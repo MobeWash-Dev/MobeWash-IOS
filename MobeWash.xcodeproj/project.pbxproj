@@ -504,6 +504,7 @@
 				780D45F21EA3DDDB00FB4D35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		780D45F31EA3DDDB00FB4D35 /* Build configuration list for PBXNativeTarget "MobeWashTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +513,7 @@
 				780D45F51EA3DDDB00FB4D35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		780D45F61EA3DDDB00FB4D35 /* Build configuration list for PBXNativeTarget "MobeWashUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +522,7 @@
 				780D45F81EA3DDDB00FB4D35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
