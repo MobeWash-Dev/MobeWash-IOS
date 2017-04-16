@@ -1,0 +1,6 @@
+framework module Pods_MobeWashUITests {
+  umbrella header "Pods-MobeWashUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
