@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007802BA1EAC02FB0048195E /* CarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007802B91EAC02FB0048195E /* CarInfo.swift */; };
+		007802BC1EAC03040048195E /* Washer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007802BB1EAC03040048195E /* Washer.swift */; };
+		007802BE1EAC030A0048195E /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007802BD1EAC030A0048195E /* Work.swift */; };
 		077871BF1EA7E58B00652EE5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 077871BE1EA7E58B00652EE5 /* icon.png */; };
 		780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CB1EA3DDDA00FB4D35 /* AppDelegate.swift */; };
 		780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		007802B91EAC02FB0048195E /* CarInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarInfo.swift; sourceTree = "<group>"; };
+		007802BB1EAC03040048195E /* Washer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Washer.swift; sourceTree = "<group>"; };
+		007802BD1EAC030A0048195E /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
 		073CC921CAFDBEFC61F6753A /* Pods-MobeWash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.release.xcconfig"; sourceTree = "<group>"; };
 		077871BE1EA7E58B00652EE5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		0D1905CA2E73BC252B45A062 /* Pods_MobeWash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +101,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		007802B81EAC02EF0048195E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				007802BD1EAC030A0048195E /* Work.swift */,
+				007802BB1EAC03040048195E /* Washer.swift */,
+				007802B91EAC02FB0048195E /* CarInfo.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		3D7E300AB6FA9548B5BFE1D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,9 +159,10 @@
 		780D45CA1EA3DDDA00FB4D35 /* MobeWash */ = {
 			isa = PBXGroup;
 			children = (
-				780D45CB1EA3DDDA00FB4D35 /* AppDelegate.swift */,
-				78CBE8BD1EA3E5E1006BD330 /* ViewControllers */,
+				007802B81EAC02EF0048195E /* Model */,
 				784486041EA3E897001D1F96 /* Views (Storyboards) */,
+				78CBE8BD1EA3E5E1006BD330 /* ViewControllers */,
+				780D45CB1EA3DDDA00FB4D35 /* AppDelegate.swift */,
 				784486071EA3E8CD001D1F96 /* Resources */,
 				784486061EA3E8A8001D1F96 /* Extensions */,
 				784486051EA3E8A2001D1F96 /* Services */,
@@ -498,7 +515,9 @@
 			files = (
 				B500A0261EAC034300EEED32 /* WorkListTableViewCell.swift in Sources */,
 				780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */,
-				B500A0251EAC034300EEED32 /* WorkDetailViewController.swift in Sources */,
+				007802BC1EAC03040048195E /* Washer.swift in Sources */,
+				007802BE1EAC030A0048195E /* Work.swift in Sources */,
+				007802BA1EAC02FB0048195E /* CarInfo.swift in Sources */,
 				780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */,
 				B500A0271EAC034300EEED32 /* WorkListViewController.swift in Sources */,
 			);
