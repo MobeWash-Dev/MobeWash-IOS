@@ -9,14 +9,13 @@
 import UIKit
 
 class WorkListViewController: UITableViewController {
-    var workListName = ["job1", "job2", "job3"]
+    var workListName = ["Super Wash", "job2", "job3"]
     var workListLocation = ["UTC", "UCSD", "La Jolla"]
     var workListTime = [3, 5, 6]
     var workListImages = ["job1.jpg", "job2.jpg", "job3.jpg"]
   
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -43,19 +42,39 @@ class WorkListViewController: UITableViewController {
 
   
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellIdentifier = "Cell"
+        var cellIdentifier = "Cell"
+        var radius:CGFloat = 0
+        
+        if indexPath.row == 0 {
+            cellIdentifier = "priorityCell";
+            radius = 0
+        }
+        else {
+            radius = 40
+        }
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
                   as! WorkListTableViewCell
         cell.nameLabel.text = workListName[indexPath.row]
         cell.locationLabel.text = workListLocation[indexPath.row]
         cell.timeLabel.text = "\(workListTime[indexPath.row]) PM"
         cell.thumbnailImageView.image = UIImage(named: workListImages[indexPath.row])
-        cell.thumbnailImageView.layer.cornerRadius = 40.0
+        cell.thumbnailImageView.layer.cornerRadius = radius
         cell.thumbnailImageView.clipsToBounds = true
         return cell
     }
   
-
+    override func tableView(_ tableView: UITableView,
+                            heightForRowAt indexPath: IndexPath) -> CGFloat {
+      if indexPath.row == 0 {
+        return 200
+      }
+      return 100
+    }
+    
+    func update() {
+    
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
