@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FacebookLogin
 
 class HomeViewController: UIViewController, UITextFieldDelegate {
 
@@ -14,11 +15,17 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordField: UITextField!
     
     @IBAction func loginButton(_ sender: UIButton) {
-        print("Successful Login")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let loginButton = LoginButton(readPermissions: [.publicProfile ])
+        loginButton.center = view.center
+        
+        // remove when FacebookAppID is set up
+        loginButton.isUserInteractionEnabled = false
+
+        view.addSubview(loginButton)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

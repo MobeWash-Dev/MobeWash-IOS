@@ -32,7 +32,6 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         modelOfCar.isHidden = true
     }
     @IBAction func signUpButton(_ sender: UIButton) {
-        print("Signup Button Clicked")
     }
     
     override func viewDidLoad() {
