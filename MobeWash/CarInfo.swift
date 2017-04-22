@@ -6,18 +6,22 @@
 ////
 ////
 //
-//import Foundation
-//class CarInfo{
-//    //field
-//    private var _workTitle:String!
-//    private var _workTime:String!
-//    private var _workLocation:String!
-//    private var _carInfo:CarInfo!
-//    private var _package:String!
-//    
-//    //init
-//    
-//    init(workTitle) {
-//        <#statements#>
-//    }
-//}
+import Foundation
+class CarInfo{
+    //field
+    private var _carMake:String
+    private var _carColor:String
+    private var _carPlate:String
+    private var _carModel:String
+    private var _carPicture:[String]
+    
+    //init
+    
+    init(carMake:String, carColor:String,carPlate:String,carModel:String,carPicture:[String] ) {
+        self._carMake=carMake
+        self._carColor = carColor
+        self._carPlate=carPlate
+        self._carModel=carModel
+        self._carPicture=carPicture
+    }
+}
