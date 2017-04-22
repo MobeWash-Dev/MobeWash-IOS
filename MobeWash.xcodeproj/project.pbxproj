@@ -17,7 +17,6 @@
 		780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */; };
 		780D45E11EA3DDDB00FB4D35 /* MobeWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45E01EA3DDDB00FB4D35 /* MobeWashTests.swift */; };
 		780D45EC1EA3DDDB00FB4D35 /* MobeWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */; };
-		B500A0251EAC034300EEED32 /* WorkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B500A0221EAC034300EEED32 /* WorkDetailViewController.swift */; };
 		B500A0261EAC034300EEED32 /* WorkListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B500A0231EAC034300EEED32 /* WorkListTableViewCell.swift */; };
 		B500A0271EAC034300EEED32 /* WorkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B500A0241EAC034300EEED32 /* WorkListViewController.swift */; };
 		B500A0291EAC03F200EEED32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B500A0281EAC03F200EEED32 /* Main.storyboard */; };
