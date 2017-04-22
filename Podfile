@@ -8,6 +8,7 @@ target 'MobeWash' do
   use_frameworks!
 
   pod ‘FacebookLogin’
+  pod ‘Google/SignIn’
 
   # Pods for MobeWash
 
