@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		077871BF1EA7E58B00652EE5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 077871BE1EA7E58B00652EE5 /* icon.png */; };
 		780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CB1EA3DDDA00FB4D35 /* AppDelegate.swift */; };
 		780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */; };
 		780D45D11EA3DDDA00FB4D35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D45CF1EA3DDDA00FB4D35 /* Main.storyboard */; };
@@ -14,7 +15,6 @@
 		780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */; };
 		780D45E11EA3DDDB00FB4D35 /* MobeWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45E01EA3DDDB00FB4D35 /* MobeWashTests.swift */; };
 		780D45EC1EA3DDDB00FB4D35 /* MobeWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */; };
-		784486091EA3EAD3001D1F96 /* droplet_960.png in Resources */ = {isa = PBXBuildFile; fileRef = 784486081EA3EAD3001D1F96 /* droplet_960.png */; };
 		B1B87C597285DC19C7C7D95B /* Pods_MobeWash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1905CA2E73BC252B45A062 /* Pods_MobeWash.framework */; };
 		B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
 		B25AAC4B1EAC1095001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
@@ -43,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		073CC921CAFDBEFC61F6753A /* Pods-MobeWash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.release.xcconfig"; sourceTree = "<group>"; };
+		077871BE1EA7E58B00652EE5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		0D1905CA2E73BC252B45A062 /* Pods_MobeWash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E96681111EA98DFF0AB6C8D /* Pods_MobeWashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		780D45C81EA3DDDA00FB4D35 /* MobeWash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobeWash.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,7 +59,6 @@
 		780D45E71EA3DDDB00FB4D35 /* MobeWashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobeWashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobeWashUITests.swift; sourceTree = "<group>"; };
 		780D45ED1EA3DDDB00FB4D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		784486081EA3EAD3001D1F96 /* droplet_960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = droplet_960.png; sourceTree = "<group>"; };
 		938203FEC5CD43B1818AFF2B /* Pods-MobeWashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9468D1ECF422C6979804B99B /* Pods-MobeWashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.release.xcconfig"; sourceTree = "<group>"; };
 		B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -204,7 +204,7 @@
 		784486071EA3E8CD001D1F96 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				784486081EA3EAD3001D1F96 /* droplet_960.png */,
+				077871BE1EA7E58B00652EE5 /* icon.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -333,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077871BF1EA7E58B00652EE5 /* icon.png in Resources */,
 				780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */,
 				780D45D31EA3DDDA00FB4D35 /* Assets.xcassets in Resources */,
 				B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */,
@@ -657,11 +658,13 @@
 			baseConfigurationReference = CCAAE805BAC673105378E7B9 /* Pods-MobeWash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MobeWash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanippolito.MobeWash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -670,11 +673,13 @@
 			baseConfigurationReference = 073CC921CAFDBEFC61F6753A /* Pods-MobeWash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MobeWash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanippolito.MobeWash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
