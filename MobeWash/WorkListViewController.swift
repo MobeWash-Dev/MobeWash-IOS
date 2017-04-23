@@ -9,18 +9,25 @@
 import UIKit
 
 class WorkListViewController: UITableViewController {
-    var workListName = ["Super Wash", "job2", "job3"]
-    var workListLocation = ["UTC", "UCSD", "La Jolla"]
-    var workListTime = [3, 5, 6]
-    var workListImages = ["job1.jpg", "job2.jpg", "job3.jpg"]
+    var washer = Washer(name:"Chris Zhang");
+
   
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource=self
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        let work1 = Work(workTitle: "Super Wash", workTime: "3pm,Thursday", workLoc: "9500 Gilman Drive", package: "DayDreams",carPicture:"job1.jpg")
+        let work2 = Work(workTitle: "job2", workTime: "5pm,Thursday", workLoc: "9501 Gilman Drive", package: "DayDream",carPicture:"job2.jpg")
+        let work3 = Work(workTitle: "job3", workTime: "6pm,Thursday", workLoc: "9501 Gilman Drive", package: "DayDream", carPicture: "job3.jpg")
+        washer.addWork(work: work1)
+        washer.addWork(work: work2)
+        washer.addWork(work: work3)
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,7 +44,7 @@ class WorkListViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return workListName.count
+        return washer.workList.count
     }
 
   
@@ -55,10 +62,10 @@ class WorkListViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
                   as! WorkListTableViewCell
-        cell.nameLabel.text = workListName[indexPath.row]
-        cell.locationLabel.text = workListLocation[indexPath.row]
-        cell.timeLabel.text = "\(workListTime[indexPath.row]) PM"
-        cell.thumbnailImageView.image = UIImage(named: workListImages[indexPath.row])
+        cell.nameLabel.text = washer.workList[indexPath.row].workTitle
+        cell.locationLabel.text = washer.workList[indexPath.row].workLocation
+        cell.timeLabel.text = "\(washer.workList[indexPath.row].workTime)"
+        cell.thumbnailImageView.image = UIImage(named: washer.workList[indexPath.row].carPicture)
         cell.thumbnailImageView.layer.cornerRadius = radius
         cell.thumbnailImageView.clipsToBounds = true
         return cell
@@ -71,7 +78,21 @@ class WorkListViewController: UITableViewController {
       }
       return 100
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let work = washer.workList[indexPath.row]
+        
+        performSegue(withIdentifier: "WorkDetailVC", sender: work)
+        
+    }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? WorkDetailVC{
+            
+            if let work =  sender as? Work{
+                destination.work = work
+            }
+        }
+    }
     func update() {
     
     }

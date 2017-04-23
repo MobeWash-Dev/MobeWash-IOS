@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WorkDetailViewController: UIViewController {
+class WorkDetailViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

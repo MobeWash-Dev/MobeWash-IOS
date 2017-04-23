@@ -10,6 +10,7 @@
 		007802BA1EAC02FB0048195E /* CarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007802B91EAC02FB0048195E /* CarInfo.swift */; };
 		007802BC1EAC03040048195E /* Washer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007802BB1EAC03040048195E /* Washer.swift */; };
 		007802BE1EAC030A0048195E /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007802BD1EAC030A0048195E /* Work.swift */; };
+		007802C21EAC3D630048195E /* WorkDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007802C11EAC3D630048195E /* WorkDetailVC.swift */; };
 		077871BF1EA7E58B00652EE5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 077871BE1EA7E58B00652EE5 /* icon.png */; };
 		780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CB1EA3DDDA00FB4D35 /* AppDelegate.swift */; };
 		780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */; };
@@ -45,6 +46,7 @@
 		007802B91EAC02FB0048195E /* CarInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarInfo.swift; sourceTree = "<group>"; };
 		007802BB1EAC03040048195E /* Washer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Washer.swift; sourceTree = "<group>"; };
 		007802BD1EAC030A0048195E /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		007802C11EAC3D630048195E /* WorkDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailVC.swift; sourceTree = "<group>"; };
 		073CC921CAFDBEFC61F6753A /* Pods-MobeWash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.release.xcconfig"; sourceTree = "<group>"; };
 		077871BE1EA7E58B00652EE5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		0D1905CA2E73BC252B45A062 /* Pods_MobeWash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +65,6 @@
 		780D45ED1EA3DDDB00FB4D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		938203FEC5CD43B1818AFF2B /* Pods-MobeWashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9468D1ECF422C6979804B99B /* Pods-MobeWashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.release.xcconfig"; sourceTree = "<group>"; };
-		B500A0221EAC034300EEED32 /* WorkDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDetailViewController.swift; sourceTree = "<group>"; };
 		B500A0231EAC034300EEED32 /* WorkListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkListTableViewCell.swift; sourceTree = "<group>"; };
 		B500A0241EAC034300EEED32 /* WorkListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkListViewController.swift; sourceTree = "<group>"; };
 		B500A0281EAC03F200EEED32 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -224,9 +225,9 @@
 			isa = PBXGroup;
 			children = (
 				780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */,
-				B500A0221EAC034300EEED32 /* WorkDetailViewController.swift */,
 				B500A0231EAC034300EEED32 /* WorkListTableViewCell.swift */,
 				B500A0241EAC034300EEED32 /* WorkListViewController.swift */,
+				007802C11EAC3D630048195E /* WorkDetailVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -516,6 +517,7 @@
 				780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */,
 				007802BC1EAC03040048195E /* Washer.swift in Sources */,
 				007802BE1EAC030A0048195E /* Work.swift in Sources */,
+				007802C21EAC3D630048195E /* WorkDetailVC.swift in Sources */,
 				007802BA1EAC02FB0048195E /* CarInfo.swift in Sources */,
 				780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */,
 				B500A0271EAC034300EEED32 /* WorkListViewController.swift in Sources */,

@@ -15,17 +15,21 @@ class Work{
     private var _workLocation:String!
     //private var _carInfo:CarInfo!
     private var _package:String!
+    private var _carPicture:String!
     
-    
-    init(workTitle:String,workTime:String,workLoc:String,/*carInfo:CarInfo,*/package:String) {
+    init(workTitle:String,workTime:String,workLoc:String,/*carInfo:CarInfo,*/package:String,carPicture:String) {
         self._workTitle=workTitle
         self._workTime=workTime
         self._workLocation=workLoc
         self._package=package
+        self._carPicture=carPicture
         //self._carInfo=carInfo
 
     }
     //methods
+    var carPicture:String {
+        return _carPicture
+    }
     var workTitle:String {
         return _workTitle
     }
