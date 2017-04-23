@@ -23,6 +23,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
         
         // Facebook Sign In
         let loginButton = LoginButton(readPermissions: [.publicProfile ])
@@ -59,6 +60,10 @@ class HomeViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDele
         textField.resignFirstResponder()
         
         return true
+=======
+        // Do any additional setup after loading the view, typically from a nib.
+        NSLog("For testing purpose only.")
+>>>>>>> development
     }
 
     override func didReceiveMemoryWarning() {
