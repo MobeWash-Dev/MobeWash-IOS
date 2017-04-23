@@ -336,11 +336,8 @@
 				077871BF1EA7E58B00652EE5 /* icon.png in Resources */,
 				780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */,
 				780D45D31EA3DDDA00FB4D35 /* Assets.xcassets in Resources */,
-<<<<<<< HEAD
 				B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */,
 				784486091EA3EAD3001D1F96 /* droplet_960.png in Resources */,
-=======
->>>>>>> development
 				780D45D11EA3DDDA00FB4D35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
