@@ -16,6 +16,10 @@
 		780D45E11EA3DDDB00FB4D35 /* MobeWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45E01EA3DDDB00FB4D35 /* MobeWashTests.swift */; };
 		780D45EC1EA3DDDB00FB4D35 /* MobeWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */; };
 		8C34AA391EB15930000A5490 /* MWPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA381EB15930000A5490 /* MWPackage.swift */; };
+		8C34AA3B1EB1BAE7000A5490 /* MWCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3A1EB1BAE7000A5490 /* MWCompany.swift */; };
+		8C34AA3D1EB1BFE5000A5490 /* MWCompanySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3C1EB1BFE5000A5490 /* MWCompanySetting.swift */; };
+		8C34AA3F1EB1D329000A5490 /* MWBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3E1EB1D329000A5490 /* MWBooking.swift */; };
+		8C34AA411EB1D3A8000A5490 /* MWField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA401EB1D3A8000A5490 /* MWField.swift */; };
 		B1B87C597285DC19C7C7D95B /* Pods_MobeWash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1905CA2E73BC252B45A062 /* Pods_MobeWash.framework */; };
 		B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
 		B25AAC4B1EAC1095001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
@@ -61,6 +65,10 @@
 		780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobeWashUITests.swift; sourceTree = "<group>"; };
 		780D45ED1EA3DDDB00FB4D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C34AA381EB15930000A5490 /* MWPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWPackage.swift; sourceTree = "<group>"; };
+		8C34AA3A1EB1BAE7000A5490 /* MWCompany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWCompany.swift; sourceTree = "<group>"; };
+		8C34AA3C1EB1BFE5000A5490 /* MWCompanySetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWCompanySetting.swift; sourceTree = "<group>"; };
+		8C34AA3E1EB1D329000A5490 /* MWBooking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWBooking.swift; sourceTree = "<group>"; };
+		8C34AA401EB1D3A8000A5490 /* MWField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWField.swift; sourceTree = "<group>"; };
 		938203FEC5CD43B1818AFF2B /* Pods-MobeWashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9468D1ECF422C6979804B99B /* Pods-MobeWashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.release.xcconfig"; sourceTree = "<group>"; };
 		B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -225,6 +233,10 @@
 			isa = PBXGroup;
 			children = (
 				8C34AA381EB15930000A5490 /* MWPackage.swift */,
+				8C34AA3C1EB1BFE5000A5490 /* MWCompanySetting.swift */,
+				8C34AA3A1EB1BAE7000A5490 /* MWCompany.swift */,
+				8C34AA3E1EB1D329000A5490 /* MWBooking.swift */,
+				8C34AA401EB1D3A8000A5490 /* MWField.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -514,9 +526,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */,
+				8C34AA3F1EB1D329000A5490 /* MWBooking.swift in Sources */,
 				8C34AA391EB15930000A5490 /* MWPackage.swift in Sources */,
 				780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */,
+				8C34AA411EB1D3A8000A5490 /* MWField.swift in Sources */,
 				780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */,
+				8C34AA3D1EB1BFE5000A5490 /* MWCompanySetting.swift in Sources */,
+				8C34AA3B1EB1BAE7000A5490 /* MWCompany.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
