@@ -13,12 +13,20 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
     @IBOutlet weak var companyInput: UITextField!
     @IBOutlet weak var companyTable: UITableView!
     
+     // Leon - dummy data for tableview
+    var companies = ["Google", "Amazon", "UCSD", "United"]
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         // Leon - set up new delegation method
         companyInput.delegate = self
+        companyTable.delegate = self
+        companyTable.dataSource = self
+        
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,11 +40,17 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        print("Count is " + String(self.companies.count) )
+        return companies.count - 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        // dequeue and set text
+        let companycell = tableView.dequeueReusableCell( withIdentifier:"companyCell") as? CompanyCell!
+        print("Name is " + companies[indexPath.row])
+        companycell?.nameText.text = companies[indexPath.row]
+        return companycell!
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
