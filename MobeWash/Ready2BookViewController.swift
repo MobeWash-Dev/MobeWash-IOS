@@ -29,6 +29,7 @@ class Ready2BookViewController: UIViewController, UISearchBarDelegate, UITableVi
         companyTable.dataSource = self
         filterData(withText: "")
         companyInput.showsCancelButton = true
+        // companyInput.setPositionAdjustment(UIOffsetMake(100.0,0.0), for: UISearchBarIcon.clear)
         
        
     }
@@ -54,6 +55,8 @@ class Ready2BookViewController: UIViewController, UISearchBarDelegate, UITableVi
         }
         
     }
+    
+    
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         print("Done editing")
