@@ -68,6 +68,7 @@
                     </view>
                     <connections>
                         <outlet property="companyInput" destination="buL-3U-fjy" id="IOP-1K-Gdr"/>
+                        <outlet property="companyTable" destination="93a-6B-eU8" id="CPR-1P-DUY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BLm-4N-BZ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
