@@ -8,10 +8,11 @@
 
 import UIKit
 
-class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
+class Ready2BookViewController: UIViewController, UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var companyInput: UITextField!
+    
     @IBOutlet weak var companyTable: UITableView!
+    @IBOutlet weak var companyInput: UISearchBar!
     
      // Leon - dummy data for tableview
     var companies = ["Google", "Amazon", "UCSD", "United", "Apple", "Watermelon", "Leon's Awesome Company", "Alphabat", "Tesla"]
@@ -26,7 +27,8 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
         companyInput.delegate = self
         companyTable.delegate = self
         companyTable.dataSource = self
-        filterData()
+        filterData(withText: "")
+        companyInput.showsCancelButton = true
         
        
     }
@@ -36,7 +38,7 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
-    func filterData() {
+    func filterData(withText: String) {
         
         // Leon - manually filter data
         if(filtered == []){
@@ -44,7 +46,7 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
         }else{
             filtered = []
             for company in companies {
-                if company.hasPrefix(self.companyInput.text!){
+                if company.hasPrefix(withText){
                     filtered.append(company)
                 }
             }
@@ -53,16 +55,24 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
         
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return true
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        print("Done editing")
+        filterData(withText: companyInput.text!)
+        self.companyTable.reloadData()
+        companyInput.resignFirstResponder()
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        print("Done editing")
-        filterData()
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        companyInput.resignFirstResponder()
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print("Changed")
+        filterData(withText: searchText)
         self.companyTable.reloadData()
     }
+    
+
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print("Count is " + String(self.filtered.count) )
