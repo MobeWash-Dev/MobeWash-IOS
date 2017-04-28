@@ -14,7 +14,7 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
     @IBOutlet weak var companyTable: UITableView!
     
      // Leon - dummy data for tableview
-    var companies = ["Google", "Amazon", "UCSD", "United"]
+    var companies = ["Google", "Amazon", "UCSD", "United", "Apple", "Watermelon", "Leon's Awesome Company"]
 
     
     override func viewDidLoad() {
@@ -37,6 +37,10 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print("edited")
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
