@@ -19,12 +19,10 @@
 		B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
 		B25AAC4B1EAC1095001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
 		B25AAC4C1EAC1095001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
-		B260314B1EB197E300FE81AE /* details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B260314A1EB197E300FE81AE /* details.storyboard */; };
-		B260314C1EB197E300FE81AE /* details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B260314A1EB197E300FE81AE /* details.storyboard */; };
-		B260314D1EB197E300FE81AE /* details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B260314A1EB197E300FE81AE /* details.storyboard */; };
 		B260314F1EB1BC3B00FE81AE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260314E1EB1BC3B00FE81AE /* DetailsViewController.swift */; };
 		B26031501EB1BC3B00FE81AE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260314E1EB1BC3B00FE81AE /* DetailsViewController.swift */; };
 		B26031511EB1BC3B00FE81AE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260314E1EB1BC3B00FE81AE /* DetailsViewController.swift */; };
+		B26031541EB31A4000FE81AE /* details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26031521EB31A4000FE81AE /* details.storyboard */; };
 		B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B99A961EA85F84003D2F09 /* SignUpViewController.swift */; };
 		D33FEC5C8A337100A19C9B93 /* Pods_MobeWashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BC0914DB8B3E67496FB482 /* Pods_MobeWashUITests.framework */; };
 		DB5B01C34B38E597002C930D /* Pods_MobeWashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E96681111EA98DFF0AB6C8D /* Pods_MobeWashTests.framework */; };
@@ -69,8 +67,8 @@
 		9468D1ECF422C6979804B99B /* Pods-MobeWashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.release.xcconfig"; sourceTree = "<group>"; };
 		B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B25AAC4D1EAC13E1001C3369 /* MobeWash-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobeWash-Bridging-Header.h"; sourceTree = "<group>"; };
-		B260314A1EB197E300FE81AE /* details.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = details.storyboard; sourceTree = "<group>"; };
 		B260314E1EB1BC3B00FE81AE /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		B26031531EB31A4000FE81AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/details.storyboard; sourceTree = "<group>"; };
 		B2B99A961EA85F84003D2F09 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C2D4BD3FC464428E3FEDE0D9 /* Pods-MobeWashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashUITests/Pods-MobeWashUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCAAE805BAC673105378E7B9 /* Pods-MobeWash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.debug.xcconfig"; sourceTree = "<group>"; };
@@ -189,7 +187,7 @@
 		784486041EA3E897001D1F96 /* Views (Storyboards) */ = {
 			isa = PBXGroup;
 			children = (
-				B260314A1EB197E300FE81AE /* details.storyboard */,
+				B26031521EB31A4000FE81AE /* details.storyboard */,
 				780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */,
 				780D45CF1EA3DDDA00FB4D35 /* Main.storyboard */,
 			);
@@ -346,8 +344,8 @@
 				077871BF1EA7E58B00652EE5 /* icon.png in Resources */,
 				780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */,
 				780D45D31EA3DDDA00FB4D35 /* Assets.xcassets in Resources */,
+				B26031541EB31A4000FE81AE /* details.storyboard in Resources */,
 				B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */,
-				B260314B1EB197E300FE81AE /* details.storyboard in Resources */,
 				780D45D11EA3DDDA00FB4D35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,7 +354,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B260314C1EB197E300FE81AE /* details.storyboard in Resources */,
 				B25AAC4B1EAC1095001C3369 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,7 +362,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B260314D1EB197E300FE81AE /* details.storyboard in Resources */,
 				B25AAC4C1EAC1095001C3369 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,6 +566,14 @@
 				780D45D51EA3DDDA00FB4D35 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B26031521EB31A4000FE81AE /* details.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B26031531EB31A4000FE81AE /* Base */,
+			);
+			name = details.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
