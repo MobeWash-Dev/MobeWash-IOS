@@ -15,6 +15,8 @@
 		780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */; };
 		780D45E11EA3DDDB00FB4D35 /* MobeWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45E01EA3DDDB00FB4D35 /* MobeWashTests.swift */; };
 		780D45EC1EA3DDDB00FB4D35 /* MobeWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */; };
+		8C34AA431EB30355000A5490 /* BillingDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C34AA421EB30355000A5490 /* BillingDetails.storyboard */; };
+		8C34AA451EB30509000A5490 /* BillingDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA441EB30509000A5490 /* BillingDetailsController.swift */; };
 		B1B87C597285DC19C7C7D95B /* Pods_MobeWash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1905CA2E73BC252B45A062 /* Pods_MobeWash.framework */; };
 		B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
 		B25AAC4B1EAC1095001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
@@ -59,6 +61,8 @@
 		780D45E71EA3DDDB00FB4D35 /* MobeWashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobeWashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobeWashUITests.swift; sourceTree = "<group>"; };
 		780D45ED1EA3DDDB00FB4D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C34AA421EB30355000A5490 /* BillingDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BillingDetails.storyboard; sourceTree = "<group>"; };
+		8C34AA441EB30509000A5490 /* BillingDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingDetailsController.swift; sourceTree = "<group>"; };
 		938203FEC5CD43B1818AFF2B /* Pods-MobeWashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9468D1ECF422C6979804B99B /* Pods-MobeWashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.release.xcconfig"; sourceTree = "<group>"; };
 		B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 			children = (
 				780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */,
 				780D45CF1EA3DDDA00FB4D35 /* Main.storyboard */,
+				8C34AA421EB30355000A5490 /* BillingDetails.storyboard */,
 			);
 			name = "Views (Storyboards)";
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 			children = (
 				780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */,
 				B2B99A961EA85F84003D2F09 /* SignUpViewController.swift */,
+				8C34AA441EB30509000A5490 /* BillingDetailsController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -334,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				077871BF1EA7E58B00652EE5 /* icon.png in Resources */,
+				8C34AA431EB30355000A5490 /* BillingDetails.storyboard in Resources */,
 				780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */,
 				780D45D31EA3DDDA00FB4D35 /* Assets.xcassets in Resources */,
 				B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */,
@@ -502,6 +509,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C34AA451EB30509000A5490 /* BillingDetailsController.swift in Sources */,
 				B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */,
 				780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */,
 				780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */,
