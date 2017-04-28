@@ -15,6 +15,7 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
     
      // Leon - dummy data for tableview
     var companies = ["Google", "Amazon", "UCSD", "United", "Apple", "Watermelon", "Leon's Awesome Company"]
+    var filtered = [String]()
 
     
     override func viewDidLoad() {
@@ -25,6 +26,7 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
         companyInput.delegate = self
         companyTable.delegate = self
         companyTable.dataSource = self
+        filterData()
         
        
     }
@@ -34,26 +36,43 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
         // Dispose of any resources that can be recreated.
     }
     
+    func filterData() {
+        if(filtered == []){
+            filtered = self.companies
+        }else{
+            filtered = []
+            for company in companies {
+                if company.hasPrefix(self.companyInput.text!){
+                    filtered.append(company)
+                }
+            }
+
+        }
+        
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        print("edited")
+        print("Done editing")
+        filterData()
+        self.companyTable.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print("Count is " + String(self.companies.count) )
-        return companies.count
+        print("Count is " + String(self.filtered.count) )
+        return filtered.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         // dequeue and set text
         let companycell = tableView.dequeueReusableCell( withIdentifier:"companyCell") as? CompanyCell!
-        print("Name is " + companies[indexPath.row])
-        companycell?.nameText.text = companies[indexPath.row]
+        print("Name is " + filtered[indexPath.row])
+        companycell?.nameText.text = filtered[indexPath.row]
         return companycell!
     }
     
