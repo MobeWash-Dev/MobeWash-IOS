@@ -14,7 +14,7 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
     @IBOutlet weak var companyTable: UITableView!
     
      // Leon - dummy data for tableview
-    var companies = ["Google", "Amazon", "UCSD", "United", "Apple", "Watermelon", "Leon's Awesome Company"]
+    var companies = ["Google", "Amazon", "UCSD", "United", "Apple", "Watermelon", "Leon's Awesome Company", "Alphabat", "Tesla"]
     var filtered = [String]()
 
     
@@ -37,6 +37,8 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
     }
     
     func filterData() {
+        
+        // Leon - manually filter data
         if(filtered == []){
             filtered = self.companies
         }else{
@@ -69,7 +71,7 @@ class Ready2BookViewController: UIViewController, UITextFieldDelegate, UITableVi
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        // dequeue and set text
+        // Leon - dequeue and set text
         let companycell = tableView.dequeueReusableCell( withIdentifier:"companyCell") as? CompanyCell!
         print("Name is " + filtered[indexPath.row])
         companycell?.nameText.text = filtered[indexPath.row]
