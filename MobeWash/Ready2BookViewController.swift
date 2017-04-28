@@ -46,7 +46,7 @@ class Ready2BookViewController: UIViewController, UISearchBarDelegate, UITableVi
         }else{
             filtered = []
             for company in companies {
-                if company.hasPrefix(withText){
+                if company.lowercased().hasPrefix(withText.lowercased()){
                     filtered.append(company)
                 }
             }
