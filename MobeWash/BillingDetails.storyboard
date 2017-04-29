@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Billing Details View Controller-->
+        <!--Billing Details -->
         <scene sceneID="4u5-s7-EXK">
             <objects>
                 <viewController id="9K3-Le-dwk" customClass="BillingDetailsViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
@@ -66,7 +66,7 @@
                             <constraint firstItem="TOj-Xp-sbj" firstAttribute="trailing" secondItem="q2l-G1-ADH" secondAttribute="trailingMargin" id="wFg-Kd-gyr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="4EW-fO-VYe"/>
+                    <navigationItem key="navigationItem" title="Billing Details " id="4EW-fO-VYe"/>
                     <connections>
                         <outlet property="carImageView" destination="2Gi-pT-UCM" id="v1a-K5-qkw"/>
                         <outlet property="detailTextView" destination="aqQ-AD-4VT" id="1JI-ib-Fqt"/>
@@ -83,7 +83,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jKr-4k-5ac" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="10E-Nu-zlo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="10E-Nu-zlo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
