@@ -35,6 +35,7 @@ class BillingDetailsViewController: UIViewController, STPPaymentCardTextFieldDel
     
     //Data elements
     //var package = ...
+    var billingData : NSMutableDictionary?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +53,11 @@ class BillingDetailsViewController: UIViewController, STPPaymentCardTextFieldDel
         
         paymentTextField.delegate = self
         bookButton?.isEnabled = false
-        bookButtonApplePay?.isEnabled = Stripe.deviceSupportsApplePay()
+        bookButtonApplePay?.isEnabled = false
+       // bookButtonApplePay?.isEnabled = Stripe.deviceSupportsApplePay()
+        
+        
+        
         
     }
     
@@ -114,6 +119,26 @@ class BillingDetailsViewController: UIViewController, STPPaymentCardTextFieldDel
     }
     
     func bookButtonTapped() {
+        
+        //check if all billing data fields are set 
+        for view: UIView in view.subviews {
+            if (view is UITextField) {
+                let textField: UITextField? = (view as? UITextField)
+                if textField?.text?.characters.count == 0 {
+                    print("Fill out all billing details")
+                    return
+                }
+            }
+        }
+        
+        //package billing data
+        billingData = NSMutableDictionary()
+        billingData?.setValue(addressLine!.text, forKey: "address")
+        billingData?.setValue(cityLine!.text, forKey: "city")
+        billingData?.setValue(stateLine!.text, forKey: "state")
+        billingData?.setValue(postalLine!.text, forKey: "zip")
+        billingData?.setValue(countryLine!.text, forKey: "country")
+        
         
         let card = paymentTextField.cardParams
         STPAPIClient.shared().createToken(withCard: card) { (token, error) in
