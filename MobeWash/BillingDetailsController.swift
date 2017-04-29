@@ -63,46 +63,55 @@ class BillingDetailsViewController: UIViewController, STPPaymentCardTextFieldDel
     
     func initViews() {
 
-        let textFieldHeight: CGFloat = (self.view.frame.size.height / 13.0)
+        //textfield frame layout constants
+        let textFieldHeight = self.view.frame.size.height / 13.0
+        let textFieldWidth = self.view.frame.size.width - 40
         
-        //init buttons
+        //init textFields and Buttons
         self.bookButton = BuyButton(enabled: true, theme: STPTheme.default())
-        
         self.bookButtonApplePay = ApplePayBuyButton(enabled: true, theme: STPTheme.default())
         
+        //add targets
         self.bookButton?.addTarget(self, action: #selector(bookButtonTapped), for: .touchUpInside)
-        
         self.bookButtonApplePay?.addTarget(self, action: #selector(bookButtonApplePayTapped), for: .touchUpInside)
         
         //init payment textField and Button Frames
-        paymentTextField = STPPaymentCardTextField(frame: CGRect(x: 20, y: self.topView.frame.maxY + 35, width: self.view.frame.size.width - 40, height: textFieldHeight))
         
+        let paymentTextFieldFrame = CGRect(x: 20, y: self.topView.frame.maxY + 35, width: textFieldWidth, height: textFieldHeight)
+        
+        let addressLineFrame = CGRect(x: 20, y:paymentTextFieldFrame.maxY+5, width: textFieldWidth, height: textFieldHeight)
+        
+        let cityLineFrame = CGRect(x: 20, y:addressLineFrame.maxY+5, width: self.view.frame.size.width - 40, height: textFieldHeight)
+        
+        let stateLineFrame = CGRect(x: 20, y:cityLineFrame.maxY+5, width: textFieldWidth/2 - 5 , height: textFieldHeight)
+        
+        let postalLineFrame = CGRect(x: stateLineFrame.maxX + 5, y:cityLineFrame.maxY+5, width: textFieldWidth/2 , height: textFieldHeight)
+        
+        let countryLineFrame = CGRect(x: 20, y:postalLineFrame.maxY+5, width: textFieldWidth, height: textFieldHeight)
+        
+        let bookButtonFrame = CGRect(x: 20, y:countryLineFrame.maxY+35, width: textFieldWidth, height: textFieldHeight)
+        
+        let bookButtonApplePayFrame = CGRect(x: 20, y:bookButtonFrame.maxY+5, width: textFieldWidth, height: textFieldHeight)
+        
+
+        //set textField and button frames
+    
+        paymentTextField = STPPaymentCardTextField(frame: paymentTextFieldFrame)
         paymentTextField.borderWidth = 0.25
-        //init rest of textFields
         
-        addressLine = UITextField(frame: CGRect(x: 20, y:self.paymentTextField.frame.maxY+5, width: self.view.frame.size.width - 40, height: textFieldHeight))
-        addressLine?.borderStyle = UITextBorderStyle.roundedRect
-        addressLine?.placeholder = "Billing Address"
+        addressLine = UITextField(frame: addressLineFrame, borderStyle: .roundedRect, placeholder: "Billing Address")
         
-        cityLine = UITextField(frame: CGRect(x: 20, y:self.addressLine!.frame.maxY+5, width: self.view.frame.size.width - 40, height: textFieldHeight))
-        cityLine?.borderStyle = UITextBorderStyle.roundedRect
-        cityLine?.placeholder = "City"
+        cityLine = UITextField(frame: cityLineFrame, borderStyle: .roundedRect, placeholder: "City")
+    
+        stateLine = UITextField(frame: stateLineFrame, borderStyle: .roundedRect, placeholder: "State")
+
+        postalLine = UITextField(frame: postalLineFrame, borderStyle: .roundedRect, placeholder: "Postal Code")
         
-        stateLine = UITextField(frame: CGRect(x: 20, y:self.cityLine!.frame.maxY+5, width: (self.view.frame.size.width - 40)/2 - 5 , height: textFieldHeight))
-        stateLine?.borderStyle = UITextBorderStyle.roundedRect
-        stateLine?.placeholder = "State"
+        countryLine = UITextField(frame: countryLineFrame, borderStyle: .roundedRect, placeholder: "Country")
         
-        postalLine = UITextField(frame: CGRect(x: stateLine!.frame.maxX + 5, y:self.cityLine!.frame.maxY+5, width: (self.view.frame.size.width - 40)/2 , height: textFieldHeight))
-        postalLine?.borderStyle = UITextBorderStyle.roundedRect
-        postalLine?.placeholder = "Postal Code"
-        
-        countryLine = UITextField(frame: CGRect(x: 20, y:self.postalLine!.frame.maxY+5, width: self.view.frame.size.width - 40, height: textFieldHeight))
-        countryLine?.borderStyle = UITextBorderStyle.roundedRect
-        countryLine?.placeholder = "Country"
-        
-        bookButton?.frame = CGRect(x: 20, y:self.countryLine!.frame.maxY+35, width: self.view.frame.size.width - 40, height: textFieldHeight)
-        
-        bookButtonApplePay?.frame = CGRect(x: 20, y:self.bookButton!.frame.maxY+5, width: self.view.frame.size.width - 40, height: textFieldHeight)
+        bookButton?.frame = bookButtonFrame
+    
+        bookButtonApplePay?.frame = bookButtonApplePayFrame
         
         
     }
@@ -115,13 +124,6 @@ class BillingDetailsViewController: UIViewController, STPPaymentCardTextFieldDel
         topView.layer.borderWidth = 0.5
         topView.layer.borderColor = UIColor.lightGray.cgColor
         topView.layer.cornerRadius = 10
-        
-        //Layout ImageView
-        //Layout topView
-        carImageView.layer.masksToBounds = true
-        carImageView.layer.borderWidth = 0.5
-        carImageView.layer.borderColor = UIColor.lightGray.cgColor
-    
     }
     
     func bookButtonTapped() {
