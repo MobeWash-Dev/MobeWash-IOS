@@ -18,9 +18,38 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
     var selectedDate = Int()
     var displayDate = String()
     var selectedTime = String()
-
+    
+    var picker: UIDatePicker = UIDatePicker()
+    
     @IBAction func selectDate(_ sender: UIButton) {
+        picker.datePickerMode = UIDatePickerMode.date
+        picker.addTarget(self, action:  #selector(handleDatePicker(sender:)), for: UIControlEvents.valueChanged)
+        
+        let screen = UIScreen.main.bounds
+        picker.frame = CGRect(x:0.0, y:300, width:screen.size.width, height:250)
+        picker.backgroundColor = UIColor.white
+        
+        
+        var components = DateComponents()
+        components.month = 1
+        let maxDate = Calendar.current.date(byAdding: components, to: Date())
+        picker.maximumDate = maxDate
+        picker.minimumDate = Date()
+        
+        self.view.addSubview(picker)
+    
     }
+    
+    func handleDatePicker(sender:UIDatePicker){
+        self.setDateVariables(selectedDateAndTime: sender.date)
+        dateLabel.text = displayDate
+        timeTableView.reloadData()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        picker.removeFromSuperview()
+    }
+    
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var timeTableView: UITableView!
     @IBOutlet weak var tableViewHeader: UILabel!
@@ -44,6 +73,7 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         // Data source to be changed
         let time = availability[selectedMonth]![selectedDate]![indexPath.row]
+        // Selecting AM and PM to be changed
         if(time < 13){
             cell.textLabel?.text = String(time)+"AM"
         } else{
@@ -51,7 +81,6 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
         
         return cell
-        
     }
     
     internal func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
@@ -70,7 +99,6 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let currentCell = tableView.cellForRow(at: indexPath)
         currentCell?.layer.borderColor = UIColor.gray.cgColor
         selectedTime = (currentCell?.textLabel!.text)!
-        print(selectedTime)
     }
     
     override func viewDidLoad() {
@@ -108,6 +136,7 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
             noTimesLabel.isHidden = false
             timeTableView.isHidden = true
         } else{
+            noneAvailable = false
             noTimesLabel.isHidden = true
             timeTableView.isHidden = false
         }
