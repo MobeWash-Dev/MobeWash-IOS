@@ -53,7 +53,6 @@ public class MWPackage {
         self._name = dictionary["name"] as! String
         self._cost = dictionary["cost"] as! Double
         self._length = dictionary["length"] as! Int
-        
         self._extraCost = dictionary["extraCost"] as! Double
         self._extraLength = dictionary["extraLength"] as! Int
         self._info = dictionary["info"] as! [String]
