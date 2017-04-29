@@ -19,6 +19,8 @@
 		B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
 		B25AAC4B1EAC1095001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
 		B25AAC4C1EAC1095001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
+		B260315A1EB4577300FE81AE /* Time.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26031581EB4577300FE81AE /* Time.storyboard */; };
+		B260315C1EB45A4900FE81AE /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260315B1EB45A4900FE81AE /* TimeViewController.swift */; };
 		B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B99A961EA85F84003D2F09 /* SignUpViewController.swift */; };
 		D33FEC5C8A337100A19C9B93 /* Pods_MobeWashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BC0914DB8B3E67496FB482 /* Pods_MobeWashUITests.framework */; };
 		DB5B01C34B38E597002C930D /* Pods_MobeWashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E96681111EA98DFF0AB6C8D /* Pods_MobeWashTests.framework */; };
@@ -63,6 +65,8 @@
 		9468D1ECF422C6979804B99B /* Pods-MobeWashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.release.xcconfig"; sourceTree = "<group>"; };
 		B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B25AAC4D1EAC13E1001C3369 /* MobeWash-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobeWash-Bridging-Header.h"; sourceTree = "<group>"; };
+		B26031591EB4577300FE81AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Time.storyboard; sourceTree = "<group>"; };
+		B260315B1EB45A4900FE81AE /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		B2B99A961EA85F84003D2F09 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C2D4BD3FC464428E3FEDE0D9 /* Pods-MobeWashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashUITests/Pods-MobeWashUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCAAE805BAC673105378E7B9 /* Pods-MobeWash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.debug.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +187,7 @@
 			children = (
 				780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */,
 				780D45CF1EA3DDDA00FB4D35 /* Main.storyboard */,
+				B26031581EB4577300FE81AE /* Time.storyboard */,
 			);
 			name = "Views (Storyboards)";
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 			children = (
 				780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */,
 				B2B99A961EA85F84003D2F09 /* SignUpViewController.swift */,
+				B260315B1EB45A4900FE81AE /* TimeViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -337,8 +343,8 @@
 				780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */,
 				780D45D31EA3DDDA00FB4D35 /* Assets.xcassets in Resources */,
 				B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */,
-				784486091EA3EAD3001D1F96 /* droplet_960.png in Resources */,
 				780D45D11EA3DDDA00FB4D35 /* Main.storyboard in Resources */,
+				B260315A1EB4577300FE81AE /* Time.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */,
+				B260315C1EB45A4900FE81AE /* TimeViewController.swift in Sources */,
 				780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */,
 				780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */,
 			);
@@ -555,6 +562,14 @@
 				780D45D51EA3DDDA00FB4D35 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B26031581EB4577300FE81AE /* Time.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B26031591EB4577300FE81AE /* Base */,
+			);
+			name = Time.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
