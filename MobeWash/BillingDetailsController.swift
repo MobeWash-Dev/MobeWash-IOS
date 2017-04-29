@@ -115,6 +115,12 @@ class BillingDetailsViewController: UIViewController, STPPaymentCardTextFieldDel
         topView.layer.borderWidth = 0.5
         topView.layer.borderColor = UIColor.lightGray.cgColor
         topView.layer.cornerRadius = 10
+        
+        //Layout ImageView
+        //Layout topView
+        carImageView.layer.masksToBounds = true
+        carImageView.layer.borderWidth = 0.5
+        carImageView.layer.borderColor = UIColor.lightGray.cgColor
     
     }
     
