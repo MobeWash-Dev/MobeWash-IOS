@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		077871BF1EA7E58B00652EE5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 077871BE1EA7E58B00652EE5 /* icon.png */; };
+		079726341EB2FC4400A3DF1C /* Ready2Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079726331EB2FC4400A3DF1C /* Ready2Book.storyboard */; };
+		079726381EB2FE7200A3DF1C /* Ready2BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079726371EB2FE7200A3DF1C /* Ready2BookViewController.swift */; };
+		0797263C1EB3077400A3DF1C /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797263B1EB3077400A3DF1C /* CompanyCell.swift */; };
 		780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CB1EA3DDDA00FB4D35 /* AppDelegate.swift */; };
 		780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */; };
 		780D45D11EA3DDDA00FB4D35 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D45CF1EA3DDDA00FB4D35 /* Home.storyboard */; };
@@ -49,6 +52,9 @@
 /* Begin PBXFileReference section */
 		073CC921CAFDBEFC61F6753A /* Pods-MobeWash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.release.xcconfig"; sourceTree = "<group>"; };
 		077871BE1EA7E58B00652EE5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		079726331EB2FC4400A3DF1C /* Ready2Book.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ready2Book.storyboard; sourceTree = "<group>"; };
+		079726371EB2FE7200A3DF1C /* Ready2BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ready2BookViewController.swift; sourceTree = "<group>"; };
+		0797263B1EB3077400A3DF1C /* CompanyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
 		0D1905CA2E73BC252B45A062 /* Pods_MobeWash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E96681111EA98DFF0AB6C8D /* Pods_MobeWashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		780D45C81EA3DDDA00FB4D35 /* MobeWash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobeWash.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +199,7 @@
 				780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */,
 				780D45CF1EA3DDDA00FB4D35 /* Home.storyboard */,
 				B26031551EB407D900FE81AE /* SignUp.storyboard */,
+				079726331EB2FC4400A3DF1C /* Ready2Book.storyboard */,
 			);
 			name = "Views (Storyboards)";
 			sourceTree = "<group>";
@@ -225,6 +232,8 @@
 				B260314E1EB1BC3B00FE81AE /* DetailsViewController.swift */,
 				780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */,
 				B2B99A961EA85F84003D2F09 /* SignUpViewController.swift */,
+				079726371EB2FE7200A3DF1C /* Ready2BookViewController.swift */,
+				0797263B1EB3077400A3DF1C /* CompanyCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -346,6 +355,7 @@
 			files = (
 				077871BF1EA7E58B00652EE5 /* icon.png in Resources */,
 				780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */,
+				079726341EB2FC4400A3DF1C /* Ready2Book.storyboard in Resources */,
 				780D45D31EA3DDDA00FB4D35 /* Assets.xcassets in Resources */,
 				B26031541EB31A4000FE81AE /* Details.storyboard in Resources */,
 				B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */,
@@ -515,8 +525,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0797263C1EB3077400A3DF1C /* CompanyCell.swift in Sources */,
 				B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */,
 				780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */,
+				079726381EB2FE7200A3DF1C /* Ready2BookViewController.swift in Sources */,
 				780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */,
 				B260314F1EB1BC3B00FE81AE /* DetailsViewController.swift in Sources */,
 			);
