@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		077871BF1EA7E58B00652EE5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 077871BE1EA7E58B00652EE5 /* icon.png */; };
+		3A3F7FA21EB5C90300F15BB3 /* WasherHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3F7FA11EB5C90300F15BB3 /* WasherHistory.storyboard */; };
+		3A3F7FA41EB5CA7200F15BB3 /* WasherHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F7FA31EB5CA7200F15BB3 /* WasherHistoryTableViewController.swift */; };
+		3A3F7FA61EB5D2B800F15BB3 /* WasherHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F7FA51EB5D2B800F15BB3 /* WasherHistoryTableViewCell.swift */; };
 		780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CB1EA3DDDA00FB4D35 /* AppDelegate.swift */; };
 		780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */; };
 		780D45D11EA3DDDA00FB4D35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D45CF1EA3DDDA00FB4D35 /* Main.storyboard */; };
@@ -45,6 +48,9 @@
 		073CC921CAFDBEFC61F6753A /* Pods-MobeWash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.release.xcconfig"; sourceTree = "<group>"; };
 		077871BE1EA7E58B00652EE5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		0D1905CA2E73BC252B45A062 /* Pods_MobeWash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A3F7FA11EB5C90300F15BB3 /* WasherHistory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WasherHistory.storyboard; sourceTree = "<group>"; };
+		3A3F7FA31EB5CA7200F15BB3 /* WasherHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WasherHistoryTableViewController.swift; sourceTree = "<group>"; };
+		3A3F7FA51EB5D2B800F15BB3 /* WasherHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WasherHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		6E96681111EA98DFF0AB6C8D /* Pods_MobeWashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		780D45C81EA3DDDA00FB4D35 /* MobeWash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobeWash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		780D45CB1EA3DDDA00FB4D35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 			children = (
 				780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */,
 				780D45CF1EA3DDDA00FB4D35 /* Main.storyboard */,
+				3A3F7FA11EB5C90300F15BB3 /* WasherHistory.storyboard */,
 			);
 			name = "Views (Storyboards)";
 			sourceTree = "<group>";
@@ -214,6 +221,8 @@
 			children = (
 				780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */,
 				B2B99A961EA85F84003D2F09 /* SignUpViewController.swift */,
+				3A3F7FA31EB5CA7200F15BB3 /* WasherHistoryTableViewController.swift */,
+				3A3F7FA51EB5D2B800F15BB3 /* WasherHistoryTableViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -334,10 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				077871BF1EA7E58B00652EE5 /* icon.png in Resources */,
+				3A3F7FA21EB5C90300F15BB3 /* WasherHistory.storyboard in Resources */,
 				780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */,
 				780D45D31EA3DDDA00FB4D35 /* Assets.xcassets in Resources */,
 				B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */,
-				784486091EA3EAD3001D1F96 /* droplet_960.png in Resources */,
 				780D45D11EA3DDDA00FB4D35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,8 +512,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3F7FA41EB5CA7200F15BB3 /* WasherHistoryTableViewController.swift in Sources */,
 				B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */,
 				780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */,
+				3A3F7FA61EB5D2B800F15BB3 /* WasherHistoryTableViewCell.swift in Sources */,
 				780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

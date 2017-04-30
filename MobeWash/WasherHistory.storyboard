@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FTN-bQ-wHS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Washer History Table View Controller-->
+        <scene sceneID="bcR-so-17z">
+            <objects>
+                <tableViewController id="FTN-bQ-wHS" customClass="WasherHistoryTableViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ka1-IQ-58c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" rowHeight="80" id="Xc0-k8-lqt" customClass="WasherHistoryTableViewCell" customModule="MobeWash" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xc0-k8-lqt" id="y1p-A8-CxP">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="erm-ge-B6E">
+                                            <rect key="frame" x="21" y="10" width="60" height="60"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="60" id="gCr-Iy-1gj"/>
+                                                <constraint firstAttribute="height" constant="60" id="umV-WM-FsY"/>
+                                            </constraints>
+                                        </imageView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="3Ei-Ia-CXf">
+                                            <rect key="frame" x="104" y="9" width="65.5" height="61.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Package" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ot-03-aVQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="65.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CarType" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmQ-HB-B9e">
+                                                    <rect key="frame" x="0.0" y="20.5" width="63.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DR2-be-Gmn">
+                                                    <rect key="frame" x="0.0" y="41" width="36" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3Ei-Ia-CXf" firstAttribute="top" secondItem="y1p-A8-CxP" secondAttribute="topMargin" constant="1" id="AKs-fn-hqn"/>
+                                        <constraint firstItem="3Ei-Ia-CXf" firstAttribute="centerY" secondItem="y1p-A8-CxP" secondAttribute="centerY" id="SMq-K7-0ty"/>
+                                        <constraint firstItem="3Ei-Ia-CXf" firstAttribute="leading" secondItem="erm-ge-B6E" secondAttribute="trailing" constant="23" id="WZc-LI-gMp"/>
+                                        <constraint firstItem="erm-ge-B6E" firstAttribute="centerY" secondItem="y1p-A8-CxP" secondAttribute="centerY" id="eJU-79-7go"/>
+                                        <constraint firstItem="erm-ge-B6E" firstAttribute="leading" secondItem="y1p-A8-CxP" secondAttribute="leadingMargin" constant="13" id="fnU-hr-0xS"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="carTypeLabel" destination="bmQ-HB-B9e" id="QbD-fK-Grh"/>
+                                    <outlet property="dateLabel" destination="DR2-be-Gmn" id="Bae-SD-xIq"/>
+                                    <outlet property="packageLabel" destination="7ot-03-aVQ" id="6S5-55-mJH"/>
+                                    <outlet property="thumbnailImageView" destination="erm-ge-B6E" id="B9f-MD-gMO"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FTN-bQ-wHS" id="sJR-6v-Mjh"/>
+                            <outlet property="delegate" destination="FTN-bQ-wHS" id="O4q-4D-j8c"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n7o-R8-Zkj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-292" y="-35.532233883058474"/>
+        </scene>
+    </scenes>
+</document>
