@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07191B901EB64A640024BF35 /* ServicePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07191B8F1EB64A640024BF35 /* ServicePickViewController.swift */; };
+		07191B921EB64A990024BF35 /* ServicePickStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07191B911EB64A990024BF35 /* ServicePickStoryBoard.storyboard */; };
 		077871BF1EA7E58B00652EE5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 077871BE1EA7E58B00652EE5 /* icon.png */; };
 		780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CB1EA3DDDA00FB4D35 /* AppDelegate.swift */; };
 		780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07191B8F1EB64A640024BF35 /* ServicePickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicePickViewController.swift; sourceTree = "<group>"; };
+		07191B911EB64A990024BF35 /* ServicePickStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServicePickStoryBoard.storyboard; sourceTree = "<group>"; };
 		073CC921CAFDBEFC61F6753A /* Pods-MobeWash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.release.xcconfig"; sourceTree = "<group>"; };
 		077871BE1EA7E58B00652EE5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		0D1905CA2E73BC252B45A062 /* Pods_MobeWash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +187,7 @@
 			children = (
 				780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */,
 				780D45CF1EA3DDDA00FB4D35 /* Main.storyboard */,
+				07191B911EB64A990024BF35 /* ServicePickStoryBoard.storyboard */,
 			);
 			name = "Views (Storyboards)";
 			sourceTree = "<group>";
@@ -213,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */,
+				07191B8F1EB64A640024BF35 /* ServicePickViewController.swift */,
 				B2B99A961EA85F84003D2F09 /* SignUpViewController.swift */,
 			);
 			name = ViewControllers;
@@ -333,11 +339,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07191B921EB64A990024BF35 /* ServicePickStoryBoard.storyboard in Resources */,
 				077871BF1EA7E58B00652EE5 /* icon.png in Resources */,
 				780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */,
 				780D45D31EA3DDDA00FB4D35 /* Assets.xcassets in Resources */,
 				B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */,
-				784486091EA3EAD3001D1F96 /* droplet_960.png in Resources */,
 				780D45D11EA3DDDA00FB4D35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +510,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */,
+				07191B901EB64A640024BF35 /* ServicePickViewController.swift in Sources */,
 				780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */,
 				780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */,
 			);
