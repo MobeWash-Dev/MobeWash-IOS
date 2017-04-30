@@ -73,7 +73,6 @@ fastlane/test_output
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
-MobeWash.xcodeproj/project.pbxproj
 
 ## Build generated
 
@@ -83,7 +82,7 @@ MobeWash.xcodeproj/project.pbxproj
 
 ### Xcode Patch ###
 *.xcodeproj/*
-*.xcodeproj/project.pbxproj
+!*.xcodeproj/project.pbxproj
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
