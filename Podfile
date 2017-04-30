@@ -9,6 +9,7 @@ target 'MobeWash' do
 
   pod ‘FacebookLogin’
   pod ‘Google/SignIn’
+  pod 'Stripe'
 
   # Pods for MobeWash
 
