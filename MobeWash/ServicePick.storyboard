@@ -32,7 +32,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBj-hf-cd6">
-                                <rect key="frame" x="86" y="372" width="202" height="100"/>
+                                <rect key="frame" x="86.5" y="372" width="202" height="100"/>
                                 <color key="backgroundColor" red="0.46123126149999999" green="0.6736420393" blue="0.9726208448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="202" id="97M-lE-x3M"/>
@@ -44,10 +44,11 @@
                                 </state>
                                 <connections>
                                     <action selector="service_1_chosen:" destination="VMC-ED-UCs" eventType="touchUpInside" id="kKB-xc-4KP"/>
+                                    <segue destination="fGR-e8-Vcl" kind="show" id="XIw-bv-K6l"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UK-KD-vTV">
-                                <rect key="frame" x="86" y="482" width="202" height="100"/>
+                                <rect key="frame" x="86.5" y="482" width="202" height="100"/>
                                 <color key="backgroundColor" red="0.46123126149999999" green="0.6736420393" blue="0.9726208448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="202" id="StZ-fQ-p1B"/>
@@ -59,6 +60,7 @@
                                 </state>
                                 <connections>
                                     <action selector="service_2_chosen:" destination="VMC-ED-UCs" eventType="touchUpInside" id="tlG-WB-VS9"/>
+                                    <segue destination="fGR-e8-Vcl" kind="show" id="9Ec-x5-bGQ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="QhV-qt-0rf">
@@ -93,16 +95,19 @@
             </objects>
             <point key="canvasLocation" x="-1092" y="4.9475262368815596"/>
         </scene>
-        <!--Storyboard Reference-->
+        <!--Time-->
         <scene sceneID="lVr-Es-cuH">
             <objects>
-                <viewControllerPlaceholder id="fGR-e8-Vcl" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Time" id="fGR-e8-Vcl" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bta-46-0OY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-682" y="4"/>
+            <point key="canvasLocation" x="-527" y="4"/>
         </scene>
     </scenes>
     <resources>
         <image name="icon.png" width="548" height="800"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="XIw-bv-K6l"/>
+    </inferredMetricsTieBreakers>
 </document>

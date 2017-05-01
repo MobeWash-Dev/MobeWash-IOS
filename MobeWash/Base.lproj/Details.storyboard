@@ -131,6 +131,7 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButton:" destination="kJJ-bY-Z8a" eventType="touchUpInside" id="TgI-8V-KGP"/>
+                                    <segue destination="ah6-Di-m0J" kind="show" id="ewh-8q-3ON"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -151,6 +152,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndm-MD-qbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-221.59999999999999" y="-93.103448275862078"/>
+        </scene>
+        <!--BillingDetails-->
+        <scene sceneID="mia-1c-iXb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BillingDetails" id="ah6-Di-m0J" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w9s-9e-gBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="-59"/>
         </scene>
     </scenes>
 </document>

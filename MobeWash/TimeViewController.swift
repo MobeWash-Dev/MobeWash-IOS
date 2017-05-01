@@ -11,7 +11,7 @@ import UIKit
 class TimeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     // Dummy Data
-    let availability = ["April": [28: [10, 11, 12], 29: [8, 14]]]
+    let availability = ["April": [30: [10, 11, 12]],"May": [01: [10, 11, 12]]]
     
     var noneAvailable = false
     var selectedMonth = String()
