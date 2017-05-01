@@ -20,6 +20,8 @@
 		780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */; };
 		780D45E11EA3DDDB00FB4D35 /* MobeWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45E01EA3DDDB00FB4D35 /* MobeWashTests.swift */; };
 		780D45EC1EA3DDDB00FB4D35 /* MobeWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */; };
+		78FCB3E61EB6E9A20094C161 /* Time.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FCB3E51EB6E9A20094C161 /* Time.storyboard */; };
+		78FCB3E81EB6E9B40094C161 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */; };
 		8C2EF0F61EB43CC900514560 /* TextfieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */; };
 		8C34AA391EB15930000A5490 /* MWPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA381EB15930000A5490 /* MWPackage.swift */; };
 		8C34AA3B1EB1BAE7000A5490 /* MWCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3A1EB1BAE7000A5490 /* MWCompany.swift */; };
@@ -91,6 +93,8 @@
 		780D45E71EA3DDDB00FB4D35 /* MobeWashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobeWashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobeWashUITests.swift; sourceTree = "<group>"; };
 		780D45ED1EA3DDDB00FB4D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78FCB3E51EB6E9A20094C161 /* Time.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Time.storyboard; sourceTree = "<group>"; };
+		78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldExtensions.swift; sourceTree = "<group>"; };
 		8C34AA381EB15930000A5490 /* MWPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWPackage.swift; sourceTree = "<group>"; };
 		8C34AA3A1EB1BAE7000A5490 /* MWCompany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWCompany.swift; sourceTree = "<group>"; };
@@ -234,6 +238,7 @@
 		784486041EA3E897001D1F96 /* Views (Storyboards) */ = {
 			isa = PBXGroup;
 			children = (
+				78FCB3E51EB6E9A20094C161 /* Time.storyboard */,
 				B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */,
 				B26031521EB31A4000FE81AE /* Details.storyboard */,
 				780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */,
@@ -277,6 +282,7 @@
 				B59F36CA1EB69A8700DA21EE /* WorkListTableViewCell.swift */,
 				B59F36C81EB69A8100DA21EE /* WorkDetailViewController.swift */,
 				B59F36C61EB69A7C00DA21EE /* WorkDetailVC.swift */,
+				78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */,
 				B260314E1EB1BC3B00FE81AE /* DetailsViewController.swift */,
 				780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */,
 				07191B8F1EB64A640024BF35 /* ServicePickViewController.swift */,
@@ -423,6 +429,7 @@
 				8C34AA431EB30355000A5490 /* BillingDetails.storyboard in Resources */,
 				780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */,
 				079726341EB2FC4400A3DF1C /* Ready2Book.storyboard in Resources */,
+				78FCB3E61EB6E9A20094C161 /* Time.storyboard in Resources */,
 				780D45D31EA3DDDA00FB4D35 /* Assets.xcassets in Resources */,
 				B59F36CF1EB69A9E00DA21EE /* Worklist.storyboard in Resources */,
 				B26031541EB31A4000FE81AE /* Details.storyboard in Resources */,
@@ -594,6 +601,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B59F36C31EB69A5700DA21EE /* Washer.swift in Sources */,
+				78FCB3E81EB6E9B40094C161 /* TimeViewController.swift in Sources */,
 				B59F36C71EB69A7C00DA21EE /* WorkDetailVC.swift in Sources */,
 				B59F36C91EB69A8100DA21EE /* WorkDetailViewController.swift in Sources */,
 				8C34AA471EB3D755000A5490 /* Buttons.swift in Sources */,
