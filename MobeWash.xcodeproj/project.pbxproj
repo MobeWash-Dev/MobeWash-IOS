@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		07191B901EB64A640024BF35 /* ServicePickViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07191B8F1EB64A640024BF35 /* ServicePickViewController.swift */; };
-		07191B921EB64A990024BF35 /* ServicePickStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07191B911EB64A990024BF35 /* ServicePickStoryBoard.storyboard */; };
+		07191B921EB64A990024BF35 /* ServicePick.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07191B911EB64A990024BF35 /* ServicePick.storyboard */; };
 		077871BF1EA7E58B00652EE5 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 077871BE1EA7E58B00652EE5 /* icon.png */; };
 		079726341EB2FC4400A3DF1C /* Ready2Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079726331EB2FC4400A3DF1C /* Ready2Book.storyboard */; };
 		079726381EB2FE7200A3DF1C /* Ready2BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079726371EB2FE7200A3DF1C /* Ready2BookViewController.swift */; };
@@ -70,7 +70,7 @@
 
 /* Begin PBXFileReference section */
 		07191B8F1EB64A640024BF35 /* ServicePickViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicePickViewController.swift; sourceTree = "<group>"; };
-		07191B911EB64A990024BF35 /* ServicePickStoryBoard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServicePickStoryBoard.storyboard; sourceTree = "<group>"; };
+		07191B911EB64A990024BF35 /* ServicePick.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ServicePick.storyboard; sourceTree = "<group>"; };
 		073CC921CAFDBEFC61F6753A /* Pods-MobeWash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.release.xcconfig"; sourceTree = "<group>"; };
 		077871BE1EA7E58B00652EE5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		079726331EB2FC4400A3DF1C /* Ready2Book.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ready2Book.storyboard; sourceTree = "<group>"; };
@@ -238,7 +238,7 @@
 				B26031521EB31A4000FE81AE /* Details.storyboard */,
 				780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */,
 				8C34AA421EB30355000A5490 /* BillingDetails.storyboard */,
-				07191B911EB64A990024BF35 /* ServicePickStoryBoard.storyboard */,
+				07191B911EB64A990024BF35 /* ServicePick.storyboard */,
 				780D45CF1EA3DDDA00FB4D35 /* Home.storyboard */,
 				B26031551EB407D900FE81AE /* SignUp.storyboard */,
 				079726331EB2FC4400A3DF1C /* Ready2Book.storyboard */,
@@ -418,7 +418,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07191B921EB64A990024BF35 /* ServicePickStoryBoard.storyboard in Resources */,
+				07191B921EB64A990024BF35 /* ServicePick.storyboard in Resources */,
 				077871BF1EA7E58B00652EE5 /* icon.png in Resources */,
 				8C34AA431EB30355000A5490 /* BillingDetails.storyboard in Resources */,
 				780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */,
