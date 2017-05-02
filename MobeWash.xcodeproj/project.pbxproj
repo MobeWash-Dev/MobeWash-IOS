@@ -20,6 +20,8 @@
 		780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */; };
 		780D45E11EA3DDDB00FB4D35 /* MobeWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45E01EA3DDDB00FB4D35 /* MobeWashTests.swift */; };
 		780D45EC1EA3DDDB00FB4D35 /* MobeWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */; };
+		78CDC7C61EB8363400495ED0 /* MobeWashStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7C51EB8363400495ED0 /* MobeWashStyles.swift */; };
+		78CDC7C81EB836B200495ED0 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7C71EB836B200495ED0 /* ThemeManager.swift */; };
 		78FCB3E61EB6E9A20094C161 /* Time.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FCB3E51EB6E9A20094C161 /* Time.storyboard */; };
 		78FCB3E81EB6E9B40094C161 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */; };
 		8C2EF0F61EB43CC900514560 /* TextfieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */; };
@@ -93,6 +95,8 @@
 		780D45E71EA3DDDB00FB4D35 /* MobeWashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobeWashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobeWashUITests.swift; sourceTree = "<group>"; };
 		780D45ED1EA3DDDB00FB4D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78CDC7C51EB8363400495ED0 /* MobeWashStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobeWashStyles.swift; sourceTree = "<group>"; };
+		78CDC7C71EB836B200495ED0 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		78FCB3E51EB6E9A20094C161 /* Time.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Time.storyboard; sourceTree = "<group>"; };
 		78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldExtensions.swift; sourceTree = "<group>"; };
@@ -203,9 +207,9 @@
 		780D45CA1EA3DDDA00FB4D35 /* MobeWash */ = {
 			isa = PBXGroup;
 			children = (
-				8C34AA371EB15616000A5490 /* Models */,
 				780D45CB1EA3DDDA00FB4D35 /* AppDelegate.swift */,
 				B25AAC4D1EAC13E1001C3369 /* MobeWash-Bridging-Header.h */,
+				8C34AA371EB15616000A5490 /* Models */,
 				78CBE8BD1EA3E5E1006BD330 /* ViewControllers */,
 				784486041EA3E897001D1F96 /* Views (Storyboards) */,
 				784486071EA3E8CD001D1F96 /* Resources */,
@@ -213,6 +217,8 @@
 				784486051EA3E8A2001D1F96 /* Services */,
 				780D45D21EA3DDDA00FB4D35 /* Assets.xcassets */,
 				780D45D71EA3DDDA00FB4D35 /* Info.plist */,
+				78CDC7C51EB8363400495ED0 /* MobeWashStyles.swift */,
+				78CDC7C71EB836B200495ED0 /* ThemeManager.swift */,
 			);
 			path = MobeWash;
 			sourceTree = "<group>";
@@ -238,15 +244,15 @@
 		784486041EA3E897001D1F96 /* Views (Storyboards) */ = {
 			isa = PBXGroup;
 			children = (
+				8C34AA421EB30355000A5490 /* BillingDetails.storyboard */,
+				B26031521EB31A4000FE81AE /* Details.storyboard */,
+				780D45CF1EA3DDDA00FB4D35 /* Home.storyboard */,
+				780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */,
+				079726331EB2FC4400A3DF1C /* Ready2Book.storyboard */,
+				07191B911EB64A990024BF35 /* ServicePickStoryBoard.storyboard */,
+				B26031551EB407D900FE81AE /* SignUp.storyboard */,
 				78FCB3E51EB6E9A20094C161 /* Time.storyboard */,
 				B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */,
-				B26031521EB31A4000FE81AE /* Details.storyboard */,
-				780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */,
-				8C34AA421EB30355000A5490 /* BillingDetails.storyboard */,
-				07191B911EB64A990024BF35 /* ServicePickStoryBoard.storyboard */,
-				780D45CF1EA3DDDA00FB4D35 /* Home.storyboard */,
-				B26031551EB407D900FE81AE /* SignUp.storyboard */,
-				079726331EB2FC4400A3DF1C /* Ready2Book.storyboard */,
 			);
 			name = "Views (Storyboards)";
 			sourceTree = "<group>";
@@ -278,18 +284,18 @@
 		78CBE8BD1EA3E5E1006BD330 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B59F36CC1EB69A8D00DA21EE /* WorkListViewController.swift */,
-				B59F36CA1EB69A8700DA21EE /* WorkListTableViewCell.swift */,
-				B59F36C81EB69A8100DA21EE /* WorkDetailViewController.swift */,
-				B59F36C61EB69A7C00DA21EE /* WorkDetailVC.swift */,
-				78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */,
+				8C34AA441EB30509000A5490 /* BillingDetailsController.swift */,
+				0797263B1EB3077400A3DF1C /* CompanyCell.swift */,
 				B260314E1EB1BC3B00FE81AE /* DetailsViewController.swift */,
 				780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */,
+				079726371EB2FE7200A3DF1C /* Ready2BookViewController.swift */,
 				07191B8F1EB64A640024BF35 /* ServicePickViewController.swift */,
 				B2B99A961EA85F84003D2F09 /* SignUpViewController.swift */,
-				8C34AA441EB30509000A5490 /* BillingDetailsController.swift */,
-				079726371EB2FE7200A3DF1C /* Ready2BookViewController.swift */,
-				0797263B1EB3077400A3DF1C /* CompanyCell.swift */,
+				78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */,
+				B59F36C81EB69A8100DA21EE /* WorkDetailViewController.swift */,
+				B59F36C61EB69A7C00DA21EE /* WorkDetailVC.swift */,
+				B59F36CC1EB69A8D00DA21EE /* WorkListViewController.swift */,
+				B59F36CA1EB69A8700DA21EE /* WorkListTableViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -607,8 +613,10 @@
 				8C34AA471EB3D755000A5490 /* Buttons.swift in Sources */,
 				B59F36C51EB69A6100DA21EE /* Work.swift in Sources */,
 				8C34AA451EB30509000A5490 /* BillingDetailsController.swift in Sources */,
+				78CDC7C81EB836B200495ED0 /* ThemeManager.swift in Sources */,
 				0797263C1EB3077400A3DF1C /* CompanyCell.swift in Sources */,
 				B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */,
+				78CDC7C61EB8363400495ED0 /* MobeWashStyles.swift in Sources */,
 				07191B901EB64A640024BF35 /* ServicePickViewController.swift in Sources */,
 				8C34AA3F1EB1D329000A5490 /* MWBooking.swift in Sources */,
 				8C34AA391EB15930000A5490 /* MWPackage.swift in Sources */,
