@@ -28,6 +28,10 @@ class ThemeManager {
         proxyButton.backgroundColor = MWColors.MWOrange
         proxyButton.setTitleColor(MWColors.MWGray, for: .normal)
         
+        let proxyGreenButton = GreenButton.appearance()
+        proxyGreenButton.backgroundColor = MWColors.MWGreen
+        proxyGreenButton.setTitleColor(MWColors.MWGray, for: .normal)
+        
         //Swith Example
         //let proxySwitch = UISwitch.appearance()
         //proxySwitch.onTintColor = MWColors.MWPurple

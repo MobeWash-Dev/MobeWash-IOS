@@ -10,7 +10,7 @@ import UIKit
 
 class ServicePickViewController: UIViewController {
     
-    @IBOutlet weak var service_1_button: UIButton!
+    @IBOutlet weak var service_1_button: GreenButton!
     @IBOutlet weak var service_2_button: UIButton!
     
     @IBOutlet weak var service_display: UITextField!
