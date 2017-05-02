@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class GreenButton: UIButton {
+class CustomButton: UIButton {
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)!
@@ -22,6 +22,9 @@ class GreenButton: UIButton {
     func commonInit(){
         self.layer.cornerRadius = self.bounds.width/2
         self.clipsToBounds = true
+        self.layer.borderWidth = 1.0
+        self.layer.borderColor = MWColors.MWBlue.cgColor
+
     }
 
 }

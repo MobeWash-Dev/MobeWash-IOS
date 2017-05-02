@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jKr-4k-5ac">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9K3-Le-dwk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Billing Details -->
+        <!--Billing Details View Controller-->
         <scene sceneID="4u5-s7-EXK">
             <objects>
                 <viewController id="9K3-Le-dwk" customClass="BillingDetailsViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,13 +23,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOj-Xp-sbj">
-                                <rect key="frame" x="16" y="72" width="343" height="140"/>
+                                <rect key="frame" x="16" y="28" width="343" height="184"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Gi-pT-UCM">
-                                        <rect key="frame" x="179" y="8" width="156" height="124"/>
+                                        <rect key="frame" x="179" y="8" width="156" height="168"/>
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aqQ-AD-4VT">
-                                        <rect key="frame" x="8" y="8" width="156" height="124"/>
+                                        <rect key="frame" x="8" y="8" width="156" height="168"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="156" id="L6p-AV-Kik"/>
@@ -66,7 +66,6 @@
                             <constraint firstItem="TOj-Xp-sbj" firstAttribute="trailing" secondItem="q2l-G1-ADH" secondAttribute="trailingMargin" id="wFg-Kd-gyr"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Billing Details " id="4EW-fO-VYe"/>
                     <connections>
                         <outlet property="carImageView" destination="2Gi-pT-UCM" id="v1a-K5-qkw"/>
                         <outlet property="detailTextView" destination="aqQ-AD-4VT" id="1JI-ib-Fqt"/>
@@ -77,24 +76,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TeX-mD-HOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="964" y="164.16791604197903"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="hCf-09-9nz">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jKr-4k-5ac" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="10E-Nu-zlo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="9K3-Le-dwk" kind="relationship" relationship="rootViewController" id="eXA-Eb-rth"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="arc-DE-kFh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="164.16791604197903"/>
         </scene>
     </scenes>
     <resources>
