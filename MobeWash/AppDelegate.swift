@@ -24,8 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         GIDSignIn.sharedInstance().delegate = self
         
-        // Leon manually altered view initial VC for testing reason 
-        
+        ThemeManager.applyTheme()
+
         return true
     }
     

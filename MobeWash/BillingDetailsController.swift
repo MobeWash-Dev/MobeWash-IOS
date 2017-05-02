@@ -24,7 +24,7 @@ class BillingDetailsViewController: UIViewController, STPPaymentCardTextFieldDel
     var bookButton: BuyButton?
     var bookButtonApplePay: ApplePayBuyButton?
 
-    var addressLine: UITextField?
+    var addressLine: UITextField!
     var cityLine: UITextField?
     var postalLine: UITextField?
     var stateLine: UITextField?
