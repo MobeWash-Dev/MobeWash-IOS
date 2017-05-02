@@ -31,7 +31,7 @@
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBj-hf-cd6" customClass="GreenButton" customModule="MobeWash" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBj-hf-cd6" customClass="CustomButton" customModule="MobeWash" customModuleProvider="target">
                                 <rect key="frame" x="86.5" y="372" width="202" height="100"/>
                                 <color key="backgroundColor" red="0.46123126149999999" green="0.6736420393" blue="0.9726208448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
@@ -47,7 +47,7 @@
                                     <segue destination="fGR-e8-Vcl" kind="show" id="XIw-bv-K6l"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UK-KD-vTV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UK-KD-vTV" customClass="CustomButton" customModule="MobeWash" customModuleProvider="target">
                                 <rect key="frame" x="86.5" y="482" width="202" height="100"/>
                                 <color key="backgroundColor" red="0.46123126149999999" green="0.6736420393" blue="0.9726208448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>

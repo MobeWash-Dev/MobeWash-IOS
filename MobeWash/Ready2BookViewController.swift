@@ -22,6 +22,7 @@ class Ready2BookViewController: UIViewController, UISearchBarDelegate, UITableVi
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
         // Leon - set up new delegation method
         companyInput.delegate = self

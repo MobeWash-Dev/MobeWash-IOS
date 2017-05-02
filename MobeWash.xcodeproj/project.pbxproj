@@ -22,7 +22,9 @@
 		780D45EC1EA3DDDB00FB4D35 /* MobeWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */; };
 		78CDC7C61EB8363400495ED0 /* MobeWashStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7C51EB8363400495ED0 /* MobeWashStyles.swift */; };
 		78CDC7C81EB836B200495ED0 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7C71EB836B200495ED0 /* ThemeManager.swift */; };
-		78CDC7CB1EB8721100495ED0 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7CA1EB8721100495ED0 /* CircleButton.swift */; };
+		78CDC7CB1EB8721100495ED0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7CA1EB8721100495ED0 /* CustomButton.swift */; };
+		78CDC7CF1EB8881000495ED0 /* CustomUINavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7CE1EB8881000495ED0 /* CustomUINavBar.swift */; };
+		78CDC7D11EB888C700495ED0 /* CustomUINavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7D01EB888C700495ED0 /* CustomUINavItem.swift */; };
 		78FCB3E61EB6E9A20094C161 /* Time.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FCB3E51EB6E9A20094C161 /* Time.storyboard */; };
 		78FCB3E81EB6E9B40094C161 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */; };
 		8C2EF0F61EB43CC900514560 /* TextfieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */; };
@@ -98,7 +100,9 @@
 		780D45ED1EA3DDDB00FB4D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78CDC7C51EB8363400495ED0 /* MobeWashStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobeWashStyles.swift; sourceTree = "<group>"; };
 		78CDC7C71EB836B200495ED0 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
-		78CDC7CA1EB8721100495ED0 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		78CDC7CA1EB8721100495ED0 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		78CDC7CE1EB8881000495ED0 /* CustomUINavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUINavBar.swift; sourceTree = "<group>"; };
+		78CDC7D01EB888C700495ED0 /* CustomUINavItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUINavItem.swift; sourceTree = "<group>"; };
 		78FCB3E51EB6E9A20094C161 /* Time.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Time.storyboard; sourceTree = "<group>"; };
 		78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldExtensions.swift; sourceTree = "<group>"; };
@@ -306,7 +310,9 @@
 		78CDC7C91EB871A800495ED0 /* CustomUIClasses */ = {
 			isa = PBXGroup;
 			children = (
-				78CDC7CA1EB8721100495ED0 /* CircleButton.swift */,
+				78CDC7CA1EB8721100495ED0 /* CustomButton.swift */,
+				78CDC7CE1EB8881000495ED0 /* CustomUINavBar.swift */,
+				78CDC7D01EB888C700495ED0 /* CustomUINavItem.swift */,
 			);
 			name = CustomUIClasses;
 			sourceTree = "<group>";
@@ -622,7 +628,7 @@
 				B59F36C71EB69A7C00DA21EE /* WorkDetailVC.swift in Sources */,
 				B59F36C91EB69A8100DA21EE /* WorkDetailViewController.swift in Sources */,
 				8C34AA471EB3D755000A5490 /* Buttons.swift in Sources */,
-				78CDC7CB1EB8721100495ED0 /* CircleButton.swift in Sources */,
+				78CDC7CB1EB8721100495ED0 /* CustomButton.swift in Sources */,
 				B59F36C51EB69A6100DA21EE /* Work.swift in Sources */,
 				8C34AA451EB30509000A5490 /* BillingDetailsController.swift in Sources */,
 				78CDC7C81EB836B200495ED0 /* ThemeManager.swift in Sources */,
@@ -634,9 +640,11 @@
 				8C34AA391EB15930000A5490 /* MWPackage.swift in Sources */,
 				780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */,
 				8C34AA411EB1D3A8000A5490 /* MWField.swift in Sources */,
+				78CDC7D11EB888C700495ED0 /* CustomUINavItem.swift in Sources */,
 				780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */,
 				B59F36C11EB69A4800DA21EE /* CarInfo.swift in Sources */,
 				8C2EF0F61EB43CC900514560 /* TextfieldExtensions.swift in Sources */,
+				78CDC7CF1EB8881000495ED0 /* CustomUINavBar.swift in Sources */,
 				8C34AA3D1EB1BFE5000A5490 /* MWCompanySetting.swift in Sources */,
 				B59F36CD1EB69A8D00DA21EE /* WorkListViewController.swift in Sources */,
 				8C34AA3B1EB1BAE7000A5490 /* MWCompany.swift in Sources */,
