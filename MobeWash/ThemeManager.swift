@@ -11,13 +11,25 @@ import UIKit
 class ThemeManager {
     static func applyTheme() {
         
-        let proxySegmentedControl = UISegmentedControl.appearance()
-        proxySegmentedControl.tintColor = MWColors.MWGreen
+        //SegmentedControl Example
+        //let proxySegmentedControl = UISegmentedControl.appearance()
+        //proxySegmentedControl.tintColor = MWColors.MWGreen
         
         let proxyTextField = UITextField.appearance()
-        proxyTextField.backgroundColor = MWColors.MWLightGray
+        proxyTextField.backgroundColor = MWColors.MWGreen
+        //proxyTextField.textColor = MWStyles.buttonTextColor
+        //proxyTextField.font = MWStyles.bodyFont
         
-        let proxySwitch = UISwitch.appearance()
-        proxySwitch.onTintColor = MWColors.MWPurple
+        
+        let proxyLabel = UILabel.appearance()
+        proxyLabel.textColor = MWColors.MWLightBlue
+        
+        let proxyButton = UIButton.appearance()
+        proxyButton.backgroundColor = MWColors.MWOrange
+        proxyButton.setTitleColor(MWColors.MWGray, for: .normal)
+        
+        //Swith Example
+        //let proxySwitch = UISwitch.appearance()
+        //proxySwitch.onTintColor = MWColors.MWPurple
     }
 }
