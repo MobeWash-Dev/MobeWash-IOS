@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kJJ-bY-Z8a">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Details View Controller-->
+        <!--Details-->
         <scene sceneID="1aT-RS-Gia">
             <objects>
-                <viewController id="kJJ-bY-Z8a" customClass="DetailsViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Details" id="kJJ-bY-Z8a" customClass="DetailsViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AGJ-Yo-Waq"/>
                         <viewControllerLayoutGuide type="bottom" id="6Yv-wa-dfg"/>
@@ -131,6 +131,7 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButton:" destination="kJJ-bY-Z8a" eventType="touchUpInside" id="TgI-8V-KGP"/>
+                                    <segue destination="ah6-Di-m0J" kind="show" id="ewh-8q-3ON"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -151,6 +152,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndm-MD-qbb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-221.59999999999999" y="-93.103448275862078"/>
+        </scene>
+        <!--BillingDetails-->
+        <scene sceneID="mia-1c-iXb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BillingDetails" id="ah6-Di-m0J" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w9s-9e-gBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="318" y="-59"/>
         </scene>
     </scenes>
 </document>

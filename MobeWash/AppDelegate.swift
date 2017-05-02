@@ -25,9 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().delegate = self
         
         // Leon manually altered view initial VC for testing reason 
-        let storyBoard = UIStoryboard(name: "Ready2Book", bundle: nil)
-        let secondVC = storyBoard.instantiateViewController(withIdentifier: "Ready2Book") as! Ready2BookViewController
-        self.window?.rootViewController = secondVC
+        
         return true
     }
     
