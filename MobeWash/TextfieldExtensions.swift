@@ -17,10 +17,4 @@ extension UITextField {
         self.placeholder = placeholder
         
     }
-    
-    
-    
-    
-    
-    
 }

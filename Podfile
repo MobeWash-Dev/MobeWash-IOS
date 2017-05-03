@@ -10,6 +10,8 @@ target 'MobeWash' do
   pod ‘FacebookLogin’
   pod ‘Google/SignIn’
   pod 'Stripe'
+  pod 'FSCalendar'
+
 
   # Pods for MobeWash
 

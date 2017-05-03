@@ -25,6 +25,7 @@ PODS:
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
   - FirebaseInstanceID (1.0.10):
     - FirebaseCore (~> 3.6)
+  - FSCalendar (2.7.4)
   - Google/Core (3.0.3):
     - FirebaseAnalytics (~> 3.2)
   - Google/SignIn (3.0.3):
@@ -56,6 +57,7 @@ PODS:
 
 DEPENDENCIES:
   - FacebookLogin
+  - FSCalendar
   - Google/SignIn
   - Stripe
 
@@ -68,6 +70,7 @@ SPEC CHECKSUMS:
   FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
   FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
   FirebaseInstanceID: b9eedd6846fb5e1f0f7279e1deaa7a7e4cf8392e
+  FSCalendar: e95995a746acae531c4a7dd636b8393233125ec5
   Google: 813c467362eabc11385f5a5cc9ad0cb651a58f4e
   GoogleSignIn: d7ad83f13480e1f30453471d00d19b5293ac46af
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
@@ -75,6 +78,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
   Stripe: dd6df0e2c6a8463e2f1ca9b15dc246e5ae1eee64
 
-PODFILE CHECKSUM: 7d79bed851d3b5a3ff7d84b2b6d5f83c8bab96b3
+PODFILE CHECKSUM: 3439f6f4e06bc8d7ef5e151bbaf17cf48e661633
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
