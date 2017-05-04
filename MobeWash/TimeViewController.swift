@@ -56,22 +56,26 @@ class TimeViewController: UIViewController, FSCalendarDataSource, FSCalendarDele
         calendar.appearance.caseOptions = [.headerUsesUpperCase,.weekdayUsesSingleUpperCase]
         self.view.addSubview(calendar)
         self.calendar = calendar
-        calendar.select(self.dateFormatter1.date(from: "2017/05/02"))
-        let todayItem = UIBarButtonItem(title: "TODAY", style: .plain, target: self, action: #selector(self.todayItemClicked(sender:)))
-        self.navigationItem.rightBarButtonItem = todayItem
+        
+        calendar.select(Date())
+        //calendar.select(self.dateFormatter1.date(from: "2017/05/02"))
+        /*let todayItem = UIBarButtonItem(title: "TODAY", style: .plain, target: self, action: #selector(self.todayItemClicked(sender:)))
+        self.navigationItem.rightBarButtonItem = todayItem*/
         
         // For UITest
         self.calendar.accessibilityIdentifier = "calendar"
+        self.calendar.today = nil
     }
     
     deinit {
         print("\(#function)")
     }
     
-    @objc
+    /*@objc
     func todayItemClicked(sender: AnyObject) {
         self.calendar.setCurrentPage(Date(), animated: false)
-    }
+    } */
+    
     
     func calendar(_ calendar: FSCalendar, numberOfEventsFor date: Date) -> Int {
         let dateString = self.dateFormatter1.string(from: date)
@@ -87,6 +91,13 @@ class TimeViewController: UIViewController, FSCalendarDataSource, FSCalendarDele
     func calendar(_ calendar: FSCalendar, shouldSelect date: Date) -> Bool {
         let dateString = self.dateFormatter1.string(from: date)
         if self.datesWithUnAvailableWashers.contains(dateString) {
+            return false
+        }
+        
+        let year = Calendar.current.component(.year, from:Date())
+        let month = Calendar.current.component(.month, from:Date())
+        let day = Calendar.current.component(.day, from:Date())
+        if (date < self.dateFormatter1.date(from: String(year)+"/"+String(month)+"/"+String(day))!){
             return false
         }
         
