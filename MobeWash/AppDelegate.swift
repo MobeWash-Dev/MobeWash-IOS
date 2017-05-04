@@ -25,6 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().delegate = self
         
         ThemeManager.applyTheme()
+        
+        let storyBoard = UIStoryboard(name: "Ready2Book", bundle: nil)
+        let secondVC = storyBoard.instantiateViewController(withIdentifier: "Ready2Book") as! Ready2BookViewController
+        self.window?.rootViewController = secondVC
 
         return true
     }

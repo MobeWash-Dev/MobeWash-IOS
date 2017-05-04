@@ -20,6 +20,9 @@
 		780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */; };
 		780D45E11EA3DDDB00FB4D35 /* MobeWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45E01EA3DDDB00FB4D35 /* MobeWashTests.swift */; };
 		780D45EC1EA3DDDB00FB4D35 /* MobeWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */; };
+		783919D11EBA9EDE0086CF37 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783919D01EBA9EDE0086CF37 /* Calendar.storyboard */; };
+		783919D31EBAA1B70086CF37 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783919D21EBAA1B70086CF37 /* CalendarCell.swift */; };
+		783919D51EBAA3310086CF37 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783919D41EBAA3310086CF37 /* CalendarViewController.swift */; };
 		78CDC7C61EB8363400495ED0 /* MobeWashStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7C51EB8363400495ED0 /* MobeWashStyles.swift */; };
 		78CDC7C81EB836B200495ED0 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7C71EB836B200495ED0 /* ThemeManager.swift */; };
 		78CDC7CB1EB8721100495ED0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7CA1EB8721100495ED0 /* CustomButton.swift */; };
@@ -98,6 +101,9 @@
 		780D45E71EA3DDDB00FB4D35 /* MobeWashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobeWashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobeWashUITests.swift; sourceTree = "<group>"; };
 		780D45ED1EA3DDDB00FB4D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783919D01EBA9EDE0086CF37 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
+		783919D21EBAA1B70086CF37 /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		783919D41EBAA3310086CF37 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		78CDC7C51EB8363400495ED0 /* MobeWashStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobeWashStyles.swift; sourceTree = "<group>"; };
 		78CDC7C71EB836B200495ED0 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		78CDC7CA1EB8721100495ED0 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -260,6 +266,7 @@
 				B26031551EB407D900FE81AE /* SignUp.storyboard */,
 				78FCB3E51EB6E9A20094C161 /* Time.storyboard */,
 				B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */,
+				783919D01EBA9EDE0086CF37 /* Calendar.storyboard */,
 			);
 			name = "Views (Storyboards)";
 			sourceTree = "<group>";
@@ -303,6 +310,8 @@
 				B59F36C61EB69A7C00DA21EE /* WorkDetailVC.swift */,
 				B59F36CC1EB69A8D00DA21EE /* WorkListViewController.swift */,
 				B59F36CA1EB69A8700DA21EE /* WorkListTableViewCell.swift */,
+				783919D21EBAA1B70086CF37 /* CalendarCell.swift */,
+				783919D41EBAA3310086CF37 /* CalendarViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -458,6 +467,7 @@
 				B26031541EB31A4000FE81AE /* Details.storyboard in Resources */,
 				B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */,
 				B26031571EB407D900FE81AE /* SignUp.storyboard in Resources */,
+				783919D11EBA9EDE0086CF37 /* Calendar.storyboard in Resources */,
 				780D45D11EA3DDDA00FB4D35 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,7 +503,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		1D7810C15A5F9FB251471F92 /* [CP] Embed Pods Frameworks */ = {
@@ -523,7 +533,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		5203C6F7CB5C48725148FB23 /* [CP] Copy Pods Resources */ = {
@@ -583,7 +593,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EBCE57009594AEA846FFC30C /* [CP] Copy Pods Resources */ = {
@@ -629,6 +639,7 @@
 				B59F36C91EB69A8100DA21EE /* WorkDetailViewController.swift in Sources */,
 				8C34AA471EB3D755000A5490 /* Buttons.swift in Sources */,
 				78CDC7CB1EB8721100495ED0 /* CustomButton.swift in Sources */,
+				783919D31EBAA1B70086CF37 /* CalendarCell.swift in Sources */,
 				B59F36C51EB69A6100DA21EE /* Work.swift in Sources */,
 				8C34AA451EB30509000A5490 /* BillingDetailsController.swift in Sources */,
 				78CDC7C81EB836B200495ED0 /* ThemeManager.swift in Sources */,
@@ -647,6 +658,7 @@
 				78CDC7CF1EB8881000495ED0 /* CustomUINavBar.swift in Sources */,
 				8C34AA3D1EB1BFE5000A5490 /* MWCompanySetting.swift in Sources */,
 				B59F36CD1EB69A8D00DA21EE /* WorkListViewController.swift in Sources */,
+				783919D51EBAA3310086CF37 /* CalendarViewController.swift in Sources */,
 				8C34AA3B1EB1BAE7000A5490 /* MWCompany.swift in Sources */,
 				079726381EB2FE7200A3DF1C /* Ready2BookViewController.swift in Sources */,
 				B59F36CB1EB69A8700DA21EE /* WorkListTableViewCell.swift in Sources */,

@@ -12,7 +12,7 @@
         <!--Details-->
         <scene sceneID="1aT-RS-Gia">
             <objects>
-                <viewController title="Details" id="kJJ-bY-Z8a" customClass="DetailsViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Details" title="Details" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kJJ-bY-Z8a" customClass="DetailsViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AGJ-Yo-Waq"/>
                         <viewControllerLayoutGuide type="bottom" id="6Yv-wa-dfg"/>
