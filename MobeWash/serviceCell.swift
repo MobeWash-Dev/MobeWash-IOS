@@ -1,16 +1,16 @@
 //
-//  CompanyCell.swift
-//  MobeWash
+//  serviceCell.swift
+//  
 //
-//  Created by Shuangli Zhou on 4/27/17.
+//  Created by Shuangli Zhou on 5/5/17.
 //
 //
 
 import UIKit
 
-class CompanyCell: UITableViewCell {
+class serviceCell: UITableViewCell {
 
-    @IBOutlet weak var nameText: UILabel!
+    @IBOutlet weak var serviceButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()

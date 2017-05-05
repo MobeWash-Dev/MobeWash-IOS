@@ -8,17 +8,23 @@
 
 import UIKit
 
-class ServicePickViewController: UIViewController {
+class ServicePickViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBOutlet weak var service_1_button: CustomButton!
-    @IBOutlet weak var service_2_button: CustomButton!
-    
-    @IBOutlet weak var service_display: UITextField!
+    @IBOutlet weak var serviceTable: UITableView!
+    @IBOutlet weak var serviceDisplay: UILabel!
+    var services = ["MobeWash", "MobePlus", "MobeWhatever"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
 
         // Do any additional setup after loading the view.
+        serviceTable.delegate = self
+        serviceTable.dataSource = self
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,15 +43,31 @@ class ServicePickViewController: UIViewController {
     }
     */
     
-    @IBAction func service_1_chosen(_ sender: Any) {
-        print("Service 1 chosed")
-        self.service_display.text = "Service 1 Chosen"
+
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return services.count
     }
     
-    @IBAction func service_2_chosen(_ sender: Any) {
-        print("Service 2 chosed")
-        self.service_display.text = "Service 2 Chosen"
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let serviceCell = tableView.dequeueReusableCell( withIdentifier:"serviceCell") as? serviceCell!
+        print("Name is " + services[indexPath.row])
+        serviceCell?.serviceButton.setTitle(services[indexPath.row], for: UIControlState.normal)
+        
+        // customize sercvie button action below later
+  
+        
+        return serviceCell!
+        
+   
+        
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+
 
 }
