@@ -10,6 +10,7 @@
 #define MobeWash_Bridging_Header_h
 
 #import <Google/SignIn.h>
+#import <Stripe/Stripe.h>
 
 
 #endif /* MobeWash_Bridging_Header_h */
