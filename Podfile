@@ -10,6 +10,7 @@ target 'MobeWash' do
   pod ‘FacebookLogin’
   pod ‘Google/SignIn’
   pod 'Stripe'
+  pod 'Alamofire', '~> 4.4'
 
   # Pods for MobeWash
 
