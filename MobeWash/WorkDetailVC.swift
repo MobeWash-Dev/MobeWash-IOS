@@ -57,7 +57,20 @@ class WorkDetailVC: UITableViewController,MKMapViewDelegate,CLLocationManagerDel
         carMake.text = _work.carInfo.carMake
         carModel.text = _work.carInfo.carModel
         carPlate.text = _work.carInfo.carPlate
-        carColor.backgroundColor = UIColor.red
+        switch work.carInfo.carColor {
+        case "white":
+            carColor.backgroundColor = UIColor.white
+            break
+        case "blue":
+            carColor.backgroundColor = UIColor.blue
+            break
+        case "yellow":
+            carColor.backgroundColor=UIColor.yellow
+            break
+        default:
+            carColor.backgroundColor = UIColor.black
+            break
+        }
         Phone.text = work.carInfo.ownerPhone
         
         // Do any additional setup after loading the view.
