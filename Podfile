@@ -10,6 +10,7 @@ target 'MobeWash' do
   pod ‘FacebookLogin’
   pod ‘Google/SignIn’
   pod 'Stripe'
+  pod 'ReachabilitySwift', '~> 3'
 
   # Pods for MobeWash
 
