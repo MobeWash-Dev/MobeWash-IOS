@@ -142,8 +142,8 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7O-wk-vHU">
-                                                            <rect key="frame" x="36" y="35.5" width="40" height="40"/>
-                                                            <color key="backgroundColor" red="0.45365084909999998" green="0.85462326759999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <rect key="frame" x="36" y="36" width="40" height="40"/>
+                                                            <color key="backgroundColor" red="0.20399454240000001" green="0.54511106009999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="40" id="tHK-sR-s4O"/>
@@ -156,15 +156,15 @@
                                                             </userDefinedRuntimeAttributes>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dateLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOC-cu-YXO">
-                                                            <rect key="frame" x="15.5" y="46.5" width="81.5" height="20.5"/>
+                                                            <rect key="frame" x="15" y="46" width="82" height="21"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                            <color key="textColor" red="0.45490196078431372" green="0.85490196078431369" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <color key="textColor" red="0.20399454236030579" green="0.54511106014251709" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                             <size key="shadowOffset" width="0.0" height="0.0"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahl-6i-EIz">
-                                                            <rect key="frame" x="56" y="56.5" width="0.0" height="0.0"/>
+                                                            <rect key="frame" x="56" y="56" width="0.0" height="0.0"/>
                                                             <color key="backgroundColor" red="0.97680455446243286" green="0.971494407487278" blue="0.96102748941320748" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -231,7 +231,7 @@
                     </view>
                     <connections>
                         <outlet property="calendarView" destination="TXe-3r-7li" id="uXt-0U-Thd"/>
-                        <outlet property="month" destination="y9L-oc-tyx" id="qnU-nV-Xag"/>
+                        <outlet property="monthLabel" destination="y9L-oc-tyx" id="eiE-ih-d4I"/>
                         <outlet property="noTimesLabel" destination="lGd-Md-VPZ" id="bu7-tf-991"/>
                         <outlet property="timeTableView" destination="5gQ-Nk-jPS" id="ZcC-ye-Iyt"/>
                     </connections>

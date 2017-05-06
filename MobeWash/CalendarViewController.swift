@@ -9,7 +9,7 @@
 import UIKit
 import JTAppleCalendar
 
-class CalendarViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class CalendarViewController: UIViewController {
     
     let formatter = DateFormatter()
     
@@ -22,12 +22,13 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
     var displayDate = String()
     var selectedTime = String()
     
-    
     @IBOutlet weak var timeTableView: UITableView!
     @IBOutlet weak var noTimesLabel: UILabel!
     
     @IBOutlet weak var calendarView: JTAppleCalendarView!
-    @IBOutlet weak var month: UILabel!
+    @IBOutlet weak var monthLabel: UILabel!
+    
+    let brightBlue = UIColor(red: 32/255.0, green: 139/255.0, blue: 1, alpha: 1.0)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,8 +37,8 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         
         self.setDateVariables(selectedDateAndTime: Date())
         timeTableView.cellLayoutMarginsFollowReadableWidth = false
-        
         timeTableView.tableFooterView = UIView(frame: CGRect.zero)
+        
         noTimesLabel.font = noTimesLabel.font.withSize(20)
         noTimesLabel.textColor = UIColor.gray
         noTimesLabel.isHidden = true
@@ -50,7 +51,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         
         calendarView.selectDates([Date()])
         
-        // Set up labels
+        // Set up date labels
         calendarView.visibleDates { visibleDates in
             self.setupViewsOfCalendar(from: visibleDates)
         }
@@ -60,7 +61,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         let date = visibleDates.monthDates.first!.date
       
         self.formatter.dateFormat = "MMMM"
-        self.month.text = formatter.string(from: date)
+        self.monthLabel.text = formatter.string(from: date)
     }
 
     func setDateVariables(selectedDateAndTime: Date){
@@ -70,10 +71,10 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         formatter.dateStyle = .long
         
         // ["Month Date", "Year", "Time"]
-        let dateTimeArray = formatter.string(from: dateAndTime).components(separatedBy: ",")
+        let dateTimeArray: [String] = formatter.string(from: dateAndTime).components(separatedBy: ",")
         
         // ["Month", "Date"]
-        let dateArray = dateTimeArray[0].components(separatedBy: " ")
+        let dateArray: [String] = dateTimeArray[0].components(separatedBy: " ")
         
         selectedMonth = dateArray[0]
         selectedDate = Int(dateArray[1])!
@@ -91,7 +92,13 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
-    internal func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+}
+
+extension CalendarViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if noneAvailable == true{
             return 0
         }
@@ -100,7 +107,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         return availability[selectedMonth]![selectedDate]!.count
     }
     
-    internal func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "timeCell")
         
         if noneAvailable == true{
@@ -109,6 +116,7 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         
         // Data source to be changed
         let time = availability[selectedMonth]![selectedDate]![indexPath.row]
+        
         // Selecting AM and PM to be changed
         if(time < 13){
             cell.textLabel?.text = String(time)+"AM"
@@ -118,8 +126,10 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         
         return cell
     }
-    
-    internal func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+}
+
+extension CalendarViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if cell.responds(to: #selector(setter: UITableViewCell.separatorInset)) {
             cell.separatorInset = UIEdgeInsets.zero
         }
@@ -131,42 +141,14 @@ class CalendarViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
-    internal func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentCell = tableView.cellForRow(at: indexPath)
         currentCell?.layer.borderColor = UIColor.gray.cgColor
+        
+        // Choose what to do with user's selected time
         selectedTime = (currentCell?.textLabel!.text)!
     }
-    
-    func handleCellSelected(view: JTAppleCell?, cellState: CellState) {
-        guard let validCell = view as? CalendarCell else { return }
-        if validCell.isSelected{
-            validCell.selectedView.isHidden = false
-        } else {
-            validCell.selectedView.isHidden = true
-        }
-    }
-    
-    let brightBlue = UIColor(red: 116/255.0, green: 218/255.0, blue: 1, alpha: 1.0)
-    
-    func handleCellTextColor(view: JTAppleCell?, cellState: CellState) {
-        guard let validCell = view as? CalendarCell else { return }
-        
-        if cellState.isSelected {
-            validCell.dateLabel.textColor = UIColor.white
-        } else {
-            if cellState.dateBelongsTo == .thisMonth {
-                validCell.dateLabel.textColor = brightBlue
-            } else {
-                validCell.dateLabel.textColor = UIColor.lightGray
-            }
-        }
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 }
-
 
 extension CalendarViewController: JTAppleCalendarViewDataSource {
     
@@ -177,6 +159,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource {
         formatter.locale = Calendar.current.locale
         
         let month = Calendar.current.component(.month, from: Date())
+        
         let start = formatter.date(from: "2017 " + String(month) + " 01")!
         let end = formatter.date(from: "2017 12 31")!
         calendar.allowsMultipleSelection = false
@@ -190,27 +173,36 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
         let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "CalendarCell", for: indexPath) as! CalendarCell
 
-        /*let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "-----")
+        // Blocking out dates
+        let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "-----")
         attributeString.addAttribute(NSStrikethroughStyleAttributeName, value: 3, range: NSMakeRange(0, attributeString.length))
         
-        let badDates : Set = ["5","9","10","11","20",] */
+        let badDates : Set = ["9","10","11","20"]
+        let cellMonth = Calendar.current.component(.month, from: date)
+        let cellDay = Calendar.current.component(.day, from: date)
         
         cell.dateLabel.text = cellState.text
         
+        if (String(cellMonth) == "5" && badDates.contains(cell.dateLabel.text!)){
+            cell.strikeThrough.attributedText = attributeString
+            cell.isUserInteractionEnabled = false
+        } else {
+            cell.strikeThrough.text = ""
+            cell.isUserInteractionEnabled = true
+        }
+        
+        // Getting current date
+        let currMonth = Calendar.current.component(.month, from: Date())
+        let currDate = Calendar.current.component(.day, from: Date())
+        
+        if currMonth == cellMonth && currDate == cellDay {
+            cell.isCurrentDate = true
+        } else {
+            cell.isCurrentDate = false
+        }
+        
         handleCellSelected(view: cell, cellState: cellState)
         handleCellTextColor(view: cell, cellState: cellState)
-        
-        /*if cell.dateLabel.text == "12" || badDates.contains(cell.dateLabel.text!){
-            cell.strikeThrough.attributedText = attributeString
-        }
-        //cell.strikeThrough.attributedText = attributeString
-        
-        cell.layer.borderWidth = 2
-        cell.layer.borderColor = UIColor.black.cgColor
-        
-        if cell.isSelected {
-            cell.isHighlighted = false
-        } */
         
         return cell
     }
@@ -228,8 +220,44 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
         handleCellTextColor(view: cell, cellState: cellState)
     }
     
+    func calendar(_ calendar: JTAppleCalendarView, shouldSelectDate date: Date, cell: JTAppleCell, cellState: CellState) -> Bool {
+        if cellState.dateBelongsTo == .thisMonth {
+            return true
+        } else {
+            return false
+        }
+    }
+    
     func calendar(_ calendar: JTAppleCalendarView, didScrollToDateSegmentWith visibleDates: DateSegmentInfo) {
         setupViewsOfCalendar(from: visibleDates)
     }
     
+    func handleCellSelected(view: JTAppleCell?, cellState: CellState) {
+        guard let validCell = view as? CalendarCell else { return }
+        
+        if cellState.isSelected{
+            validCell.selectedView.backgroundColor = brightBlue
+            validCell.selectedView.isHidden = false
+        } else if validCell.isCurrentDate {
+            validCell.selectedView.backgroundColor = UIColor.lightGray
+            validCell.selectedView.isHidden = false
+        } else {
+            validCell.selectedView.isHidden = true
+        }
+    }
+    
+    func handleCellTextColor(view: JTAppleCell?, cellState: CellState) {
+        guard let validCell = view as? CalendarCell else { return }
+        
+        if cellState.isSelected || validCell.isCurrentDate {
+            validCell.dateLabel.textColor = UIColor.white
+        } else {
+            if cellState.dateBelongsTo == .thisMonth {
+                validCell.dateLabel.textColor = brightBlue
+            } else {
+                validCell.dateLabel.textColor = UIColor.lightGray
+            }
+            
+        }
+    }
 }

@@ -15,6 +15,8 @@ class CalendarCell: JTAppleCell {
     @IBOutlet weak var strikeThrough: UILabel!
     @IBOutlet weak var selectedView: UIView!
 
+    var isCurrentDate: Bool = false
+    
     /*
     override var isSelected: Bool {
         didSet {
