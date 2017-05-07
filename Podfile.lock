@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.4.0)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -53,13 +54,26 @@ PODS:
   - GTMSessionFetcher/Full (1.1.9):
     - GTMSessionFetcher/Core (= 1.1.9)
   - Stripe (10.0.1)
+  - SwiftHash (1.1.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.4)
   - FacebookLogin
   - Google/SignIn
   - Stripe
+  - SwiftHash (from `https://github.com/onmyway133/SwiftHash`)
+
+EXTERNAL SOURCES:
+  SwiftHash:
+    :git: https://github.com/onmyway133/SwiftHash
+
+CHECKOUT OPTIONS:
+  SwiftHash:
+    :commit: bc57c37bc7be27c47641630554dae98b2abc0df1
+    :git: https://github.com/onmyway133/SwiftHash
 
 SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
   FacebookLogin: c9d606504735780a9e3002465a615512e0a691a5
@@ -74,7 +88,8 @@ SPEC CHECKSUMS:
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
   Stripe: dd6df0e2c6a8463e2f1ca9b15dc246e5ae1eee64
+  SwiftHash: 18c0f28ea3ea336742cbe72dc84f60dad562addb
 
-PODFILE CHECKSUM: 7d79bed851d3b5a3ff7d84b2b6d5f83c8bab96b3
+PODFILE CHECKSUM: 894ec1696cc918eb43bd9e7b6637f7506c2fb728
 
 COCOAPODS: 1.2.0

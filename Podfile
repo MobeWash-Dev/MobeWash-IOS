@@ -10,6 +10,8 @@ target 'MobeWash' do
   pod ‘FacebookLogin’
   pod ‘Google/SignIn’
   pod 'Stripe'
+  pod 'Alamofire', '~> 4.4'
+  pod 'SwiftHash', git: 'https://github.com/onmyway133/SwiftHash'
 
   # Pods for MobeWash
 

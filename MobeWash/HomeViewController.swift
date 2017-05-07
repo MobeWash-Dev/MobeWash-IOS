@@ -10,6 +10,7 @@ import UIKit
 import FacebookLogin
 import Google
 import GoogleSignIn
+import Alamofire
 
 class HomeViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDelegate {
     
@@ -19,6 +20,20 @@ class HomeViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDele
     @IBOutlet weak var passwordField: UITextField!
     
     @IBAction func loginButton(_ sender: UIButton) {
+        
+        let userRequestURL = MWConfig.webApp + "/user"
+        
+        //get request
+        Alamofire.request(userRequestURL).responseJSON { response in
+            print("Success: \(response.result.isSuccess)")
+            print("Response String: \(String(describing: response.result.value))")
+            
+            if let json = response.result.value as? [AnyObject]{
+                    for (key,value) in json[0] as! [String:AnyObject]{
+                        print(key,value)
+                }
+            }
+        }
     }
     
     override func viewDidLoad() {
