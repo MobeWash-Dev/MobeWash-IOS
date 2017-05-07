@@ -13,15 +13,38 @@ class CarInfo{
     private var _carColor:String
     private var _carPlate:String
     private var _carModel:String
-    private var _carPicture:[String]
+//    private var _carPicture:[String]
     
     //init
     
-    init(carMake:String, carColor:String,carPlate:String,carModel:String,carPicture:[String] ) {
+    init(carMake:String, carColor:String,carPlate:String,carModel:String/*,carPicture:[String]*/ ) {
         self._carMake=carMake
         self._carColor = carColor
         self._carPlate=carPlate
         self._carModel=carModel
-        self._carPicture=carPicture
+//        self._carPicture=carPicture
+    }
+    
+    init() {
+        self._carMake = ""
+        self._carColor = ""
+        self._carPlate = ""
+        self._carModel = ""
+    }
+    
+    var carMake:String {
+        return _carMake
+    }
+    
+    var carColor:String {
+        return _carColor
+    }
+    
+    var carPlate:String {
+        return _carPlate
+    }
+    
+    var carModel:String {
+        return _carModel
     }
 }

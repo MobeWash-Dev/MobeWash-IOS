@@ -30,9 +30,9 @@ class WasherHistoryTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let work1 = Work(workTitle: "Work 1", workTime: "12pm, Wednesday", workLoc: "9450 Gilman Drive", package: "SuperWash",carPicture:"LG.jpg")
-        let work2 = Work(workTitle: "Work 2", workTime: "1pm, Wednesday", workLoc: "9450 Gilman Drive", package: "SuperWash",carPicture:"JGC.jpg")
-        let work3 = Work(workTitle: "Work 3", workTime: "11am, Saturday", workLoc: "9450 Gilman Drive", package: "SuperWash", carPicture: "MP.jpg")
+        let work1 = Work(workTitle: "Work 1", workTime: "12pm, Wednesday", workLoc: "9450 Gilman Drive", carInfo: CarInfo(carMake:"Lamborghini", carColor: "Yello", carPlate: "11111",carModel: "Gallardo"), package: "SuperWash",carPicture:"LG.jpg")
+        let work2 = Work(workTitle: "Work 2", workTime: "1pm, Wednesday", workLoc: "9450 Gilman Drive", carInfo: CarInfo(carMake:"Jeep", carColor: "White", carPlate: "22222",carModel: "Grand Cherokee"), package: "SuperWash",carPicture:"JGC.jpg")
+        let work3 = Work(workTitle: "Work 3", workTime: "11am, Saturday", workLoc: "9450 Gilman Drive", carInfo: CarInfo(carMake:"McLaren", carColor: "Blue", carPlate: "33333",carModel: "P1"), package: "SuperWash", carPicture: "MP.jpg")
         
         washer.addWork(work: work1);
         washer.addWork(work: work2);
@@ -66,7 +66,7 @@ class WasherHistoryTableViewController: UITableViewController {
         
         let work = washer.workList[indexPath.row]
         cell.packageLabel.text = work.package
-        cell.carTypeLabel.text = carType[indexPath.row]
+        cell.carTypeLabel.text = work.carInfo.carMake + " " + work.carInfo.carModel
         cell.dateLabel.text = work.workTime
         cell.thumbnailImageView.image = UIImage(named: work.carPicture)
         
