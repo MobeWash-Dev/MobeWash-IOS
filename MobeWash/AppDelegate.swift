@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         // Eli manually altered view initial VC for testing reason
         let storyBoard = UIStoryboard(name: "WasherHistory", bundle: nil)
-        let secondVC = storyBoard.instantiateViewController(withIdentifier: "WasherHistory") as! WasherHistoryTableViewController
+        let secondVC = storyBoard.instantiateViewController(withIdentifier: "WasherHistoryNavigation") as! UINavigationController
         self.window?.rootViewController = secondVC
         return true
     }
