@@ -13,6 +13,7 @@
 		079726341EB2FC4400A3DF1C /* Ready2Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079726331EB2FC4400A3DF1C /* Ready2Book.storyboard */; };
 		079726381EB2FE7200A3DF1C /* Ready2BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079726371EB2FE7200A3DF1C /* Ready2BookViewController.swift */; };
 		0797263C1EB3077400A3DF1C /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0797263B1EB3077400A3DF1C /* CompanyCell.swift */; };
+		0799D57D1EBCFC370027C1D8 /* serviceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0799D57C1EBCFC370027C1D8 /* serviceCell.swift */; };
 		780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CB1EA3DDDA00FB4D35 /* AppDelegate.swift */; };
 		780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45CD1EA3DDDA00FB4D35 /* HomeViewController.swift */; };
 		780D45D11EA3DDDA00FB4D35 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D45CF1EA3DDDA00FB4D35 /* Home.storyboard */; };
@@ -86,6 +87,7 @@
 		079726331EB2FC4400A3DF1C /* Ready2Book.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ready2Book.storyboard; sourceTree = "<group>"; };
 		079726371EB2FE7200A3DF1C /* Ready2BookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ready2BookViewController.swift; sourceTree = "<group>"; };
 		0797263B1EB3077400A3DF1C /* CompanyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
+		0799D57C1EBCFC370027C1D8 /* serviceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = serviceCell.swift; sourceTree = "<group>"; };
 		0D1905CA2E73BC252B45A062 /* Pods_MobeWash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E96681111EA98DFF0AB6C8D /* Pods_MobeWashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		780D45C81EA3DDDA00FB4D35 /* MobeWash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobeWash.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -298,6 +300,7 @@
 		78CBE8BD1EA3E5E1006BD330 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0799D57C1EBCFC370027C1D8 /* serviceCell.swift */,
 				8C34AA441EB30509000A5490 /* BillingDetailsController.swift */,
 				0797263B1EB3077400A3DF1C /* CompanyCell.swift */,
 				B260314E1EB1BC3B00FE81AE /* DetailsViewController.swift */,
@@ -660,6 +663,7 @@
 				B59F36CD1EB69A8D00DA21EE /* WorkListViewController.swift in Sources */,
 				783919D51EBAA3310086CF37 /* CalendarViewController.swift in Sources */,
 				8C34AA3B1EB1BAE7000A5490 /* MWCompany.swift in Sources */,
+				0799D57D1EBCFC370027C1D8 /* serviceCell.swift in Sources */,
 				079726381EB2FE7200A3DF1C /* Ready2BookViewController.swift in Sources */,
 				B59F36CB1EB69A8700DA21EE /* WorkListTableViewCell.swift in Sources */,
 				B260314F1EB1BC3B00FE81AE /* DetailsViewController.swift in Sources */,

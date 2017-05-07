@@ -21,48 +21,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Services" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sjZ-yS-y07">
-                                <rect key="frame" x="139" y="328" width="97" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="JUF-jM-V5W"/>
-                                    <constraint firstAttribute="height" constant="30" id="Ryw-ux-ksC"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBj-hf-cd6" customClass="CustomButton" customModule="MobeWash" customModuleProvider="target">
-                                <rect key="frame" x="86.5" y="372" width="202" height="100"/>
-                                <color key="backgroundColor" red="0.46123126149999999" green="0.6736420393" blue="0.9726208448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="202" id="97M-lE-x3M"/>
-                                    <constraint firstAttribute="height" constant="100" id="NYE-OC-3uO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
-                                <state key="normal" title="Service1">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="service_1_chosen:" destination="VMC-ED-UCs" eventType="touchUpInside" id="kKB-xc-4KP"/>
-                                    <segue destination="HWP-RM-m4s" kind="show" id="fZe-AT-ey2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5UK-KD-vTV" customClass="CustomButton" customModule="MobeWash" customModuleProvider="target">
-                                <rect key="frame" x="86.5" y="482" width="202" height="100"/>
-                                <color key="backgroundColor" red="0.46123126149999999" green="0.6736420393" blue="0.9726208448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="202" id="StZ-fQ-p1B"/>
-                                    <constraint firstAttribute="height" constant="100" id="h83-fz-EH6"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
-                                <state key="normal" title="Service2">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="service_2_chosen:" destination="VMC-ED-UCs" eventType="touchUpInside" id="tlG-WB-VS9"/>
-                                    <segue destination="HWP-RM-m4s" kind="show" id="OYe-2z-DhV"/>
-                                </connections>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="QhV-qt-0rf">
                                 <rect key="frame" x="104" y="77" width="167" height="229"/>
                                 <constraints>
@@ -70,52 +28,80 @@
                                     <constraint firstAttribute="height" constant="229" id="Z0u-fD-aDI"/>
                                 </constraints>
                             </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v2j-Pg-mLe">
+                                <rect key="frame" x="41" y="390" width="293" height="249"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="249" id="oQ2-2w-i0E"/>
+                                    <constraint firstAttribute="width" constant="293" id="wHE-hW-P5i"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="serviceCell" rowHeight="54" id="fAB-KJ-Nex" customClass="serviceCell" customModule="MobeWash" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="293" height="54"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fAB-KJ-Nex" id="CjO-JM-tR8">
+                                            <rect key="frame" x="0.0" y="0.0" width="293" height="54"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udd-Oa-ekF">
+                                                    <rect key="frame" x="8" y="0.0" width="285" height="54"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                    <state key="normal" title="Service 1"/>
+                                                    <connections>
+                                                        <segue destination="fGR-e8-Vcl" kind="show" id="mQK-if-z8v"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="serviceButton" destination="udd-Oa-ekF" id="SK3-oJ-aZL"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZV-76-ifQ">
+                                <rect key="frame" x="129" y="323" width="117" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="APe-hR-22v"/>
+                                    <constraint firstAttribute="width" constant="117" id="MRk-55-yho"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="vBj-hf-cd6" firstAttribute="top" secondItem="sjZ-yS-y07" secondAttribute="bottom" constant="14" id="TRZ-L2-Crt"/>
+                            <constraint firstItem="x9p-fD-Ryq" firstAttribute="top" secondItem="v2j-Pg-mLe" secondAttribute="bottom" constant="28" id="Pr8-Tg-xUw"/>
                             <constraint firstItem="QhV-qt-0rf" firstAttribute="top" secondItem="JxS-cR-Pop" secondAttribute="bottom" constant="57" id="X06-wD-gXa"/>
+                            <constraint firstItem="eZV-76-ifQ" firstAttribute="top" secondItem="QhV-qt-0rf" secondAttribute="bottom" constant="17" id="X8Y-Pz-5RB"/>
+                            <constraint firstItem="v2j-Pg-mLe" firstAttribute="centerX" secondItem="ZKf-g2-Z2s" secondAttribute="centerX" id="Yw8-cz-WC1"/>
                             <constraint firstItem="QhV-qt-0rf" firstAttribute="centerX" secondItem="ZKf-g2-Z2s" secondAttribute="centerX" id="Zea-Y0-Au2"/>
-                            <constraint firstItem="x9p-fD-Ryq" firstAttribute="top" secondItem="5UK-KD-vTV" secondAttribute="bottom" constant="85" id="aez-9W-JZ6"/>
-                            <constraint firstItem="5UK-KD-vTV" firstAttribute="centerX" secondItem="ZKf-g2-Z2s" secondAttribute="centerX" id="b88-z8-MEP"/>
                             <constraint firstItem="QhV-qt-0rf" firstAttribute="centerX" secondItem="ZKf-g2-Z2s" secondAttribute="centerX" id="d2a-z5-VaQ"/>
-                            <constraint firstItem="5UK-KD-vTV" firstAttribute="top" secondItem="vBj-hf-cd6" secondAttribute="bottom" constant="10" id="ijT-8s-cpd"/>
-                            <constraint firstItem="vBj-hf-cd6" firstAttribute="centerX" secondItem="ZKf-g2-Z2s" secondAttribute="centerX" id="ySy-uA-RrZ"/>
-                            <constraint firstItem="sjZ-yS-y07" firstAttribute="centerX" secondItem="ZKf-g2-Z2s" secondAttribute="centerX" id="yb5-uI-91J"/>
+                            <constraint firstItem="eZV-76-ifQ" firstAttribute="centerX" secondItem="ZKf-g2-Z2s" secondAttribute="centerX" id="sxX-ZF-498"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="Service_1_button" destination="vBj-hf-cd6" id="of4-nd-wvS"/>
-                        <outlet property="service_1_button" destination="vBj-hf-cd6" id="bNs-vk-8lo"/>
-                        <outlet property="service_2_button" destination="5UK-KD-vTV" id="D9A-wk-zzI"/>
-                        <outlet property="service_display" destination="sjZ-yS-y07" id="588-Tl-AUU"/>
+                        <outlet property="serviceDisplay" destination="eZV-76-ifQ" id="qod-aI-kyH"/>
+                        <outlet property="serviceTable" destination="v2j-Pg-mLe" id="Nlp-Mm-eR3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2I-1r-5bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1092" y="4.9475262368815596"/>
         </scene>
-        <!--Time-->
+        <!--Calendar-->
         <scene sceneID="lVr-Es-cuH">
             <objects>
-                <viewControllerPlaceholder storyboardName="Time" id="fGR-e8-Vcl" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Calendar" id="fGR-e8-Vcl" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bta-46-0OY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-527" y="4"/>
-        </scene>
-        <!--Calendar-->
-        <scene sceneID="IkB-HI-frj">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Calendar" storyboardName="Calendar" referencedIdentifier="Calendar" id="HWP-RM-m4s" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="aoY-rN-Fua" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-647" y="59"/>
         </scene>
     </scenes>
     <resources>
         <image name="icon.png" width="548" height="800"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="fZe-AT-ey2"/>
-    </inferredMetricsTieBreakers>
 </document>
