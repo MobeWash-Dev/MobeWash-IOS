@@ -53,7 +53,7 @@ class MWALerts {
     }
     
 
-    // MARK -- Reachability
+    // TODO -- Reachability
     
 //    class func startNotifier(sender: UIViewController){
 //
