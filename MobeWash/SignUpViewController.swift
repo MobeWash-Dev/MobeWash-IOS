@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import SwiftHash
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
     
@@ -34,10 +35,27 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     }
     @IBAction func signUpButton(_ sender: UIButton) {
         
+        //Testing Alamofire to create a user
         if (firstNameField.text?.characters.count != 0 &&
             passwordField.text?.characters.count != 0) {
-          
+         
+            let name = firstNameField.text!
+            let hashedPassword = MD5(passwordField.text!)
             
+            let parameters: Parameters = [
+                "name": name,
+                "pass": hashedPassword]
+            
+            let userRequestURL = MWConfig.webApp + "/user"
+            
+            //Post request
+            Alamofire.request(userRequestURL, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: [:]).response(completionHandler: { response in
+                
+                print("Request: \(response.request!)")
+                print("Response: \(response.response!)")
+                print("Error: \(response.error!)")
+                
+            })
             
         }
         
