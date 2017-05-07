@@ -11,6 +11,7 @@ target 'MobeWash' do
   pod ‘Google/SignIn’
   pod 'Stripe'
   pod 'Alamofire', '~> 4.4'
+  pod 'SwiftHash'
 
   # Pods for MobeWash
 
