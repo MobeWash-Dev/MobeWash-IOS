@@ -25,7 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         GIDSignIn.sharedInstance().delegate = self
         
         ThemeManager.applyTheme()
-
+        
+        // Eli manually altered view initial VC for testing reason
+        let storyBoard = UIStoryboard(name: "WasherHistory", bundle: nil)
+        let secondVC = storyBoard.instantiateViewController(withIdentifier: "WasherHistory") as! WasherHistoryTableViewController
+        self.window?.rootViewController = secondVC
         return true
     }
     
