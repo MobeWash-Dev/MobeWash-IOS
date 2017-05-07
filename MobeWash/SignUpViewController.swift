@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class SignUpViewController: UIViewController, UITextFieldDelegate {
     
@@ -32,6 +33,14 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         modelOfCar.isHidden = true
     }
     @IBAction func signUpButton(_ sender: UIButton) {
+        
+        if (firstNameField.text?.characters.count != 0 &&
+            passwordField.text?.characters.count != 0) {
+          
+            
+            
+        }
+        
     }
     
     override func viewDidLoad() {
@@ -54,6 +63,7 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
 
     /*

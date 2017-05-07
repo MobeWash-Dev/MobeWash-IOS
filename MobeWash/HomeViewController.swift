@@ -21,19 +21,18 @@ class HomeViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDele
     
     @IBAction func loginButton(_ sender: UIButton) {
         
+        let userRequestURL = MWConfig.webApp + "/user"
+        
         //get request
-        Alamofire.request("http://localhost:8080/user").responseJSON { response in
+        Alamofire.request(userRequestURL).responseJSON { response in
             print("Success: \(response.result.isSuccess)")
             print("Response String: \(String(describing: response.result.value))")
             
-        
             if let json = response.result.value as? [AnyObject]{
                     for (key,value) in json[0] as! [String:AnyObject]{
                         print(key,value)
                 }
-            
             }
-           
         }
     }
     
