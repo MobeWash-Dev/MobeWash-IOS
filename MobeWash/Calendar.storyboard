@@ -33,6 +33,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="zE2-Ed-K9T" kind="show" identifier="Details" id="wpC-9Y-waG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

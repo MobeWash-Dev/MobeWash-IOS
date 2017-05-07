@@ -147,6 +147,9 @@ extension CalendarViewController: UITableViewDelegate {
         
         // Choose what to do with user's selected time
         selectedTime = (currentCell?.textLabel!.text)!
+        
+        performSegue(withIdentifier: "Details", sender: self)
+        
     }
 }
 
