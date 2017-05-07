@@ -9,11 +9,17 @@
 import UIKit
 
 class WasherHistoryTableViewController: UITableViewController {
+    var washer = Washer(name:"Eli Qin");
+    
+
     
     var packages:[String] = ["Mobe", "MobePlus", "Mobe"]
     var carType:[String]  = ["Lamborghini Gallardo", "Jeep Grand Cherokee", "McLaren P1"]
     var time:[String] = ["Jan 25th, 15:00", "Jan 26th, 10:00", "Jan 27th, 13:30"]
     var carImages:[String] = ["LG.jpg", "JGC.jpg", "MP.jpg"]
+    
+
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +29,14 @@ class WasherHistoryTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        print("Did load")
+        
+        let work1 = Work(workTitle: "Work 1", workTime: "12pm, Wednesday", workLoc: "9450 Gilman Drive", package: "SuperWash",carPicture:"LG.jpg")
+        let work2 = Work(workTitle: "Work 2", workTime: "1pm, Wednesday", workLoc: "9450 Gilman Drive", package: "SuperWash",carPicture:"JGC.jpg")
+        let work3 = Work(workTitle: "Work 3", workTime: "11am, Saturday", workLoc: "9450 Gilman Drive", package: "SuperWash", carPicture: "MP.jpg")
+        
+        washer.addWork(work: work1);
+        washer.addWork(work: work2);
+        washer.addWork(work: work3);
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,22 +53,42 @@ class WasherHistoryTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return carType.count
+        return washer.workList.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let radius:CGFloat = 30.0
+        
         let cellIdentifier = "HistoryCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! WasherHistoryTableViewCell
         
-        cell.packageLabel.text = packages[indexPath.row]
+        let work = washer.workList[indexPath.row]
+        cell.packageLabel.text = work.package
         cell.carTypeLabel.text = carType[indexPath.row]
-        cell.dateLabel.text = time[indexPath.row]
-        cell.thumbnailImageView.image = UIImage(named: carImages[indexPath.row])
+        cell.dateLabel.text = work.workTime
+        cell.thumbnailImageView.image = UIImage(named: work.carPicture)
+        
+        cell.thumbnailImageView.layer.cornerRadius = radius
+        cell.thumbnailImageView.clipsToBounds = true
         
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let work = washer.workList[indexPath.row]
+        
+        performSegue(withIdentifier: "WorkHistoryDetailViewController", sender: work)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? WasherHistoryDetailViewController {
+            if let work = sender as? Work {
+                destination.work = work
+            }
+        }
+    }
 
     /*
     // Override to support conditional editing of the table view.
