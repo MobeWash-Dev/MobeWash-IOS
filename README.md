@@ -1,3 +1,3 @@
 # MobeWash-IOS
 Holds code for both customer and washer app
--- Sean Ippolito, iOS Lead team 1
+-- Sean Ippolito, iOS Lead team 1, test pull request
