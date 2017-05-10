@@ -108,7 +108,7 @@ class WorkDetailVC: UITableViewController,MKMapViewDelegate,CLLocationManagerDel
                     let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
                     let addressDict = desPlacemark.addressDictionary
                     let coordinate = desPlacemark.location?.coordinate
-                    let mkPlacemark = MKPlacemark(coordinate: coordinate!, addressDictionary: addressDict as! [String : Any])
+                    let mkPlacemark = MKPlacemark(coordinate: coordinate!, addressDictionary: addressDict as? [String : Any])
                     
                     let mapItem = MKMapItem(placemark:mkPlacemark)
                     MKMapItem.openMaps(with: [currentLocationMapItem, mapItem], launchOptions: launchOptions)

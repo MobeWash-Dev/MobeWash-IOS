@@ -32,11 +32,11 @@
 		78FCB3E61EB6E9A20094C161 /* Time.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FCB3E51EB6E9A20094C161 /* Time.storyboard */; };
 		78FCB3E81EB6E9B40094C161 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */; };
 		8C2EF0F61EB43CC900514560 /* TextfieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */; };
-		8C34AA391EB15930000A5490 /* MWPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA381EB15930000A5490 /* MWPackage.swift */; };
-		8C34AA3B1EB1BAE7000A5490 /* MWCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3A1EB1BAE7000A5490 /* MWCompany.swift */; };
-		8C34AA3D1EB1BFE5000A5490 /* MWCompanySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3C1EB1BFE5000A5490 /* MWCompanySetting.swift */; };
-		8C34AA3F1EB1D329000A5490 /* MWBooking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3E1EB1D329000A5490 /* MWBooking.swift */; };
-		8C34AA411EB1D3A8000A5490 /* MWField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA401EB1D3A8000A5490 /* MWField.swift */; };
+		8C34AA391EB15930000A5490 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA381EB15930000A5490 /* Package.swift */; };
+		8C34AA3B1EB1BAE7000A5490 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3A1EB1BAE7000A5490 /* Company.swift */; };
+		8C34AA3D1EB1BFE5000A5490 /* CompanySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3C1EB1BFE5000A5490 /* CompanySetting.swift */; };
+		8C34AA3F1EB1D329000A5490 /* Booking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3E1EB1D329000A5490 /* Booking.swift */; };
+		8C34AA411EB1D3A8000A5490 /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA401EB1D3A8000A5490 /* Field.swift */; };
 		8C34AA431EB30355000A5490 /* BillingDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C34AA421EB30355000A5490 /* BillingDetails.storyboard */; };
 		8C34AA451EB30509000A5490 /* BillingDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA441EB30509000A5490 /* BillingDetailsController.swift */; };
 		8C34AA471EB3D755000A5490 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA461EB3D755000A5490 /* Buttons.swift */; };
@@ -127,11 +127,11 @@
 		78FCB3E51EB6E9A20094C161 /* Time.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Time.storyboard; sourceTree = "<group>"; };
 		78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldExtensions.swift; sourceTree = "<group>"; };
-		8C34AA381EB15930000A5490 /* MWPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWPackage.swift; sourceTree = "<group>"; };
-		8C34AA3A1EB1BAE7000A5490 /* MWCompany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWCompany.swift; sourceTree = "<group>"; };
-		8C34AA3C1EB1BFE5000A5490 /* MWCompanySetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWCompanySetting.swift; sourceTree = "<group>"; };
-		8C34AA3E1EB1D329000A5490 /* MWBooking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWBooking.swift; sourceTree = "<group>"; };
-		8C34AA401EB1D3A8000A5490 /* MWField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWField.swift; sourceTree = "<group>"; };
+		8C34AA381EB15930000A5490 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		8C34AA3A1EB1BAE7000A5490 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		8C34AA3C1EB1BFE5000A5490 /* CompanySetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanySetting.swift; sourceTree = "<group>"; };
+		8C34AA3E1EB1D329000A5490 /* Booking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Booking.swift; sourceTree = "<group>"; };
+		8C34AA401EB1D3A8000A5490 /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		8C34AA421EB30355000A5490 /* BillingDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BillingDetails.storyboard; sourceTree = "<group>"; };
 		8C34AA441EB30509000A5490 /* BillingDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingDetailsController.swift; sourceTree = "<group>"; };
 		8C34AA461EB3D755000A5490 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
@@ -347,11 +347,11 @@
 		8C34AA371EB15616000A5490 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8C34AA381EB15930000A5490 /* MWPackage.swift */,
-				8C34AA3C1EB1BFE5000A5490 /* MWCompanySetting.swift */,
-				8C34AA3A1EB1BAE7000A5490 /* MWCompany.swift */,
-				8C34AA3E1EB1D329000A5490 /* MWBooking.swift */,
-				8C34AA401EB1D3A8000A5490 /* MWField.swift */,
+				8C34AA381EB15930000A5490 /* Package.swift */,
+				8C34AA3C1EB1BFE5000A5490 /* CompanySetting.swift */,
+				8C34AA3A1EB1BAE7000A5490 /* Company.swift */,
+				8C34AA3E1EB1D329000A5490 /* Booking.swift */,
+				8C34AA401EB1D3A8000A5490 /* Field.swift */,
 				B59F36C41EB69A6100DA21EE /* Work.swift */,
 				B59F36C21EB69A5700DA21EE /* Washer.swift */,
 				B59F36C01EB69A4800DA21EE /* CarInfo.swift */,
@@ -441,11 +441,20 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MobeWash;
 				TargetAttributes = {
 					780D45C71EA3DDDA00FB4D35 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = F2F757HLJ7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					780D45DB1EA3DDDB00FB4D35 = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -675,20 +684,20 @@
 				B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */,
 				78CDC7C61EB8363400495ED0 /* MobeWashStyles.swift in Sources */,
 				07191B901EB64A640024BF35 /* ServicePickViewController.swift in Sources */,
-				8C34AA3F1EB1D329000A5490 /* MWBooking.swift in Sources */,
-				8C34AA391EB15930000A5490 /* MWPackage.swift in Sources */,
+				8C34AA3F1EB1D329000A5490 /* Booking.swift in Sources */,
+				8C34AA391EB15930000A5490 /* Package.swift in Sources */,
 				780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */,
-				8C34AA411EB1D3A8000A5490 /* MWField.swift in Sources */,
+				8C34AA411EB1D3A8000A5490 /* Field.swift in Sources */,
 				8C75E27C1EBFA9600037E8A3 /* MWAlerts.swift in Sources */,
 				78CDC7D11EB888C700495ED0 /* CustomUINavItem.swift in Sources */,
 				780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */,
 				B59F36C11EB69A4800DA21EE /* CarInfo.swift in Sources */,
 				8C2EF0F61EB43CC900514560 /* TextfieldExtensions.swift in Sources */,
 				78CDC7CF1EB8881000495ED0 /* CustomUINavBar.swift in Sources */,
-				8C34AA3D1EB1BFE5000A5490 /* MWCompanySetting.swift in Sources */,
+				8C34AA3D1EB1BFE5000A5490 /* CompanySetting.swift in Sources */,
 				B59F36CD1EB69A8D00DA21EE /* WorkListViewController.swift in Sources */,
 				783919D51EBAA3310086CF37 /* CalendarViewController.swift in Sources */,
-				8C34AA3B1EB1BAE7000A5490 /* MWCompany.swift in Sources */,
+				8C34AA3B1EB1BAE7000A5490 /* Company.swift in Sources */,
 				0799D57D1EBCFC370027C1D8 /* serviceCell.swift in Sources */,
 				079726381EB2FE7200A3DF1C /* Ready2BookViewController.swift in Sources */,
 				B59F36CB1EB69A8700DA21EE /* WorkListTableViewCell.swift in Sources */,
@@ -865,6 +874,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F2F757HLJ7;
 				INFOPLIST_FILE = MobeWash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanippolito.MobeWash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -880,6 +890,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F2F757HLJ7;
 				INFOPLIST_FILE = MobeWash/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanippolito.MobeWash;
 				PRODUCT_NAME = "$(TARGET_NAME)";
