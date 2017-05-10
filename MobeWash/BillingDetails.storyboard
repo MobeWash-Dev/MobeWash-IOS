@@ -4,16 +4,15 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Billing Details View Controller-->
+        <!--Billing-->
         <scene sceneID="4u5-s7-EXK">
             <objects>
-                <viewController id="9K3-Le-dwk" customClass="BillingDetailsViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BillingDetailsStoryboard" title="Billing" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9K3-Le-dwk" customClass="BillingDetailsViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Gsz-Gk-09E"/>
                         <viewControllerLayoutGuide type="bottom" id="MTM-9p-7AW"/>
@@ -69,7 +68,7 @@
                     <connections>
                         <outlet property="carImageView" destination="2Gi-pT-UCM" id="v1a-K5-qkw"/>
                         <outlet property="detailTextView" destination="aqQ-AD-4VT" id="1JI-ib-Fqt"/>
-                        <outlet property="paymentTextFieldPlaceholder" destination="JwD-Ha-pmT" id="I7k-eX-4rh"/>
+                        <outlet property="paymentTextFieldPlaceholderView" destination="JwD-Ha-pmT" id="Z7E-bi-FdI"/>
                         <outlet property="topView" destination="TOj-Xp-sbj" id="12C-ih-f7r"/>
                     </connections>
                 </viewController>
