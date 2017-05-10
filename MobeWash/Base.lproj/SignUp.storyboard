@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="0nW-ao-yxE">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,16 +9,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--RootNavigation-->
+        <scene sceneID="Ecg-gx-3SW">
+            <objects>
+                <navigationController storyboardIdentifier="RootNavigation" title="RootNavigation" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0nW-ao-yxE" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bQP-rM-M0L" customClass="CustomUINavBar" customModule="MobeWash" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="elT-8V-IaB" kind="relationship" relationship="rootViewController" id="YkU-We-PgC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HmU-Mx-gNl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="36"/>
+        </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="n0d-tw-WOT">
             <objects>
-                <viewController storyboardIdentifier="SignUp" id="elT-8V-IaB" customClass="SignUpViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUp" useStoryboardIdentifierAsRestorationIdentifier="YES" id="elT-8V-IaB" customClass="SignUpViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Nbz-Zt-Cuh"/>
                         <viewControllerLayoutGuide type="bottom" id="ERa-Wk-W5P"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="RyS-iv-w3M">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign up as a " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X5H-UU-kGF">
@@ -44,6 +62,7 @@
                                 <state key="normal" title="Washer"/>
                                 <connections>
                                     <action selector="washerButton:" destination="elT-8V-IaB" eventType="touchUpInside" id="9as-S3-LBL"/>
+                                    <segue destination="HbX-5w-eOn" kind="show" id="CPJ-SL-Z0L"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X9O-ID-Wtf">
@@ -143,7 +162,7 @@
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MobeWash" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLM-TR-hlK">
-                                <rect key="frame" x="108" y="52" width="158" height="21"/>
+                                <rect key="frame" x="108" y="89" width="158" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="0.45365084909999998" green="0.85462326759999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -152,6 +171,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="lvW-bx-Sbx"/>
                     <connections>
                         <outlet property="emailField" destination="v2W-6s-nhL" id="l2Y-mv-e9v"/>
                         <outlet property="firstNameField" destination="X9O-ID-Wtf" id="JZm-dO-atn"/>
@@ -175,6 +195,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AKf-wh-fFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1267" y="182"/>
+        </scene>
+        <!--Worklist-->
+        <scene sceneID="Nnb-d7-aFD">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Worklist" referencedIdentifier="Worklist" id="HbX-5w-eOn" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJN-Is-JOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="-289"/>
         </scene>
         <!--Home-->
         <scene sceneID="WMq-3v-biB">

@@ -7,41 +7,45 @@
 ////
 //
 import Foundation
+
 class CarInfo{
-    //field
-    private var _carMake:String!
-    private var _carColor:String!
-    private var _carPlate:String!
-    private var _carModel:String!
-    private var _carPicture:String!
-    private var _ownerPhone:String!
+    private var carMake: String!
+    private var carColor: String!
+    private var carPlate: String!
+    private var carModel: String!
+    private var carPicture: String!
+    private var ownerPhone: String!
+
+    init(carMake: String, carColor: String, carPlate: String, carModel: String, carPicture: String, ownerPhone: String ) {
+        self.carMake = carMake
+        self.carColor = carColor
+        self.carPlate = carPlate
+        self.carModel = carModel
+        self.carPicture = carPicture
+        self.ownerPhone = ownerPhone
+    }
     
-    //init
+    var getCarMake: String{
+        return carMake
+    }
     
-    init(carMake:String, carColor:String,carPlate:String,carModel:String,carPicture:String,ownerPhone:String ) {
-        self._carMake=carMake
-        self._carColor = carColor
-        self._carPlate=carPlate
-        self._carModel=carModel
-        self._carPicture=carPicture
-        self._ownerPhone=ownerPhone
+    var getCarColor: String!{
+        return carColor
     }
-    var carMake:String{
-        return _carMake
+    
+    var getCarPlate: String{
+        return carPlate
     }
-    var carColor:String!{
-        return _carColor
+    
+    var getCarModel: String{
+        return carModel
     }
-    var carPlate:String{
-        return _carPlate
+    
+    var getCarPicture: String{
+        return carPicture
     }
-    var carModel:String{
-        return _carModel
-    }
-    var carPicture:String{
-        return _carPicture
-    }
-    var ownerPhone:String{
-        return _ownerPhone
+    
+    var getOwnerPhone: String{
+        return ownerPhone
     }
 }

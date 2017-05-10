@@ -28,7 +28,7 @@ class ThemeManager {
         proxySearchBar.barTintColor = UIColor.white
         
         let proxyLabel = UILabel.appearance()
-        proxyLabel.textColor = MWColors.MWLightBlue
+        proxyLabel.textColor = UIColor.black
         
 //        let proxyButton = UIButton.appearance()
 //        proxyButton.backgroundColor = MWColors.

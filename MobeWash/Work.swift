@@ -7,56 +7,48 @@
 //
 
 import Foundation
-class Work{
-    
-    //field
-    private var _workTitle:String!
-    private var _workTime:String!
-    private var _workLocation:String!
-    //private var _carInfo:CarInfo!
-    private var _package:String!
-    private var _carInfo:CarInfo!
-    
-    init(workTitle:String,workTime:String,workLoc:String,/*carInfo:CarInfo,*/package:String,carInfo:CarInfo) {
-        self._workTitle=workTitle
-        self._workTime=workTime
-        self._workLocation=workLoc
-        self._package=package
-        self._carInfo = carInfo
-        //self._carInfo=carInfo
 
+class Work{
+    private var workTitle: String!
+    private var workTime: String!
+    private var workLocation: String!
+    private var package:String!
+    private var carInfo:CarInfo!
+    
+    init(workTitle: String, workTime: String, workLoc: String, package: String, carInfo: CarInfo) {
+        self.workTitle = workTitle
+        self.workTime = workTime
+        self.workLocation = workLoc
+        self.package = package
+        self.carInfo = carInfo
     }
-    //methods
-    var workTitle:String {
-        return _workTitle
+
+    var getWorkTitle: String {
+        return workTitle
     }
     
-    var workTime:String{
+    var getWorkTime: String{
         get{
-            return _workTime
+            return workTime
         }
         set{
-            _workTime = newValue
+            workTime = newValue
         }
     }
     
-    var workLocation:String{
-        return _workLocation
+    var getWorkLocation:String{
+        return workLocation
     }
     
-    
-    var carInfo:CarInfo{
-        return _carInfo
+    var getCarInfo:CarInfo{
+        return carInfo
     }
     
-    var package:String{
-        return _package
+    var getPackage:String{
+        return package
     }
     
     func isValid() -> Bool{
         return true
     }
-    
-    
-    
 }
