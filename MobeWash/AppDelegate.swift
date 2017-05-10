@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         assert(configureError == nil, "Error configuring Google services: \(String(describing: configureError))")
         
         GIDSignIn.sharedInstance().delegate = self
-        
+
         ThemeManager.applyTheme()
         
         let storyBoard = UIStoryboard(name: "Ready2Book", bundle: nil)

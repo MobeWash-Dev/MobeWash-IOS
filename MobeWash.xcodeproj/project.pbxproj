@@ -40,6 +40,7 @@
 		8C34AA431EB30355000A5490 /* BillingDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C34AA421EB30355000A5490 /* BillingDetails.storyboard */; };
 		8C34AA451EB30509000A5490 /* BillingDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA441EB30509000A5490 /* BillingDetailsController.swift */; };
 		8C34AA471EB3D755000A5490 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA461EB3D755000A5490 /* Buttons.swift */; };
+		8C75E27C1EBFA9600037E8A3 /* MWAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E27B1EBFA9600037E8A3 /* MWAlerts.swift */; };
 		B1B87C597285DC19C7C7D95B /* Pods_MobeWash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1905CA2E73BC252B45A062 /* Pods_MobeWash.framework */; };
 		B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
 		B25AAC4B1EAC1095001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
@@ -61,6 +62,18 @@
 		D33FEC5C8A337100A19C9B93 /* Pods_MobeWashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BC0914DB8B3E67496FB482 /* Pods_MobeWashUITests.framework */; };
 		DB5B01C34B38E597002C930D /* Pods_MobeWashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E96681111EA98DFF0AB6C8D /* Pods_MobeWashTests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXBuildRule section */
+		00C644111EBA542700AA8F96 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = sourcecode.metal;
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# metal\n";
+		};
+/* End PBXBuildRule section */
 
 /* Begin PBXContainerItemProxy section */
 		780D45DD1EA3DDDB00FB4D35 /* PBXContainerItemProxy */ = {
@@ -122,6 +135,7 @@
 		8C34AA421EB30355000A5490 /* BillingDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BillingDetails.storyboard; sourceTree = "<group>"; };
 		8C34AA441EB30509000A5490 /* BillingDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingDetailsController.swift; sourceTree = "<group>"; };
 		8C34AA461EB3D755000A5490 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		8C75E27B1EBFA9600037E8A3 /* MWAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWAlerts.swift; sourceTree = "<group>"; };
 		938203FEC5CD43B1818AFF2B /* Pods-MobeWashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9468D1ECF422C6979804B99B /* Pods-MobeWashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.release.xcconfig"; sourceTree = "<group>"; };
 		B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -229,6 +243,7 @@
 				784486041EA3E897001D1F96 /* Views (Storyboards) */,
 				784486071EA3E8CD001D1F96 /* Resources */,
 				784486061EA3E8A8001D1F96 /* Extensions */,
+				8C75E27A1EBFA9450037E8A3 /* MWHelperClasses */,
 				784486051EA3E8A2001D1F96 /* Services */,
 				780D45D21EA3DDDA00FB4D35 /* Assets.xcassets */,
 				780D45D71EA3DDDA00FB4D35 /* Info.plist */,
@@ -344,6 +359,14 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		8C75E27A1EBFA9450037E8A3 /* MWHelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8C75E27B1EBFA9600037E8A3 /* MWAlerts.swift */,
+			);
+			name = MWHelperClasses;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -359,6 +382,7 @@
 				EBCE57009594AEA846FFC30C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
+				00C644111EBA542700AA8F96 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -420,6 +444,7 @@
 				TargetAttributes = {
 					780D45C71EA3DDDA00FB4D35 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = F2F757HLJ7;
 						ProvisioningStyle = Automatic;
 					};
 					780D45DB1EA3DDDB00FB4D35 = {
@@ -654,6 +679,7 @@
 				8C34AA391EB15930000A5490 /* MWPackage.swift in Sources */,
 				780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */,
 				8C34AA411EB1D3A8000A5490 /* MWField.swift in Sources */,
+				8C75E27C1EBFA9600037E8A3 /* MWAlerts.swift in Sources */,
 				78CDC7D11EB888C700495ED0 /* CustomUINavItem.swift in Sources */,
 				780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */,
 				B59F36C11EB69A4800DA21EE /* CarInfo.swift in Sources */,
@@ -837,7 +863,7 @@
 			baseConfigurationReference = CCAAE805BAC673105378E7B9 /* Pods-MobeWash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F2F757HLJ7;
 				INFOPLIST_FILE = MobeWash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanippolito.MobeWash;
@@ -852,7 +878,7 @@
 			baseConfigurationReference = 073CC921CAFDBEFC61F6753A /* Pods-MobeWash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = F2F757HLJ7;
 				INFOPLIST_FILE = MobeWash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.seanippolito.MobeWash;

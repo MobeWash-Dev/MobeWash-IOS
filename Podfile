@@ -10,7 +10,11 @@ target 'MobeWash' do
   pod ‘FacebookLogin’
   pod ‘Google/SignIn’
   pod 'Stripe'
+<<<<<<< HEAD
   pod 'JTAppleCalendar', '~> 7.0'
+=======
+  pod 'ReachabilitySwift', '~> 3'
+>>>>>>> development
 
   # Pods for MobeWash
 
