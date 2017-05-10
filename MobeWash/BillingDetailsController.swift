@@ -11,9 +11,6 @@ import UIKit
 import Stripe
 
 class BillingDetailsViewController: UIViewController, STPPaymentCardTextFieldDelegate, PKPaymentAuthorizationViewControllerDelegate  {
-    
-    //UI elements
-    
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var detailTextView: UITextView!
     @IBOutlet weak var carImageView: UIImageView!

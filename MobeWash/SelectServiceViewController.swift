@@ -8,31 +8,21 @@
 
 import UIKit
 
-class ServicePickViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SelectServiceViewController: UIViewController {
+    @IBOutlet weak var serviceTableView: UITableView!
+    @IBOutlet weak var serviceLabel: UILabel!
     
-    @IBOutlet weak var serviceTable: UITableView!
-    @IBOutlet weak var serviceDisplay: UILabel!
     var services = ["MobeWash", "MobePlus", "MobeWhatever"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
-        // Do any additional setup after loading the view.
-        serviceTable.delegate = self
-        serviceTable.dataSource = self
-        
-        
-        
+        serviceTableView.delegate = self
+        serviceTableView.dataSource = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
     /*
     // MARK: - Navigation
 
@@ -42,32 +32,18 @@ class ServicePickViewController: UIViewController, UITableViewDelegate, UITableV
         // Pass the selected object to the new view controller.
     }
     */
-    
+}
 
-    
+extension SelectServiceViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return services.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let ServiceTableViewCell = tableView.dequeueReusableCell( withIdentifier:"ServiceTableViewCell") as? ServiceTableViewCell!
         
-        let serviceCell = tableView.dequeueReusableCell( withIdentifier:"serviceCell") as? serviceCell!
-        print("Name is " + services[indexPath.row])
-        serviceCell?.serviceButton.setTitle(services[indexPath.row], for: UIControlState.normal)
-        
-        // customize sercvie button action below later
-  
-        
-        return serviceCell!
-        
-   
-        
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-    
+        ServiceTableViewCell?.serviceButton.setTitle(services[indexPath.row], for: UIControlState.normal)
 
-
+        return ServiceTableViewCell!
+    }
 }

@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -97,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="512.79999999999995" y="-436.73163418290858"/>
         </scene>
-        <!--ServicePick-->
+        <!--SelectServiceViewController-->
         <scene sceneID="dJ5-If-CnQ">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="ServicePickViewController" storyboardName="ServicePick" id="A8N-4d-Txu" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="ServicePickViewController" storyboardName="SelectService" referencedIdentifier="SelectServiceViewController" id="A8N-4d-Txu" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q58-cx-kMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056" y="-376.01199400299851"/>
