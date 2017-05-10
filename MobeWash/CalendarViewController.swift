@@ -154,7 +154,6 @@ extension CalendarViewController: UITableViewDelegate {
 }
 
 extension CalendarViewController: JTAppleCalendarViewDataSource {
-    
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
         
         formatter.dateFormat = "yyyy MM dd"
