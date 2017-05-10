@@ -9,12 +9,12 @@
 import Foundation
 
 class CarInfo{
-    private var carMake: String!
-    private var carColor: String!
-    private var carPlate: String!
-    private var carModel: String!
-    private var carPicture: String!
-    private var ownerPhone: String!
+    private(set) var carMake: String!
+    private(set) var carColor: String!
+    private(set) var carPlate: String!
+    private(set) var carModel: String!
+    private(set) var carPicture: String!
+    private(set) var ownerPhone: String!
 
     init(carMake: String, carColor: String, carPlate: String, carModel: String, carPicture: String, ownerPhone: String ) {
         self.carMake = carMake
@@ -23,29 +23,5 @@ class CarInfo{
         self.carModel = carModel
         self.carPicture = carPicture
         self.ownerPhone = ownerPhone
-    }
-    
-    var getCarMake: String{
-        return carMake
-    }
-    
-    var getCarColor: String!{
-        return carColor
-    }
-    
-    var getCarPlate: String{
-        return carPlate
-    }
-    
-    var getCarModel: String{
-        return carModel
-    }
-    
-    var getCarPicture: String{
-        return carPicture
-    }
-    
-    var getOwnerPhone: String{
-        return ownerPhone
-    }
+    }    
 }

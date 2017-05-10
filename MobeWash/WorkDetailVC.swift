@@ -65,7 +65,7 @@ class WorkDetailVC: UITableViewController,MKMapViewDelegate,CLLocationManagerDel
             carColor.backgroundColor = UIColor.blue
             break
         case "yellow":
-            carColor.backgroundColor=UIColor.yellow
+            carColor.backgroundColor = UIColor.yellow
             break
         default:
             carColor.backgroundColor = UIColor.black
@@ -91,7 +91,11 @@ class WorkDetailVC: UITableViewController,MKMapViewDelegate,CLLocationManagerDel
         let phoneIndex = tableView.indexPath(for: self.phoneCell)
         if (phoneIndex == indexPath){
             let telephoneURL:NSURL = URL(string: "TEL://\(work.carInfo.ownerPhone)")! as NSURL
-            UIApplication.shared.open(telephoneURL as URL,options:[:],completionHandler:nil)
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(telephoneURL as URL,options:[:],completionHandler:nil)
+            } else {
+                // Fallback on earlier versions
+            }
         }
         
     }

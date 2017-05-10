@@ -11,10 +11,10 @@ import Foundation
 public class Package {
     private var uid: String
     private var appointmentTypeID: String
-    private var name: String
-    private var cost: Double, extraCost: Double
-    private var length: Int, extraLength: Int
-    private var info: [String]
+    private(set) var name: String
+    private(set) var cost: Double, extraCost: Double
+    private(set) var length: Int, extraLength: Int
+    private(set) var info: [String]
     
     //init for regular car
     public init(name: String, cost: Double, length: Int, info: [String]){
@@ -47,33 +47,6 @@ public class Package {
         self.extraLength = dictionary["extraLength"] as! Int
         self.info = dictionary["info"] as! [String]
     }
-    
-    
-    //getters
-    var getName:String{
-        get{ return name }
-    }
-    
-    var getCost:Double{
-        get { return cost }
-    }
-    
-    var getExtraCost:Double{
-        get{ return extraCost }
-    }
-    
-    var getLength:Int{
-        get{ return length }
-    }
-    
-    var getExtraLength:Int{
-        get{ return extraLength }
-    }
-    
-    var getInfo:[String]{
-        get{ return info }
-    }
-    
     
     //returns a dictionary representation of the object
     public func toDictionary() -> NSDictionary {
