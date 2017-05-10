@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ekV-gc-UPg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
-        <scene sceneID="Da2-vJ-nuH">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Home" id="Nfz-gk-Fwy" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Lmj-Hc-Km8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="43" y="-522"/>
-        </scene>
         <!--Ready2Book-->
         <scene sceneID="rFb-78-Zhm">
             <objects>
-                <viewController restorationIdentifier="Ready2Book" storyboardIdentifier="Ready2Book" id="6U6-wr-EOa" customClass="Ready2BookViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Ready2Book" title="Ready2Book" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6U6-wr-EOa" customClass="Ready2BookViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GLT-KX-pKn"/>
                         <viewControllerLayoutGuide type="bottom" id="fse-gl-nja"/>
@@ -32,11 +24,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" text="" placeholder="Search Company Here" translatesAutoresizingMaskIntoConstraints="NO" id="kUw-qC-a4m">
-                                <rect key="frame" x="0.0" y="291" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="247" width="375" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="45" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="93a-6B-eU8">
-                                <rect key="frame" x="0.0" y="341" width="375" height="326"/>
+                                <rect key="frame" x="0.0" y="297" width="375" height="370"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="companyCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="companyCell" rowHeight="45" id="VWz-Qh-nkm" customClass="CompanyCell" customModule="MobeWash">
@@ -47,7 +39,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9P-kn-uTn">
-                                                    <rect key="frame" x="139.5" y="12" width="98" height="23.5"/>
+                                                    <rect key="frame" x="138.5" y="12" width="98" height="23.5"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                                     <color key="textColor" red="0.46123126149999999" green="0.6736420393" blue="0.9726208448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -67,7 +59,7 @@
                                 </prototypes>
                             </tableView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="a3c-Yr-2gb">
-                                <rect key="frame" x="118" y="86" width="140" height="194"/>
+                                <rect key="frame" x="117.5" y="42" width="140" height="194"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="a3c-Yr-2gb" secondAttribute="height" multiplier="70:97" id="PSR-hM-CVF"/>
                                     <constraint firstAttribute="height" constant="194" id="naB-ea-T9k"/>
@@ -108,28 +100,10 @@
         <!--ServicePick-->
         <scene sceneID="dJ5-If-CnQ">
             <objects>
-                <viewControllerPlaceholder storyboardName="ServicePick" id="A8N-4d-Txu" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="ServicePickViewController" storyboardName="ServicePick" id="A8N-4d-Txu" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q58-cx-kMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056" y="-376.01199400299851"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="oIk-4Z-HrT">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ekV-gc-UPg" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Zh2-DG-tzv" customClass="CustomUINavBar" customModule="MobeWash" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="6U6-wr-EOa" kind="relationship" relationship="rootViewController" id="rKX-NG-iSz"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y5G-cG-XDf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-426.39999999999998" y="-436.73163418290858"/>
         </scene>
     </scenes>
     <resources>
