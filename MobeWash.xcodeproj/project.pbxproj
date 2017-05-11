@@ -23,7 +23,7 @@
 		78124A021EC33D7900962AEF /* SelectService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78124A041EC33D7900962AEF /* SelectService.storyboard */; };
 		78124A081EC3B75F00962AEF /* BillingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78124A071EC3B75F00962AEF /* BillingTextField.swift */; };
 		783919D11EBA9EDE0086CF37 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783919D01EBA9EDE0086CF37 /* Calendar.storyboard */; };
-		783919D31EBAA1B70086CF37 /* CalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783919D21EBAA1B70086CF37 /* CalendarCell.swift */; };
+		783919D31EBAA1B70086CF37 /* CalendarJTAppleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783919D21EBAA1B70086CF37 /* CalendarJTAppleCell.swift */; };
 		783919D51EBAA3310086CF37 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783919D41EBAA3310086CF37 /* CalendarViewController.swift */; };
 		78CDC7C61EB8363400495ED0 /* MobeWashStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7C51EB8363400495ED0 /* MobeWashStyles.swift */; };
 		78CDC7C81EB836B200495ED0 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7C71EB836B200495ED0 /* ThemeManager.swift */; };
@@ -119,7 +119,7 @@
 		78124A031EC33D7900962AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SelectService.storyboard; sourceTree = "<group>"; };
 		78124A071EC3B75F00962AEF /* BillingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingTextField.swift; sourceTree = "<group>"; };
 		783919D01EBA9EDE0086CF37 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
-		783919D21EBAA1B70086CF37 /* CalendarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCell.swift; sourceTree = "<group>"; };
+		783919D21EBAA1B70086CF37 /* CalendarJTAppleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarJTAppleCell.swift; sourceTree = "<group>"; };
 		783919D41EBAA3310086CF37 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		78CDC7C51EB8363400495ED0 /* MobeWashStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobeWashStyles.swift; sourceTree = "<group>"; };
 		78CDC7C71EB836B200495ED0 /* ThemeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
@@ -318,7 +318,7 @@
 			isa = PBXGroup;
 			children = (
 				8C34AA441EB30509000A5490 /* BillingDetailsViewController.swift */,
-				783919D21EBAA1B70086CF37 /* CalendarCell.swift */,
+				783919D21EBAA1B70086CF37 /* CalendarJTAppleCell.swift */,
 				783919D41EBAA3310086CF37 /* CalendarViewController.swift */,
 				0797263B1EB3077400A3DF1C /* CompanyCell.swift */,
 				B260314E1EB1BC3B00FE81AE /* DetailsViewController.swift */,
@@ -679,7 +679,7 @@
 				B59F36C91EB69A8100DA21EE /* WorkDetailViewController.swift in Sources */,
 				8C34AA471EB3D755000A5490 /* Buttons.swift in Sources */,
 				78CDC7CB1EB8721100495ED0 /* CustomButton.swift in Sources */,
-				783919D31EBAA1B70086CF37 /* CalendarCell.swift in Sources */,
+				783919D31EBAA1B70086CF37 /* CalendarJTAppleCell.swift in Sources */,
 				B59F36C51EB69A6100DA21EE /* Work.swift in Sources */,
 				8C34AA451EB30509000A5490 /* BillingDetailsViewController.swift in Sources */,
 				78CDC7C81EB836B200495ED0 /* ThemeManager.swift in Sources */,

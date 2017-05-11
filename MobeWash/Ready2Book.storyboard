@@ -57,7 +57,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="a3c-Yr-2gb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mwlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="a3c-Yr-2gb">
                                 <rect key="frame" x="117.5" y="42" width="140" height="194"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="a3c-Yr-2gb" secondAttribute="height" multiplier="70:97" id="PSR-hM-CVF"/>
@@ -106,6 +106,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon.png" width="548" height="800"/>
+        <image name="mwlogo.png" width="548" height="800"/>
     </resources>
 </document>

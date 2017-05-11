@@ -10,25 +10,22 @@ import UIKit
 import JTAppleCalendar
 
 class CalendarViewController: UIViewController {
-    
-    let formatter = DateFormatter()
-    
-    // Dummy Data
-    let availability = ["May": [5: [10, 11, 12], 7: [8, 14]]]
-    
-    var noneAvailable = false
-    var selectedMonth = String()
-    var selectedDate = Int()
-    var displayDate = String()
-    var selectedTime = String()
-    
     @IBOutlet weak var timeTableView: UITableView!
     @IBOutlet weak var noTimesLabel: UILabel!
-    
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var monthLabel: UILabel!
     
-    let brightBlue = UIColor(red: 32/255.0, green: 139/255.0, blue: 1, alpha: 1.0)
+    let brightBlue: UIColor = UIColor(red: 32/255.0, green: 139/255.0, blue: 1, alpha: 1.0)
+    let formatter = DateFormatter()
+    
+    var selectedMonth: String?
+    var selectedDate: Int?
+    var displayDate: String?
+    var selectedTime: String?
+    var noneAvailable: Bool = false
+
+    // Dummy Data
+    let availability = ["May": [5: [10, 11, 12], 7: [8, 14]]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +33,7 @@ class CalendarViewController: UIViewController {
         setupCalendarView()
         
         self.setDateVariables(selectedDateAndTime: Date())
+        
         timeTableView.cellLayoutMarginsFollowReadableWidth = false
         timeTableView.tableFooterView = UIView(frame: CGRect.zero)
         
@@ -45,13 +43,9 @@ class CalendarViewController: UIViewController {
     }
     
     func setupCalendarView(){
-        // Set up calendar spacing
         calendarView.minimumLineSpacing = 0
         calendarView.minimumInteritemSpacing = 0
-        
         calendarView.selectDates([Date()])
-        
-        // Set up date labels
         calendarView.visibleDates { visibleDates in
             self.setupViewsOfCalendar(from: visibleDates)
         }
@@ -81,7 +75,7 @@ class CalendarViewController: UIViewController {
         displayDate = dateTimeArray[0]
         
         // Data Source to be changed
-        if availability[selectedMonth]?[selectedDate]?.isEmpty == nil{
+        if availability[selectedMonth!]?[selectedDate!]?.isEmpty == nil{
             noneAvailable = true
             noTimesLabel.isHidden = false
             timeTableView.isHidden = true
@@ -103,8 +97,7 @@ extension CalendarViewController: UITableViewDataSource {
             return 0
         }
         
-        // Data source to be changed
-        return availability[selectedMonth]![selectedDate]!.count
+        return availability[selectedMonth!]![selectedDate!]!.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -115,7 +108,7 @@ extension CalendarViewController: UITableViewDataSource {
         }
         
         // Data source to be changed
-        let time = availability[selectedMonth]![selectedDate]![indexPath.row]
+        let time = availability[selectedMonth!]![selectedDate!]![indexPath.row]
         
         // Selecting AM and PM to be changed
         if(time < 13){
@@ -155,15 +148,15 @@ extension CalendarViewController: UITableViewDelegate {
 
 extension CalendarViewController: JTAppleCalendarViewDataSource {
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
+        let month = Calendar.current.component(.month, from: Date())
+        let year = Calendar.current.component(.year, from: Date())
         
         formatter.dateFormat = "yyyy MM dd"
         formatter.timeZone = Calendar.current.timeZone
         formatter.locale = Calendar.current.locale
         
-        let month = Calendar.current.component(.month, from: Date())
-        
-        let start = formatter.date(from: "2017 " + String(month) + " 01")!
-        let end = formatter.date(from: "2017 12 31")!
+        let start = formatter.date(from: String(year) + " " + String(month) + " 01")!
+        let end = formatter.date(from: String(year+1) + " " + String(month) + " 31")!
         calendar.allowsMultipleSelection = false
         
         let parameters = ConfigurationParameters(startDate: start, endDate: end)
@@ -173,7 +166,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource {
 
 extension CalendarViewController: JTAppleCalendarViewDelegate {
     func calendar(_ calendar: JTAppleCalendarView, cellForItemAt date: Date, cellState: CellState, indexPath: IndexPath) -> JTAppleCell {
-        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "CalendarCell", for: indexPath) as! CalendarCell
+        let cell = calendar.dequeueReusableJTAppleCell(withReuseIdentifier: "CalendarJTAppleCell", for: indexPath) as! CalendarJTAppleCell
 
         // Blocking out dates
         let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: "-----")
@@ -235,7 +228,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
     }
     
     func handleCellSelected(view: JTAppleCell?, cellState: CellState) {
-        guard let validCell = view as? CalendarCell else { return }
+        guard let validCell = view as? CalendarJTAppleCell else { return }
         
         if cellState.isSelected{
             validCell.selectedView.backgroundColor = brightBlue
@@ -249,7 +242,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
     }
     
     func handleCellTextColor(view: JTAppleCell?, cellState: CellState) {
-        guard let validCell = view as? CalendarCell else { return }
+        guard let validCell = view as? CalendarJTAppleCell else { return }
         
         if cellState.isSelected || validCell.isCurrentDate {
             validCell.dateLabel.textColor = UIColor.white
