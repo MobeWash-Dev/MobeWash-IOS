@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,7 +12,7 @@
         <!--Worklist-->
         <scene sceneID="DFQ-pc-ovv">
             <objects>
-                <tableViewController storyboardIdentifier="Worklist" title="Worklist" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ek0-BB-RHc" customClass="WorkListViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="WorklistStoryboard" title="Worklist" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ek0-BB-RHc" customClass="WorkListViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" id="BdB-RO-FZb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -45,7 +44,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3o2-mW-man">
-                                                                    <rect key="frame" x="15" y="91.5" width="65.5" height="33.5"/>
+                                                                    <rect key="frame" x="15" y="91.5" width="245" height="33.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
@@ -164,7 +163,7 @@
         <!--WorkDetailVC-->
         <scene sceneID="dzG-cf-FBH">
             <objects>
-                <tableViewController storyboardIdentifier="workDetails" id="egb-pv-gBi" userLabel="WorkDetailVC" customClass="WorkDetailVC" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="WorkDetailsStoryboard" useStoryboardIdentifierAsRestorationIdentifier="YES" id="egb-pv-gBi" userLabel="WorkDetailVC" customClass="WorkDetailVC" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Rlr-bi-TJH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -180,10 +179,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Detail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnP-ND-J5i">
-                                                    <rect key="frame" x="121" y="20" width="117" height="25"/>
+                                                    <rect key="frame" x="121" y="19.5" width="117" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="117" id="eAS-0f-d6s"/>
-                                                        <constraint firstAttribute="height" constant="19" id="t9I-iD-iwp"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="22"/>
                                                     <nil key="textColor"/>

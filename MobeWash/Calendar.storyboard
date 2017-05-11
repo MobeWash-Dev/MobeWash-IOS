@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,16 +12,16 @@
         <!--Ib Calendar Data Source-->
         <scene sceneID="9Wb-z0-tMv">
             <objects>
-                <viewController storyboardIdentifier="Calendar" title="Calendar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KuX-lE-lRC" customClass="CalendarViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Calendar" title="Calendar" modalTransitionStyle="crossDissolve" modalPresentationStyle="pageSheet" useStoryboardIdentifierAsRestorationIdentifier="YES" id="KuX-lE-lRC" customClass="CalendarViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FmV-E6-Rie"/>
                         <viewControllerLayoutGuide type="bottom" id="rGC-tx-xIS"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="y7m-rU-bxc">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="CalendarView" id="y7m-rU-bxc" userLabel="Calendar View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5gQ-Nk-jPS">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="TimeTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5gQ-Nk-jPS">
                                 <rect key="frame" x="0.0" y="441" width="375" height="227"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -137,7 +136,7 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalendarCell" id="Hna-yc-4Hv" customClass="CalendarCell" customModule="MobeWash" customModuleProvider="target">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CalendarJTAppleCell" reuseIdentifier="CalendarJTAppleCell" id="Hna-yc-4Hv" customClass="CalendarJTAppleCell" customModule="MobeWash" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -246,7 +245,7 @@
         <!--Details-->
         <scene sceneID="VGU-xe-2YK">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Details" storyboardName="Details" referencedIdentifier="Details" id="zE2-Ed-K9T" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="DetailsStoryboard" storyboardName="Details" id="zE2-Ed-K9T" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hug-Rm-oaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="86" y="-5"/>

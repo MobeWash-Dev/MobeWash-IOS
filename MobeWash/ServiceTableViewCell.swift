@@ -8,8 +8,7 @@
 
 import UIKit
 
-class serviceCell: UITableViewCell {
-
+class ServiceTableViewCell: UITableViewCell {
     @IBOutlet weak var serviceButton: UIButton!
     
     override func awakeFromNib() {
@@ -19,8 +18,6 @@ class serviceCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
-
 }

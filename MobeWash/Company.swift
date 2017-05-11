@@ -9,7 +9,6 @@
 import Foundation
 
 public class Company {
-    
     private var uid: String
     private var name: String
     private var location: String

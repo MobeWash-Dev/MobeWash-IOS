@@ -4,46 +4,45 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ServicePickViewController-->
+        <!--Select Service-->
         <scene sceneID="xQ3-1q-Cuj">
             <objects>
-                <viewController storyboardIdentifier="ServicePickViewController" title="ServicePickViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VMC-ED-UCs" customClass="ServicePickViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SelectServiceStoryboard" title="Select Service" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VMC-ED-UCs" customClass="SelectServiceViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JxS-cR-Pop"/>
                         <viewControllerLayoutGuide type="bottom" id="x9p-fD-Ryq"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ZKf-g2-Z2s">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="SelectServiceView" id="ZKf-g2-Z2s" userLabel="Select Service View">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="QhV-qt-0rf">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="MWLogoImageView" image="mwlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="QhV-qt-0rf">
                                 <rect key="frame" x="104" y="77" width="167" height="229"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="167" id="QcQ-se-z1m"/>
-                                    <constraint firstAttribute="height" constant="229" id="Z0u-fD-aDI"/>
+                                    <constraint firstAttribute="width" constant="167" identifier="MWLogoImageViewWidthConstraint" id="QcQ-se-z1m"/>
+                                    <constraint firstAttribute="height" constant="229" identifier="MWLogoImageViewHeightConstraint" id="Z0u-fD-aDI"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v2j-Pg-mLe">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ServiceTableView" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="v2j-Pg-mLe" userLabel="Service Table View">
                                 <rect key="frame" x="41" y="390" width="293" height="249"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="249" id="oQ2-2w-i0E"/>
-                                    <constraint firstAttribute="width" constant="293" id="wHE-hW-P5i"/>
+                                    <constraint firstAttribute="height" constant="249" identifier="ServiceTableViewHeightConstraint" id="oQ2-2w-i0E"/>
+                                    <constraint firstAttribute="width" constant="293" identifier="ServiceTableViewWidthConstraint" id="wHE-hW-P5i"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="serviceCell" rowHeight="54" id="fAB-KJ-Nex" customClass="serviceCell" customModule="MobeWash" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ServiceTableViewCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ServiceTableViewCell" rowHeight="54" id="fAB-KJ-Nex" userLabel="Service Table View Cell" customClass="ServiceTableViewCell" customModule="MobeWash" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="293" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fAB-KJ-Nex" id="CjO-JM-tR8">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ServiceView" tableViewCell="fAB-KJ-Nex" id="CjO-JM-tR8" userLabel="Service View">
                                             <rect key="frame" x="0.0" y="0.0" width="293" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udd-Oa-ekF">
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="ServiceButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udd-Oa-ekF">
                                                     <rect key="frame" x="8" y="0.0" width="285" height="54"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
@@ -61,7 +60,7 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZV-76-ifQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="ServiceLabel" text="Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZV-76-ifQ" userLabel="Service Label">
                                 <rect key="frame" x="129" y="323" width="117" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="APe-hR-22v"/>
@@ -84,8 +83,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="serviceDisplay" destination="eZV-76-ifQ" id="qod-aI-kyH"/>
-                        <outlet property="serviceTable" destination="v2j-Pg-mLe" id="Nlp-Mm-eR3"/>
+                        <outlet property="serviceLabel" destination="eZV-76-ifQ" id="lhE-Gb-k05"/>
+                        <outlet property="serviceTableView" destination="v2j-Pg-mLe" id="SHp-3Y-CYn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2I-1r-5bc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -95,13 +94,13 @@
         <!--Calendar-->
         <scene sceneID="lVr-Es-cuH">
             <objects>
-                <viewControllerPlaceholder storyboardName="Calendar" id="fGR-e8-Vcl" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="CalendarStoryboard" storyboardName="Calendar" id="fGR-e8-Vcl" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bta-46-0OY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-527" y="4"/>
         </scene>
     </scenes>
     <resources>
-        <image name="icon.png" width="548" height="800"/>
+        <image name="mwlogo.png" width="548" height="800"/>
     </resources>
 </document>

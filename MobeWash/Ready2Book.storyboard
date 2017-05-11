@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6U6-wr-EOa">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -14,7 +13,7 @@
         <!--Ready2Book-->
         <scene sceneID="rFb-78-Zhm">
             <objects>
-                <viewController storyboardIdentifier="Ready2Book" title="Ready2Book" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6U6-wr-EOa" customClass="Ready2BookViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Ready2BookStoryboard" title="Ready2Book" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6U6-wr-EOa" customClass="Ready2BookViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GLT-KX-pKn"/>
                         <viewControllerLayoutGuide type="bottom" id="fse-gl-nja"/>
@@ -58,7 +57,7 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="a3c-Yr-2gb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mwlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="a3c-Yr-2gb">
                                 <rect key="frame" x="117.5" y="42" width="140" height="194"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="a3c-Yr-2gb" secondAttribute="height" multiplier="70:97" id="PSR-hM-CVF"/>
@@ -97,16 +96,16 @@
             </objects>
             <point key="canvasLocation" x="512.79999999999995" y="-436.73163418290858"/>
         </scene>
-        <!--ServicePick-->
+        <!--SelectService-->
         <scene sceneID="dJ5-If-CnQ">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="ServicePickViewController" storyboardName="ServicePick" id="A8N-4d-Txu" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="SelectServiceStoryboard" storyboardName="SelectService" id="A8N-4d-Txu" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q58-cx-kMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1056" y="-376.01199400299851"/>
         </scene>
     </scenes>
     <resources>
-        <image name="icon.png" width="548" height="800"/>
+        <image name="mwlogo.png" width="548" height="800"/>
     </resources>
 </document>
