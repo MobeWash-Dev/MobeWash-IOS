@@ -20,24 +20,32 @@ class HomeViewController: UIViewController, UITextFieldDelegate, GIDSignInUIDele
     
     @IBAction func loginButton(_ sender: UIButton) {
     }
+    @IBOutlet weak var loginButtonOutlet: UIButton!
+    
+    let screenSize: CGRect = UIScreen.main.bounds
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Facebook Sign In
-        let loginButton = LoginButton(readPermissions: [.publicProfile ])
-        loginButton.center = view.center
+        // Center based on screen size
+        let xPosition = (screenSize.width-190)/2
+        // FB Login button y position relative to default Login button
+        var yPosition = self.loginButtonOutlet.frame.origin.y+(self.loginButtonOutlet.frame.size.height*2)+20
+        
+        // Facebook Login Button
+        let FBloginButton = LoginButton(readPermissions: [.publicProfile ])
+        FBloginButton.frame = CGRect(x:xPosition,y:yPosition,width:190,height:48)
         
         // remove when FacebookAppID is set up
-        loginButton.isUserInteractionEnabled = false
+        FBloginButton.isUserInteractionEnabled = false
 
-        view.addSubview(loginButton)
+        view.addSubview(FBloginButton)
         
-        // Google Sign In
+        // Google Signin button relative to FB Login button
+        yPosition = yPosition + FBloginButton.frame.size.height + 10
+        
+        // Google Sign In Button
         GIDSignIn.sharedInstance().uiDelegate = self
-        let screenSize: CGRect = UIScreen.main.bounds
-        let xPosition = (screenSize.width-190)/2
-        let yPosition = (screenSize.height/2)+30
         btnSignIn = GIDSignInButton(frame: CGRect(x:xPosition,y:yPosition,width:190,height:48))
         
         btnSignIn.style = GIDSignInButtonStyle.standard
