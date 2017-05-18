@@ -59,6 +59,7 @@
 		B59F36CD1EB69A8D00DA21EE /* WorkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F36CC1EB69A8D00DA21EE /* WorkListViewController.swift */; };
 		B59F36CF1EB69A9E00DA21EE /* Worklist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */; };
 		D33FEC5C8A337100A19C9B93 /* Pods_MobeWashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BC0914DB8B3E67496FB482 /* Pods_MobeWashUITests.framework */; };
+		D7F35F621ECDE59200DBFFF4 /* WasherTabView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7F35F611ECDE59200DBFFF4 /* WasherTabView.storyboard */; };
 		D7FE78721EBF633A004C7AA3 /* WasherHistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FE78711EBF633A004C7AA3 /* WasherHistoryDetailViewController.swift */; };
 		DB5B01C34B38E597002C930D /* Pods_MobeWashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E96681111EA98DFF0AB6C8D /* Pods_MobeWashTests.framework */; };
 /* End PBXBuildFile section */
@@ -158,6 +159,7 @@
 		B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Worklist.storyboard; sourceTree = "<group>"; };
 		C2D4BD3FC464428E3FEDE0D9 /* Pods-MobeWashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashUITests/Pods-MobeWashUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCAAE805BAC673105378E7B9 /* Pods-MobeWash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.debug.xcconfig"; sourceTree = "<group>"; };
+		D7F35F611ECDE59200DBFFF4 /* WasherTabView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WasherTabView.storyboard; sourceTree = "<group>"; };
 		D7FE78711EBF633A004C7AA3 /* WasherHistoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WasherHistoryDetailViewController.swift; sourceTree = "<group>"; };
 		E0BC0914DB8B3E67496FB482 /* Pods_MobeWashUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWashUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E425B7FC791DCCFB1CB52323 /* Pods-MobeWashUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashUITests/Pods-MobeWashUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -290,6 +292,7 @@
 				B26031551EB407D900FE81AE /* SignUp.storyboard */,
 				78FCB3E51EB6E9A20094C161 /* Time.storyboard */,
 				B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */,
+				D7F35F611ECDE59200DBFFF4 /* WasherTabView.storyboard */,
 			);
 			name = "Views (Storyboards)";
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				780D45D11EA3DDDA00FB4D35 /* Home.storyboard in Resources */,
 				B26031571EB407D900FE81AE /* SignUp.storyboard in Resources */,
 				783919D11EBA9EDE0086CF37 /* Calendar.storyboard in Resources */,
+				D7F35F621ECDE59200DBFFF4 /* WasherTabView.storyboard in Resources */,
 				780D45D11EA3DDDA00FB4D35 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

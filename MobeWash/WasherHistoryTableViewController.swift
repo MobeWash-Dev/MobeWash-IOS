@@ -89,7 +89,9 @@ class WasherHistoryTableViewController: UITableViewController {
             if let work = sender as? Work {
                 destination.work = work
             }
+            destination.hidesBottomBarWhenPushed = true
         }
+        
     }
 
     /*
