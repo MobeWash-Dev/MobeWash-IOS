@@ -18,7 +18,9 @@ class WasherHistoryTableViewController: UITableViewController {
     var time:[String] = ["Jan 25th, 15:00", "Jan 26th, 10:00", "Jan 27th, 13:30"]
     var carImages:[String] = ["LG.jpg", "JGC.jpg", "MP.jpg"]
     
-
+    @IBAction func close(segue:UIStoryboardSegue) {
+        
+    }
 
 
     override func viewDidLoad() {
@@ -134,5 +136,7 @@ class WasherHistoryTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
 
 }

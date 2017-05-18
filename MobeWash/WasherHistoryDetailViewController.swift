@@ -12,8 +12,35 @@ class WasherHistoryDetailViewController: UITableViewController {
     
     var work:Work!
 
+    @IBOutlet var carImage:UIImageView!
+    @IBOutlet var packageLabel:UILabel!
+    @IBOutlet var locationLabel:UILabel!
+    @IBOutlet var timeLabel:UILabel!
+    
+    @IBOutlet var makeLabel:UILabel!
+    @IBOutlet var modelLabel:UILabel!
+    @IBOutlet var colorLabel:UILabel!
+    @IBOutlet var plateLabel:UILabel!
+    
+    @IBOutlet var nameLabel:UILabel!
+    @IBOutlet var phoneLabel:UILabel!
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        carImage.image = UIImage(named: work.carPicture)
+        packageLabel.text = work.package
+        locationLabel.text = work.workLocation
+        timeLabel.text = work.workTime
+        makeLabel.text = work.carInfo.carMake
+        modelLabel.text = work.carInfo.carModel
+        colorLabel.text = work.carInfo.carColor
+        plateLabel.text = work.carInfo.carPlate
+
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
