@@ -32,7 +32,7 @@ class WasherHistoryDetailViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        carImage.image = UIImage(named: work.carPicture)
+        carImage.image = UIImage(named: work.carInfo.carPicture)
         packageLabel.text = work.package
         locationLabel.text = work.workLocation
         timeLabel.text = work.workTime
@@ -40,6 +40,7 @@ class WasherHistoryDetailViewController: UITableViewController {
         modelLabel.text = work.carInfo.carModel
         colorLabel.text = work.carInfo.carColor
         plateLabel.text = work.carInfo.carPlate
+        phoneLabel.text = work.carInfo.ownerPhone
 
 
         // Uncomment the following line to preserve selection between presentations
