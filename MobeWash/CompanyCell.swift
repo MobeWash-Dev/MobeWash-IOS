@@ -10,7 +10,7 @@ import UIKit
 
 class CompanyCell: UITableViewCell {
 
-    @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var nameText: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -12,7 +11,7 @@
         <!--Details-->
         <scene sceneID="1aT-RS-Gia">
             <objects>
-                <viewController title="Details" id="kJJ-bY-Z8a" customClass="DetailsViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailsStoryboard" title="Details" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kJJ-bY-Z8a" customClass="DetailsViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AGJ-Yo-Waq"/>
                         <viewControllerLayoutGuide type="bottom" id="6Yv-wa-dfg"/>
@@ -156,7 +155,7 @@
         <!--BillingDetails-->
         <scene sceneID="mia-1c-iXb">
             <objects>
-                <viewControllerPlaceholder storyboardName="BillingDetails" id="ah6-Di-m0J" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="BillingDetailsStoryboard" storyboardName="BillingDetails" id="ah6-Di-m0J" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w9s-9e-gBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="318" y="-59"/>

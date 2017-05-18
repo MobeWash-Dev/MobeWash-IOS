@@ -4,15 +4,14 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Time View Controller-->
+        <!--Time-->
         <scene sceneID="hyR-zH-mNy">
             <objects>
-                <viewController id="gPh-MW-EDu" customClass="TimeViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TimeStoryboard" title="Time" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gPh-MW-EDu" customClass="TimeViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ydn-GZ-1t9"/>
                         <viewControllerLayoutGuide type="bottom" id="bXp-hJ-kri"/>
@@ -97,7 +96,7 @@
         <!--Details-->
         <scene sceneID="fPL-t1-rh4">
             <objects>
-                <viewControllerPlaceholder storyboardName="Details" id="OaQ-2e-2Ad" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="DetailsStoryboard" storyboardName="Details" id="OaQ-2e-2Ad" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zBf-q1-jwV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="334" y="84"/>

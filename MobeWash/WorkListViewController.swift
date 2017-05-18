@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class WorkListViewController: UITableViewController {
-    var washer = Washer(name:"Chris Zhang");
-
-  
+class WorkListViewController: UITableViewController ,MKMapViewDelegate,CLLocationManagerDelegate{
+    let washer = Washer(name:"Chris Zhang")
+    let locationManager = CLLocationManager()
     override func viewDidLoad() {
+        var currentlocation:CLLocation
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource=self
@@ -21,14 +23,27 @@ class WorkListViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        
-        let work1 = Work(workTitle: "Super Wash", workTime: "3pm,Thursday", workLoc: "9500 Gilman Drive", package: "DayDreams",carPicture:"job1.jpg")
-        let work2 = Work(workTitle: "job2", workTime: "5pm,Thursday", workLoc: "9501 Gilman Drive", package: "DayDream",carPicture:"job2.jpg")
-        let work3 = Work(workTitle: "job3", workTime: "6pm,Thursday", workLoc: "9501 Gilman Drive", package: "DayDream", carPicture: "job3.jpg")
+        let carinfo1 = CarInfo(carMake: "Porsche", carColor: "white", carPlate: "baby96", carModel: "Cayenne", carPicture: "job1.jpg", ownerPhone: "8582639695")
+        let carinfo2 = CarInfo(carMake: "Audi", carColor: "blue", carPlate: "7n8z65k", carModel: "RS7", carPicture: "job2.jpg",ownerPhone:"8582638484")
+        let carinfo3 = CarInfo(carMake: "BMW", carColor: "yellow", carPlate: "UCSD M4", carModel: "M4", carPicture: "job3.jpg",ownerPhone:"8377375678")
+        let work1 = Work(workTitle: "Super Wash", workTime: "3pm,Thursday", workLoc: "9500 Gilman Drive, Rimac Annex, San Diego CA 92093, United States", package: "MobePlus",carInfo:carinfo1)
+        let work2 = Work(workTitle: "job2", workTime: "5pm,Thursday", workLoc: "3904 Convoy St, San Diego, CA 92111", package: "Mobe",carInfo:carinfo2)
+        let work3 = Work(workTitle: "job3", workTime: "6pm,Thursday", workLoc: "8055 Armour St, San Diego, CA 92111", package: "Mobe", carInfo:carinfo3)
         washer.addWork(work: work1)
         washer.addWork(work: work2)
         washer.addWork(work: work3)
+
+        
+        // For use in foreground
+        locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -62,12 +77,31 @@ class WorkListViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
                   as! WorkListTableViewCell
-        cell.nameLabel.text = washer.workList[indexPath.row].workTitle
+        cell.nameLabel.text = washer.workList[indexPath.row].package
         cell.locationLabel.text = washer.workList[indexPath.row].workLocation
-        cell.timeLabel.text = "\(washer.workList[indexPath.row].workTime)"
-        cell.thumbnailImageView.image = UIImage(named: washer.workList[indexPath.row].carPicture)
+        cell.timeLabel.text = (washer.workList[indexPath.row].workTime)
+        cell.thumbnailImageView.image = UIImage(named: washer.workList[indexPath.row].carInfo.carPicture)
         cell.thumbnailImageView.layer.cornerRadius = radius
         cell.thumbnailImageView.clipsToBounds = true
+        
+        //get distance
+        
+        let geocoder = CLGeocoder()
+        geocoder.geocodeAddressString(washer.workList[indexPath.row].workLocation, completionHandler:
+            {(placemarks, error) in
+                
+                if error != nil {
+                    print("Geocode failed: \(error!.localizedDescription)")
+                } else if placemarks!.count > 0 {
+                    let desPlacemark = placemarks![0]
+                    let destination = desPlacemark.location!
+                    let dist = self.locationManager.location?.distance(from: destination)
+                    cell.locationLabel.text = String(format: "%.1f miles away", dist!*0.000621371)
+
+                }
+        })
+        
+
         return cell
     }
   
@@ -82,7 +116,6 @@ class WorkListViewController: UITableViewController {
         let work = washer.workList[indexPath.row]
         
         performSegue(withIdentifier: "WorkDetailVC", sender: work)
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

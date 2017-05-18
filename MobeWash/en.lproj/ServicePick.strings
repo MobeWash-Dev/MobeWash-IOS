@@ -1,0 +1,9 @@
+
+/* Class = "UIViewController"; title = "ServicePickViewController"; ObjectID = "VMC-ED-UCs"; */
+"VMC-ED-UCs.title" = "ServicePickViewController";
+
+/* Class = "UILabel"; text = "Services"; ObjectID = "eZV-76-ifQ"; */
+"eZV-76-ifQ.text" = "Services";
+
+/* Class = "UIButton"; normalTitle = "Service 1"; ObjectID = "udd-Oa-ekF"; */
+"udd-Oa-ekF.normalTitle" = "Service 1";

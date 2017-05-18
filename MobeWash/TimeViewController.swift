@@ -99,6 +99,9 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let currentCell = tableView.cellForRow(at: indexPath)
         currentCell?.layer.borderColor = UIColor.gray.cgColor
         selectedTime = (currentCell?.textLabel!.text)!
+        
+        
+        
     }
     
     override func viewDidLoad() {

@@ -7,68 +7,23 @@
 //
 
 import Foundation
+
 class Work{
+    private(set) var workTitle: String!
+    private(set) var workTime: String!
+    private(set) var workLocation: String!
+    private(set) var package: String!
+    private(set) var carInfo: CarInfo!
     
-    //field
-    private var _workTitle:String!
-    private var _workTime:String!
-    private var _workLocation:String!
-    private var _carInfo:CarInfo!
-    private var _package:String!
-    private var _carPicture:String!
-    
-    init(workTitle:String,workTime:String,workLoc:String,carInfo:CarInfo,package:String,carPicture:String) {
-        self._workTitle=workTitle
-        self._workTime=workTime
-        self._workLocation=workLoc
-        self._package=package
-        self._carPicture=carPicture
-        self._carInfo=carInfo
-
-    }
-    
-    init(workTitle:String,workTime:String,workLoc:String,package:String,carPicture:String) {
-        self._workTitle=workTitle
-        self._workTime=workTime
-        self._workLocation=workLoc
-        self._package=package
-        self._carPicture=carPicture
-        
-    }
-    
-    //methods
-    var carPicture:String {
-        return _carPicture
-    }
-    var workTitle:String {
-        return _workTitle
-    }
-    
-    var workTime:String{
-        get{
-            return _workTime
-        }
-        set{
-            _workTime = newValue
-        }
-    }
-    
-    var workLocation:String{
-        return _workLocation
-    }
-    
-    var carInfo:CarInfo{
-        return _carInfo
+    init(workTitle: String, workTime: String, workLoc: String, package: String, carInfo: CarInfo) {
+        self.workTitle = workTitle
+        self.workTime = workTime
+        self.workLocation = workLoc
+        self.package = package
+        self.carInfo = carInfo
     }
 
-    var package:String{
-        return _package
-    }
-    
     func isValid() -> Bool{
         return true
     }
-    
-    
-    
 }

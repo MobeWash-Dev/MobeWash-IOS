@@ -7,44 +7,21 @@
 ////
 //
 import Foundation
+
 class CarInfo{
-    //field
-    private var _carMake:String
-    private var _carColor:String
-    private var _carPlate:String
-    private var _carModel:String
-//    private var _carPicture:[String]
-    
-    //init
-    
-    init(carMake:String, carColor:String,carPlate:String,carModel:String/*,carPicture:[String]*/ ) {
-        self._carMake=carMake
-        self._carColor = carColor
-        self._carPlate=carPlate
-        self._carModel=carModel
-//        self._carPicture=carPicture
-    }
-    
-    init() {
-        self._carMake = ""
-        self._carColor = ""
-        self._carPlate = ""
-        self._carModel = ""
-    }
-    
-    var carMake:String {
-        return _carMake
-    }
-    
-    var carColor:String {
-        return _carColor
-    }
-    
-    var carPlate:String {
-        return _carPlate
-    }
-    
-    var carModel:String {
-        return _carModel
-    }
+    private(set) var carMake: String!
+    private(set) var carColor: String!
+    private(set) var carPlate: String!
+    private(set) var carModel: String!
+    private(set) var carPicture: String!
+    private(set) var ownerPhone: String!
+
+    init(carMake: String, carColor: String, carPlate: String, carModel: String, carPicture: String, ownerPhone: String ) {
+        self.carMake = carMake
+        self.carColor = carColor
+        self.carPlate = carPlate
+        self.carModel = carModel
+        self.carPicture = carPicture
+        self.ownerPhone = ownerPhone
+    }    
 }

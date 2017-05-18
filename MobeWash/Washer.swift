@@ -8,53 +8,26 @@
 
 import Foundation
 
-
 class Washer{
-    //field
-    private var _name:String!
-    private var _phone:String!
-    private var _workList:[Work]
+    private(set) var name: String!
+    private(set) var phone: String!
+    private(set) var workList: [Work]
     
-    
-    
-    init(name:String) {
-        self._name=name
-        _phone = nil
-        _workList=[Work]()
+    init(name: String) {
+        self.name = name
+        self.phone = nil
+        self.workList = [Work]()
     }
     
-    
-    var name:String {
-        return _name
-    }
-    
-    var phone:String!{
-        get{
-            return _phone
-        }
-        set{
-            self._phone=newValue
-        }
-        
-    }
-    
-    var workList:[Work]{
-        return _workList
-    }
-    
-    func addWork(work:Work){
-        if(work.isValid()){
-            _workList.append(work)
+    func addWork(work: Work) {
+        if work.isValid() {
+            workList.append(work)
         }
         update()
     }
-    // update worklist in order
+
     func update(){
-        
+        //TODO
     }
-    
-    
-    
-    
     
 }

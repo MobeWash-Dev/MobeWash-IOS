@@ -23,13 +23,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         assert(configureError == nil, "Error configuring Google services: \(String(describing: configureError))")
         
         GIDSignIn.sharedInstance().delegate = self
-        
-//        ThemeManager.applyTheme()
-        
-        // Eli manually altered view initial VC for testing reason
-        let storyBoard = UIStoryboard(name: "WasherHistory", bundle: nil)
-        let secondVC = storyBoard.instantiateViewController(withIdentifier: "WasherHistoryNavigation") as! UINavigationController
-        self.window?.rootViewController = secondVC
+
+        ThemeManager.applyTheme()
+
         return true
     }
     
