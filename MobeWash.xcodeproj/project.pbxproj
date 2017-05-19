@@ -60,6 +60,9 @@
 		B59F36CB1EB69A8700DA21EE /* WorkListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F36CA1EB69A8700DA21EE /* WorkListTableViewCell.swift */; };
 		B59F36CD1EB69A8D00DA21EE /* WorkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F36CC1EB69A8D00DA21EE /* WorkListViewController.swift */; };
 		B59F36CF1EB69A9E00DA21EE /* Worklist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */; };
+		B5B67FE21EC8C6D400508F5E /* WashingInProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B67FE11EC8C6D400508F5E /* WashingInProgressViewController.swift */; };
+		B5B67FE61EC8D43500508F5E /* PhotoSlidesViewCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B67FE51EC8D43500508F5E /* PhotoSlidesViewCellCollectionViewCell.swift */; };
+		B5B67FE81EC8E3DA00508F5E /* WorkingInProgress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5B67FE71EC8E3DA00508F5E /* WorkingInProgress.storyboard */; };
 		D33FEC5C8A337100A19C9B93 /* Pods_MobeWashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BC0914DB8B3E67496FB482 /* Pods_MobeWashUITests.framework */; };
 		DB5B01C34B38E597002C930D /* Pods_MobeWashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E96681111EA98DFF0AB6C8D /* Pods_MobeWashTests.framework */; };
 /* End PBXBuildFile section */
@@ -154,6 +157,9 @@
 		B59F36CA1EB69A8700DA21EE /* WorkListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkListTableViewCell.swift; sourceTree = "<group>"; };
 		B59F36CC1EB69A8D00DA21EE /* WorkListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkListViewController.swift; sourceTree = "<group>"; };
 		B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Worklist.storyboard; sourceTree = "<group>"; };
+		B5B67FE11EC8C6D400508F5E /* WashingInProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WashingInProgressViewController.swift; sourceTree = "<group>"; };
+		B5B67FE51EC8D43500508F5E /* PhotoSlidesViewCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoSlidesViewCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		B5B67FE71EC8E3DA00508F5E /* WorkingInProgress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WorkingInProgress.storyboard; sourceTree = "<group>"; };
 		C2D4BD3FC464428E3FEDE0D9 /* Pods-MobeWashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashUITests/Pods-MobeWashUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCAAE805BAC673105378E7B9 /* Pods-MobeWash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.debug.xcconfig"; sourceTree = "<group>"; };
 		E0BC0914DB8B3E67496FB482 /* Pods_MobeWashUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWashUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -286,6 +292,7 @@
 				B26031551EB407D900FE81AE /* SignUp.storyboard */,
 				78FCB3E51EB6E9A20094C161 /* Time.storyboard */,
 				B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */,
+				B5B67FE71EC8E3DA00508F5E /* WorkingInProgress.storyboard */,
 			);
 			name = "Views (Storyboards)";
 			sourceTree = "<group>";
@@ -332,6 +339,8 @@
 				B59F36C61EB69A7C00DA21EE /* WorkDetailVC.swift */,
 				B59F36CC1EB69A8D00DA21EE /* WorkListViewController.swift */,
 				B59F36CA1EB69A8700DA21EE /* WorkListTableViewCell.swift */,
+				B5B67FE11EC8C6D400508F5E /* WashingInProgressViewController.swift */,
+				B5B67FE51EC8D43500508F5E /* PhotoSlidesViewCellCollectionViewCell.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -502,6 +511,7 @@
 				780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */,
 				079726341EB2FC4400A3DF1C /* Ready2Book.storyboard in Resources */,
 				78FCB3E61EB6E9A20094C161 /* Time.storyboard in Resources */,
+				B5B67FE81EC8E3DA00508F5E /* WorkingInProgress.storyboard in Resources */,
 				780D45D31EA3DDDA00FB4D35 /* Assets.xcassets in Resources */,
 				B59F36CF1EB69A9E00DA21EE /* Worklist.storyboard in Resources */,
 				B26031541EB31A4000FE81AE /* Details.storyboard in Resources */,
@@ -693,6 +703,7 @@
 				780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */,
 				8C34AA411EB1D3A8000A5490 /* Field.swift in Sources */,
 				8C75E27C1EBFA9600037E8A3 /* MWAlerts.swift in Sources */,
+				B5B67FE21EC8C6D400508F5E /* WashingInProgressViewController.swift in Sources */,
 				78CDC7D11EB888C700495ED0 /* CustomUINavItem.swift in Sources */,
 				780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */,
 				B59F36C11EB69A4800DA21EE /* CarInfo.swift in Sources */,
@@ -706,6 +717,7 @@
 				079726381EB2FE7200A3DF1C /* Ready2BookViewController.swift in Sources */,
 				B59F36CB1EB69A8700DA21EE /* WorkListTableViewCell.swift in Sources */,
 				B260314F1EB1BC3B00FE81AE /* DetailsViewController.swift in Sources */,
+				B5B67FE61EC8D43500508F5E /* PhotoSlidesViewCellCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

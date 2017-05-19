@@ -28,7 +28,7 @@
                                         <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uef-Fa-zpB">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                         </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iKz-sI-W50">
+                                        <stackView opaque="NO" contentMode="scaleAspectFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="iKz-sI-W50">
                                             <rect key="frame" x="8" y="8" width="359" height="183.5"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="G9A-Mz-1kF">
@@ -216,15 +216,29 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="203.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mmV-sa-7Fu">
+                                                <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mmV-sa-7Fu">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="204"/>
                                                 </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FN6-SX-Yg5">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="204"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                    <state key="normal" title="Tap to start washing!">
+                                                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <segue destination="tkS-YJ-cwd" kind="presentation" id="7Fo-lP-O3x"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="FN6-SX-Yg5" secondAttribute="bottom" id="7Zl-1Z-Ul3"/>
+                                                <constraint firstItem="FN6-SX-Yg5" firstAttribute="top" secondItem="iHg-qc-WhN" secondAttribute="top" id="9rw-Ql-BEa"/>
                                                 <constraint firstItem="mmV-sa-7Fu" firstAttribute="leading" secondItem="iHg-qc-WhN" secondAttribute="leading" id="As3-kW-yWw"/>
                                                 <constraint firstAttribute="bottom" secondItem="mmV-sa-7Fu" secondAttribute="bottom" id="LQh-dy-dkl"/>
                                                 <constraint firstItem="mmV-sa-7Fu" firstAttribute="top" secondItem="iHg-qc-WhN" secondAttribute="top" id="Sg1-Xv-blc"/>
+                                                <constraint firstItem="FN6-SX-Yg5" firstAttribute="leading" secondItem="iHg-qc-WhN" secondAttribute="leading" id="U2P-h1-jIn"/>
                                                 <constraint firstAttribute="trailing" secondItem="mmV-sa-7Fu" secondAttribute="trailing" id="iFK-Xz-qMR"/>
+                                                <constraint firstAttribute="trailing" secondItem="FN6-SX-Yg5" secondAttribute="trailing" id="jvZ-Jy-8VS"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -542,6 +556,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFr-V6-V3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2842.4000000000001" y="-10.344827586206897"/>
+        </scene>
+        <!--WashingInProgressStoryBoard-->
+        <scene sceneID="dJ4-Y5-IFi">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="WashingInProgressStoryBoard" storyboardName="WorkingInProgress" referencedIdentifier="WashingInProgressStoryBoard" id="tkS-YJ-cwd" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NKC-nA-14R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3563" y="-85"/>
         </scene>
     </scenes>
     <resources>

@@ -10,9 +10,10 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class WorkDetailVC: UITableViewController,MKMapViewDelegate,CLLocationManagerDelegate{
+class WorkDetailVC: UITableViewController,MKMapViewDelegate,CLLocationManagerDelegate, UIImagePickerControllerDelegate{
     private var _work:Work!
     
+
     @IBOutlet weak var WorkTime: UILabel!
     
     @IBOutlet weak var workType: UILabel!
@@ -123,6 +124,8 @@ class WorkDetailVC: UITableViewController,MKMapViewDelegate,CLLocationManagerDel
 
 
     }
+    
+
     
     /*
     // MARK: - Navigation
