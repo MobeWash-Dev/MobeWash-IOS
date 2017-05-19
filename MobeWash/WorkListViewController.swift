@@ -101,7 +101,7 @@ class WorkListViewController: UITableViewController ,MKMapViewDelegate,CLLocatio
                     let desPlacemark = placemarks![0]
                     let destination = desPlacemark.location!
                     if(self.currentLocation == nil){
-                        cell.locationLabel.text = "not Available"
+                        cell.locationLabel.text = "Distance Not Available"
                     }
                     else{
                         let dist = self.currentLocation?.distance(from: destination)
