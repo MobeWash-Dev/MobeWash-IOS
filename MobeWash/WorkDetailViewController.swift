@@ -9,8 +9,6 @@
 import UIKit
 
 class WorkDetailViewController: UITableViewController {
-    
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
