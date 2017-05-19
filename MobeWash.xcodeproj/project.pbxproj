@@ -61,6 +61,7 @@
 		B59F36CD1EB69A8D00DA21EE /* WorkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F36CC1EB69A8D00DA21EE /* WorkListViewController.swift */; };
 		B59F36CF1EB69A9E00DA21EE /* Worklist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */; };
 		D33FEC5C8A337100A19C9B93 /* Pods_MobeWashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BC0914DB8B3E67496FB482 /* Pods_MobeWashUITests.framework */; };
+		D7575AD71ECF606200ABA878 /* WasherTabView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7575AD61ECF606200ABA878 /* WasherTabView.storyboard */; };
 		D75EC5161ECEB3A700BD8517 /* WasherHistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EC5131ECEB3A700BD8517 /* WasherHistoryDetailViewController.swift */; };
 		D75EC5171ECEB3A700BD8517 /* WasherHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EC5141ECEB3A700BD8517 /* WasherHistoryTableViewCell.swift */; };
 		D75EC5181ECEB3A700BD8517 /* WasherHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EC5151ECEB3A700BD8517 /* WasherHistoryTableViewController.swift */; };
@@ -160,6 +161,7 @@
 		B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Worklist.storyboard; sourceTree = "<group>"; };
 		C2D4BD3FC464428E3FEDE0D9 /* Pods-MobeWashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashUITests/Pods-MobeWashUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCAAE805BAC673105378E7B9 /* Pods-MobeWash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.debug.xcconfig"; sourceTree = "<group>"; };
+		D7575AD61ECF606200ABA878 /* WasherTabView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WasherTabView.storyboard; sourceTree = "<group>"; };
 		D75EC5131ECEB3A700BD8517 /* WasherHistoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WasherHistoryDetailViewController.swift; sourceTree = "<group>"; };
 		D75EC5141ECEB3A700BD8517 /* WasherHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WasherHistoryTableViewCell.swift; sourceTree = "<group>"; };
 		D75EC5151ECEB3A700BD8517 /* WasherHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WasherHistoryTableViewController.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 		784486041EA3E897001D1F96 /* Views (Storyboards) */ = {
 			isa = PBXGroup;
 			children = (
+				D7575AD61ECF606200ABA878 /* WasherTabView.storyboard */,
 				D75EC5191ECEB3AF00BD8517 /* WasherHistory.storyboard */,
 				8C34AA421EB30355000A5490 /* BillingDetails.storyboard */,
 				783919D01EBA9EDE0086CF37 /* Calendar.storyboard */,
@@ -519,6 +522,7 @@
 				B59F36CF1EB69A9E00DA21EE /* Worklist.storyboard in Resources */,
 				B26031541EB31A4000FE81AE /* Details.storyboard in Resources */,
 				B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */,
+				D7575AD71ECF606200ABA878 /* WasherTabView.storyboard in Resources */,
 				B26031571EB407D900FE81AE /* SignUp.storyboard in Resources */,
 				783919D11EBA9EDE0086CF37 /* Calendar.storyboard in Resources */,
 				780D45D11EA3DDDA00FB4D35 /* Home.storyboard in Resources */,
