@@ -62,6 +62,11 @@
 		B59F36CD1EB69A8D00DA21EE /* WorkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F36CC1EB69A8D00DA21EE /* WorkListViewController.swift */; };
 		B59F36CF1EB69A9E00DA21EE /* Worklist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */; };
 		D33FEC5C8A337100A19C9B93 /* Pods_MobeWashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BC0914DB8B3E67496FB482 /* Pods_MobeWashUITests.framework */; };
+		D7575AD71ECF606200ABA878 /* WasherTabView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7575AD61ECF606200ABA878 /* WasherTabView.storyboard */; };
+		D75EC5161ECEB3A700BD8517 /* WasherHistoryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EC5131ECEB3A700BD8517 /* WasherHistoryDetailViewController.swift */; };
+		D75EC5171ECEB3A700BD8517 /* WasherHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EC5141ECEB3A700BD8517 /* WasherHistoryTableViewCell.swift */; };
+		D75EC5181ECEB3A700BD8517 /* WasherHistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75EC5151ECEB3A700BD8517 /* WasherHistoryTableViewController.swift */; };
+		D75EC51A1ECEB3AF00BD8517 /* WasherHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D75EC5191ECEB3AF00BD8517 /* WasherHistory.storyboard */; };
 		DB5B01C34B38E597002C930D /* Pods_MobeWashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E96681111EA98DFF0AB6C8D /* Pods_MobeWashTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -158,6 +163,11 @@
 		B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Worklist.storyboard; sourceTree = "<group>"; };
 		C2D4BD3FC464428E3FEDE0D9 /* Pods-MobeWashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashUITests/Pods-MobeWashUITests.release.xcconfig"; sourceTree = "<group>"; };
 		CCAAE805BAC673105378E7B9 /* Pods-MobeWash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.debug.xcconfig"; sourceTree = "<group>"; };
+		D7575AD61ECF606200ABA878 /* WasherTabView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WasherTabView.storyboard; sourceTree = "<group>"; };
+		D75EC5131ECEB3A700BD8517 /* WasherHistoryDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WasherHistoryDetailViewController.swift; sourceTree = "<group>"; };
+		D75EC5141ECEB3A700BD8517 /* WasherHistoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WasherHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		D75EC5151ECEB3A700BD8517 /* WasherHistoryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WasherHistoryTableViewController.swift; sourceTree = "<group>"; };
+		D75EC5191ECEB3AF00BD8517 /* WasherHistory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WasherHistory.storyboard; sourceTree = "<group>"; };
 		E0BC0914DB8B3E67496FB482 /* Pods_MobeWashUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobeWashUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E425B7FC791DCCFB1CB52323 /* Pods-MobeWashUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashUITests/Pods-MobeWashUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -280,6 +290,8 @@
 		784486041EA3E897001D1F96 /* Views (Storyboards) */ = {
 			isa = PBXGroup;
 			children = (
+				D7575AD61ECF606200ABA878 /* WasherTabView.storyboard */,
+				D75EC5191ECEB3AF00BD8517 /* WasherHistory.storyboard */,
 				8C34AA421EB30355000A5490 /* BillingDetails.storyboard */,
 				783919D01EBA9EDE0086CF37 /* Calendar.storyboard */,
 				B26031521EB31A4000FE81AE /* Details.storyboard */,
@@ -321,6 +333,9 @@
 		78CBE8BD1EA3E5E1006BD330 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D75EC5131ECEB3A700BD8517 /* WasherHistoryDetailViewController.swift */,
+				D75EC5141ECEB3A700BD8517 /* WasherHistoryTableViewCell.swift */,
+				D75EC5151ECEB3A700BD8517 /* WasherHistoryTableViewController.swift */,
 				8C34AA441EB30509000A5490 /* BillingDetailsViewController.swift */,
 				783919D21EBAA1B70086CF37 /* CalendarJTAppleCell.swift */,
 				783919D41EBAA3310086CF37 /* CalendarViewController.swift */,
@@ -507,9 +522,11 @@
 				079726341EB2FC4400A3DF1C /* Ready2Book.storyboard in Resources */,
 				78FCB3E61EB6E9A20094C161 /* Time.storyboard in Resources */,
 				780D45D31EA3DDDA00FB4D35 /* Assets.xcassets in Resources */,
+				D75EC51A1ECEB3AF00BD8517 /* WasherHistory.storyboard in Resources */,
 				B59F36CF1EB69A9E00DA21EE /* Worklist.storyboard in Resources */,
 				B26031541EB31A4000FE81AE /* Details.storyboard in Resources */,
 				B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */,
+				D7575AD71ECF606200ABA878 /* WasherTabView.storyboard in Resources */,
 				B26031571EB407D900FE81AE /* SignUp.storyboard in Resources */,
 				783919D11EBA9EDE0086CF37 /* Calendar.storyboard in Resources */,
 				780D45D11EA3DDDA00FB4D35 /* Home.storyboard in Resources */,
@@ -689,12 +706,14 @@
 				78CDC7C81EB836B200495ED0 /* ThemeManager.swift in Sources */,
 				0797263C1EB3077400A3DF1C /* CompanyCell.swift in Sources */,
 				B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */,
+				D75EC5181ECEB3A700BD8517 /* WasherHistoryTableViewController.swift in Sources */,
 				78CDC7C61EB8363400495ED0 /* MobeWashStyles.swift in Sources */,
 				07191B901EB64A640024BF35 /* SelectServiceViewController.swift in Sources */,
 				78124A081EC3B75F00962AEF /* BillingTextField.swift in Sources */,
 				8C34AA3F1EB1D329000A5490 /* Booking.swift in Sources */,
 				8C34AA391EB15930000A5490 /* Package.swift in Sources */,
 				780D45CE1EA3DDDA00FB4D35 /* HomeViewController.swift in Sources */,
+				D75EC5171ECEB3A700BD8517 /* WasherHistoryTableViewCell.swift in Sources */,
 				8C34AA411EB1D3A8000A5490 /* Field.swift in Sources */,
 				8C75E27C1EBFA9600037E8A3 /* MWAlerts.swift in Sources */,
 				78CDC7D11EB888C700495ED0 /* CustomUINavItem.swift in Sources */,
@@ -705,6 +724,7 @@
 				8C34AA3D1EB1BFE5000A5490 /* CompanySetting.swift in Sources */,
 				B59F36CD1EB69A8D00DA21EE /* WorkListViewController.swift in Sources */,
 				783919D51EBAA3310086CF37 /* CalendarViewController.swift in Sources */,
+				D75EC5161ECEB3A700BD8517 /* WasherHistoryDetailViewController.swift in Sources */,
 				8C34AA3B1EB1BAE7000A5490 /* Company.swift in Sources */,
 				0799D57D1EBCFC370027C1D8 /* ServiceTableViewCell.swift in Sources */,
 				079726381EB2FE7200A3DF1C /* Ready2BookViewController.swift in Sources */,
