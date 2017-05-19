@@ -25,9 +25,6 @@ class WasherHistoryDetailViewController: UITableViewController {
     @IBOutlet var nameLabel:UILabel!
     @IBOutlet var phoneLabel:UILabel!
     
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
