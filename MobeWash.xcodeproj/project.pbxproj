@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00C195741ECEC825008BD666 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C195731ECEC825008BD666 /* CoreLocation.framework */; };
 		07191B901EB64A640024BF35 /* SelectServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07191B8F1EB64A640024BF35 /* SelectServiceViewController.swift */; };
 		077871BF1EA7E58B00652EE5 /* mwlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 077871BE1EA7E58B00652EE5 /* mwlogo.png */; };
 		079726341EB2FC4400A3DF1C /* Ready2Book.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 079726331EB2FC4400A3DF1C /* Ready2Book.storyboard */; };
@@ -99,6 +100,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00C195731ECEC825008BD666 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		07191B8F1EB64A640024BF35 /* SelectServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectServiceViewController.swift; sourceTree = "<group>"; };
 		073CC921CAFDBEFC61F6753A /* Pods-MobeWash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWash.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWash/Pods-MobeWash.release.xcconfig"; sourceTree = "<group>"; };
 		077871BE1EA7E58B00652EE5 /* mwlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mwlogo.png; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C195741ECEC825008BD666 /* CoreLocation.framework in Frameworks */,
 				B1B87C597285DC19C7C7D95B /* Pods_MobeWash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -201,6 +204,7 @@
 		3D7E300AB6FA9548B5BFE1D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00C195731ECEC825008BD666 /* CoreLocation.framework */,
 				B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */,
 				0D1905CA2E73BC252B45A062 /* Pods_MobeWash.framework */,
 				6E96681111EA98DFF0AB6C8D /* Pods_MobeWashTests.framework */,

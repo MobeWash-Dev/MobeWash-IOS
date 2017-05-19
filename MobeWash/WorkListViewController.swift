@@ -13,8 +13,8 @@ import CoreLocation
 class WorkListViewController: UITableViewController ,MKMapViewDelegate,CLLocationManagerDelegate{
     let washer = Washer(name:"Chris Zhang")
     let locationManager = CLLocationManager()
+    var currentLocation:CLLocation? = nil
     override func viewDidLoad() {
-        var currentlocation:CLLocation
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource=self
@@ -44,7 +44,12 @@ class WorkListViewController: UITableViewController ,MKMapViewDelegate,CLLocatio
         }
     }
     
-
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last{
+            manager.stopUpdatingLocation()
+            currentLocation = location
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -95,8 +100,13 @@ class WorkListViewController: UITableViewController ,MKMapViewDelegate,CLLocatio
                 } else if placemarks!.count > 0 {
                     let desPlacemark = placemarks![0]
                     let destination = desPlacemark.location!
-                    let dist = self.locationManager.location?.distance(from: destination)
-                    cell.locationLabel.text = String(format: "%.1f miles away", dist!*0.000621371)
+                    if(self.currentLocation == nil){
+                        cell.locationLabel.text = "Distance Not Available"
+                    }
+                    else{
+                        let dist = self.currentLocation?.distance(from: destination)
+                        cell.locationLabel.text = String(format: "%.1f miles away", dist!*0.000621371)
+                    }
 
                 }
         })
