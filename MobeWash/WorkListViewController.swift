@@ -15,7 +15,6 @@ class WorkListViewController: UITableViewController ,MKMapViewDelegate,CLLocatio
     let locationManager = CLLocationManager()
     var currentLocation:CLLocation? = nil
     override func viewDidLoad() {
-        var currentlocation:CLLocation
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource=self
@@ -101,8 +100,13 @@ class WorkListViewController: UITableViewController ,MKMapViewDelegate,CLLocatio
                 } else if placemarks!.count > 0 {
                     let desPlacemark = placemarks![0]
                     let destination = desPlacemark.location!
-                    let dist = self.currentLocation?.distance(from: destination)
-                    cell.locationLabel.text = String(format: "%.1f miles away", dist!*0.000621371)
+                    if(self.currentLocation == nil){
+                        cell.locationLabel.text = "not Available"
+                    }
+                    else{
+                        let dist = self.currentLocation?.distance(from: destination)
+                        cell.locationLabel.text = String(format: "%.1f miles away", dist!*0.000621371)
+                    }
 
                 }
         })
