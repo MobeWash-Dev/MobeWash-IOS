@@ -243,10 +243,10 @@
             </objects>
             <point key="canvasLocation" x="1267" y="182"/>
         </scene>
-        <!--WasherTabView-->
+        <!--Worklist-->
         <scene sceneID="Nnb-d7-aFD">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="WorklistStoryboard" storyboardName="WasherTabView" id="HbX-5w-eOn" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="WorklistStoryboard" storyboardName="Worklist" id="HbX-5w-eOn" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pJN-Is-JOz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1228" y="-289"/>

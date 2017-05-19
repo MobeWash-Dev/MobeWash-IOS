@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="SwZ-m2-AaR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ek0-BB-RHc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -158,7 +158,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s0m-3d-axd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2671.1999999999998" y="-2.2488755622188905"/>
+            <point key="canvasLocation" x="1732" y="-2.2488755622188905"/>
         </scene>
         <!--WorkDetailVC-->
         <scene sceneID="dzG-cf-FBH">
@@ -541,31 +541,10 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFr-V6-V3z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3781.5999999999999" y="-10.344827586206897"/>
-        </scene>
-        <!--Work List-->
-        <scene sceneID="N1h-Pq-esF">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SwZ-m2-AaR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Work List" image="WorkList" selectedImage="WorkList" id="Hdf-Yi-vOe"/>
-                    <toolbarItems/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NBe-lg-xOv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="ek0-BB-RHc" kind="relationship" relationship="rootViewController" id="Qif-ax-oZ1"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bgy-b4-5PJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1732" y="-2.2488755622188905"/>
+            <point key="canvasLocation" x="2842.4000000000001" y="-10.344827586206897"/>
         </scene>
     </scenes>
     <resources>
-        <image name="WorkList" width="25" height="25"/>
         <image name="back" width="31" height="23"/>
         <image name="navi" width="30" height="30"/>
         <image name="phone" width="30" height="30"/>

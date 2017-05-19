@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Carwash History-->
+        <!--Washer History Table View Controller-->
         <scene sceneID="bcR-so-17z">
             <objects>
                 <tableViewController storyboardIdentifier="WasherHistory" id="FTN-bQ-wHS" customClass="WasherHistoryTableViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,16 +75,16 @@
                             <outlet property="delegate" destination="FTN-bQ-wHS" id="O4q-4D-j8c"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Carwash History" id="OeS-gY-YFN"/>
+                    <navigationItem key="navigationItem" id="OeS-gY-YFN"/>
                     <connections>
-                        <segue destination="NXy-3o-nlW" kind="show" identifier="WorkHistoryDetailViewController" action="showDetailViewController:sender:" id="rxp-VM-qui"/>
+                        <segue destination="NXy-3o-nlW" kind="showDetail" identifier="WorkHistoryDetailViewController" id="rxp-VM-qui"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7o-R8-Zkj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="647.20000000000005" y="-35.532233883058474"/>
         </scene>
-        <!--Carwash Detail-->
+        <!--Washer History Detail View Controller-->
         <scene sceneID="ft3-qh-A9c">
             <objects>
                 <tableViewController id="NXy-3o-nlW" customClass="WasherHistoryDetailViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
@@ -392,7 +392,6 @@
                             <outlet property="delegate" destination="NXy-3o-nlW" id="CTF-mX-JPA"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Carwash Detail" id="Zgb-lg-9KX"/>
                     <connections>
                         <outlet property="carImage" destination="zkE-Qn-RVs" id="zfQ-la-Ath"/>
                         <outlet property="colorLabel" destination="6aX-W9-sSq" id="x1j-dx-32S"/>
@@ -415,10 +414,8 @@
         <scene sceneID="9DW-Nx-Fat">
             <objects>
                 <navigationController storyboardIdentifier="WasherHistoryStoryboard" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="82e-oJ-TKa" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="history" id="3VU-AT-Uu7"/>
                     <toolbarItems/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mfd-a2-TVg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="mfd-a2-TVg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
