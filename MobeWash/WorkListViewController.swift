@@ -86,20 +86,20 @@ class WorkListViewController: UITableViewController ,MKMapViewDelegate,CLLocatio
         
         //get distance
         
-        let geocoder = CLGeocoder()
-        geocoder.geocodeAddressString(washer.workList[indexPath.row].workLocation, completionHandler:
-            {(placemarks, error) in
-                
-                if error != nil {
-                    print("Geocode failed: \(error!.localizedDescription)")
-                } else if placemarks!.count > 0 {
-                    let desPlacemark = placemarks![0]
-                    let destination = desPlacemark.location!
-                    let dist = self.locationManager.location?.distance(from: destination)
-                    cell.locationLabel.text = String(format: "%.1f miles away", dist!*0.000621371)
-
-                }
-        })
+//        let geocoder = CLGeocoder()
+//        geocoder.geocodeAddressString(washer.workList[indexPath.row].workLocation, completionHandler:
+//            {(placemarks, error) in
+//                
+//                if error != nil {
+//                    print("Geocode failed: \(error!.localizedDescription)")
+//                } else if placemarks!.count > 0 {
+//                    let desPlacemark = placemarks![0]
+//                    let destination = desPlacemark.location!
+//                    let dist = self.locationManager.location?.distance(from: destination)
+//                    cell.locationLabel.text = String(format: "%.1f miles away", dist!*0.000621371)
+//
+//                }
+//        })
         
 
         return cell

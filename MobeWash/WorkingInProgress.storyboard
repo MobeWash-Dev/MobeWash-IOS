@@ -20,28 +20,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="S2N-1q-w6M">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="S2N-1q-w6M">
                                 <rect key="frame" x="0.0" y="517" width="375" height="150"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="vh5-hO-ocK"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HEy-uQ-az7">
-                                    <size key="itemSize" width="150" height="150"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rYz-3l-HAO">
+                                    <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="bU5-dQ-Cin" customClass="PhotoSlidesViewCell" customModule="MobeWash" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="25" width="100" height="100"/>
+                                        <rect key="frame" x="0.0" y="-7" width="100" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hcm-ag-1Gt">
-                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="job1" translatesAutoresizingMaskIntoConstraints="NO" id="hcm-ag-1Gt">
+                                                    <rect key="frame" x="0.0" y="-7" width="100" height="100"/>
                                                 </imageView>
                                             </subviews>
                                         </view>
@@ -60,7 +60,7 @@
                                 </cells>
                             </collectionView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wUN-8K-Aeb">
-                                <rect key="frame" x="10" y="170" width="355" height="180"/>
+                                <rect key="frame" x="10" y="214" width="355" height="180"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="CbZ-Vs-UR1"/>
                                 </constraints>
@@ -81,13 +81,35 @@
                             <constraint firstItem="wUN-8K-Aeb" firstAttribute="top" secondItem="HBe-FO-chX" secondAttribute="bottom" constant="150" id="muZ-h8-VO4"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="hs5-05-WgY"/>
                     <connections>
                         <outlet property="washingStepButton" destination="wUN-8K-Aeb" id="kGm-So-Zpy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ct6-DD-2aN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="759.20000000000005" y="-394.45277361319341"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="f1K-lz-Hdu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="udG-q6-UoK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nIi-hu-1cC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vx9-Tj-T3m" kind="relationship" relationship="rootViewController" id="6a8-w8-Kec"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7K7-sb-Zls" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="-180" y="-394.45277361319341"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="job1" width="640" height="480"/>
+    </resources>
 </document>

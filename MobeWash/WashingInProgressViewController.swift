@@ -11,7 +11,7 @@ import UIKit
 class WashingInProgressViewController: UIViewController, UINavigationControllerDelegate, UICollectionViewDataSource, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var washingStepButton: UIButton!
-    var carPhotos: [UIImage] = []
+    var carPhotos: [UIImage] = [UIImage(named:"job1.jpg")!, UIImage(named:"job2.jpg")!, UIImage(named:"job3.jpg")!]
     override func viewDidLoad() {
         super.viewDidLoad()
         washingStepButton.setTitle("Take a picture before washing!", for: .normal)
@@ -25,10 +25,10 @@ class WashingInProgressViewController: UIViewController, UINavigationControllerD
     
     @IBAction func WashingSteps(_ sender: Any) {
         if washingStepButton.currentTitle == "Take a picture before washing!" {
-            if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
+            if UIImagePickerController.isSourceTypeAvailable(.camera) {
                 let imagePicker = UIImagePickerController()
                 imagePicker.delegate = self
-                imagePicker.sourceType = .photoLibrary
+                imagePicker.sourceType = .camera
                 imagePicker.allowsEditing = false
                 self.present(imagePicker, animated: true, completion: nil)
             }
