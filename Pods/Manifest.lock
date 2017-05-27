@@ -52,6 +52,7 @@ PODS:
   - GTMSessionFetcher/Core (1.1.9)
   - GTMSessionFetcher/Full (1.1.9):
     - GTMSessionFetcher/Core (= 1.1.9)
+  - InteractiveSideMenu (1.0)
   - JTAppleCalendar (7.0.2)
   - ReachabilitySwift (3)
   - Stripe (10.0.1)
@@ -59,6 +60,7 @@ PODS:
 DEPENDENCIES:
   - FacebookLogin
   - Google/SignIn
+  - InteractiveSideMenu
   - JTAppleCalendar (~> 7.0)
   - ReachabilitySwift (~> 3)
   - Stripe
@@ -77,10 +79,11 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 5c046c76a1f859bc9c187e918f18e4fc7bb57b5e
+  InteractiveSideMenu: 2966af15dee760f6c3e09a7a80a98c09fed3d7a4
   JTAppleCalendar: c14685634064ef67a68209548ff3443208af48a3
   ReachabilitySwift: f5b9bb30a0777fac8f09ce8b067e32faeb29bb64
   Stripe: dd6df0e2c6a8463e2f1ca9b15dc246e5ae1eee64
 
-PODFILE CHECKSUM: 47ad35e74f1a9e9acd91167ece41a7c6b35a8dc8
+PODFILE CHECKSUM: 8e807e428cea14815c42021177a033c2699aec26
 
 COCOAPODS: 1.2.1

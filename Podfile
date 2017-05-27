@@ -12,6 +12,7 @@ target 'MobeWash' do
   pod 'Stripe'
   pod 'JTAppleCalendar', '~> 7.0'
   pod 'ReachabilitySwift', '~> 3'
+  pod 'InteractiveSideMenu'
 
 
   # Pods for MobeWash
