@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9K3-Le-dwk">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Billing-->
+        <scene sceneID="4u5-s7-EXK">
+            <objects>
+                <viewController storyboardIdentifier="BillingDetailsStoryboard" title="Billing" useStoryboardIdentifierAsRestorationIdentifier="YES" id="9K3-Le-dwk" customClass="BillingDetailsViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gsz-Gk-09E"/>
+                        <viewControllerLayoutGuide type="bottom" id="MTM-9p-7AW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="BillingDetailsView" id="q2l-G1-ADH" userLabel="Billing Details View">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" restorationIdentifier="ServicePurchasedView" translatesAutoresizingMaskIntoConstraints="NO" id="TOj-Xp-sbj" userLabel="Service Purchased View">
+                                <rect key="frame" x="16" y="28" width="343" height="184"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="CarImageView" image="mwlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="2Gi-pT-UCM">
+                                        <rect key="frame" x="179" y="8" width="156" height="168"/>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="ServiceDetailTextView" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aqQ-AD-4VT" userLabel="Service Detail Text View">
+                                        <rect key="frame" x="8" y="8" width="156" height="168"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="156" identifier="ServiceDetailTextViewWidthConstraint" id="L6p-AV-Kik"/>
+                                        </constraints>
+                                        <string key="text">DETAILS:                                                                 Mobe Exterior Wash                        55 min @ $24                          April 1st, 2pm                                   DayBreak Games         </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aqQ-AD-4VT" firstAttribute="top" secondItem="TOj-Xp-sbj" secondAttribute="topMargin" identifier="ServiceDetailTextViewTopConstraint" id="QEM-i9-jkg"/>
+                                    <constraint firstItem="2Gi-pT-UCM" firstAttribute="leading" secondItem="aqQ-AD-4VT" secondAttribute="trailing" constant="15" identifier="CarImageViewLeadingConstraint" id="UB7-jy-UbP"/>
+                                    <constraint firstItem="2Gi-pT-UCM" firstAttribute="bottom" secondItem="aqQ-AD-4VT" secondAttribute="bottom" identifier="CarImageViewBottomConstraint" id="XzQ-Rt-nbS"/>
+                                    <constraint firstItem="aqQ-AD-4VT" firstAttribute="bottom" secondItem="TOj-Xp-sbj" secondAttribute="bottomMargin" identifier="ServiceDetailTextViewBottomConstraint" id="aUV-hH-ABX"/>
+                                    <constraint firstItem="2Gi-pT-UCM" firstAttribute="top" secondItem="aqQ-AD-4VT" secondAttribute="top" identifier="CarImageViewBottomConstraint" id="cFv-Px-bEO"/>
+                                    <constraint firstItem="2Gi-pT-UCM" firstAttribute="trailing" secondItem="TOj-Xp-sbj" secondAttribute="trailing" constant="-8" identifier="CarImageViewTrailingConstraint" id="syX-W7-qc6"/>
+                                    <constraint firstItem="aqQ-AD-4VT" firstAttribute="leading" secondItem="TOj-Xp-sbj" secondAttribute="leading" constant="8" identifier="ServiceDetailTextViewLeadingConstraint" id="wVI-iF-YPp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" restorationIdentifier="PaymentTextFieldPlaceholderView" translatesAutoresizingMaskIntoConstraints="NO" id="JwD-Ha-pmT">
+                                <rect key="frame" x="16" y="247" width="343" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JwD-Ha-pmT" firstAttribute="bottom" secondItem="MTM-9p-7AW" secondAttribute="top" constant="-360" identifier="PaymentTextFieldPlaceholderViewBottomConstraint" id="0HM-qx-8ut"/>
+                            <constraint firstItem="TOj-Xp-sbj" firstAttribute="bottom" secondItem="JwD-Ha-pmT" secondAttribute="top" constant="-35" identifier="ServicePurchasedBottomConstraint" id="3wv-34-q3t"/>
+                            <constraint firstItem="JwD-Ha-pmT" firstAttribute="trailing" secondItem="TOj-Xp-sbj" secondAttribute="trailing" identifier="PaymentTextFieldPlaceholderViewTrailingConstraint" id="4P9-Gp-k9u"/>
+                            <constraint firstItem="TOj-Xp-sbj" firstAttribute="top" secondItem="Gsz-Gk-09E" secondAttribute="bottom" constant="8" symbolic="YES" identifier="ServicePurchasedTopConstraint" id="5tp-dT-u1s"/>
+                            <constraint firstItem="JwD-Ha-pmT" firstAttribute="leading" secondItem="TOj-Xp-sbj" secondAttribute="leading" identifier="PaymentTextFieldPlaceholderViewLeadingConstraint" id="YW8-cV-HYR"/>
+                            <constraint firstItem="TOj-Xp-sbj" firstAttribute="leading" secondItem="q2l-G1-ADH" secondAttribute="leadingMargin" identifier="ServicePurchasedLeadingConstraint" id="aVy-Je-lpP"/>
+                            <constraint firstItem="JwD-Ha-pmT" firstAttribute="top" secondItem="q2l-G1-ADH" secondAttribute="top" constant="247" identifier="PaymentTextFieldPlaceholderViewTopConstraint" id="nWR-bR-X2U"/>
+                            <constraint firstItem="TOj-Xp-sbj" firstAttribute="trailing" secondItem="q2l-G1-ADH" secondAttribute="trailingMargin" identifier="ServicePurchasedTrailingConstraint" id="wFg-Kd-gyr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="carImageView" destination="2Gi-pT-UCM" id="v1a-K5-qkw"/>
+                        <outlet property="detailTextView" destination="aqQ-AD-4VT" id="1JI-ib-Fqt"/>
+                        <outlet property="paymentTextFieldPlaceholderView" destination="JwD-Ha-pmT" id="Z7E-bi-FdI"/>
+                        <outlet property="topView" destination="TOj-Xp-sbj" id="12C-ih-f7r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TeX-mD-HOf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="164.16791604197903"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mwlogo.png" width="548" height="800"/>
+    </resources>
+</document>

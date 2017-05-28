@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6U6-wr-EOa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Ready2Book-->
+        <scene sceneID="rFb-78-Zhm">
+            <objects>
+                <viewController storyboardIdentifier="Ready2BookStoryboard" title="Ready2Book" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6U6-wr-EOa" customClass="Ready2BookViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GLT-KX-pKn"/>
+                        <viewControllerLayoutGuide type="bottom" id="fse-gl-nja"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Mg-MI-iUS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" text="" placeholder="Search Company Here" translatesAutoresizingMaskIntoConstraints="NO" id="kUw-qC-a4m">
+                                <rect key="frame" x="0.0" y="247" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="45" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="93a-6B-eU8">
+                                <rect key="frame" x="0.0" y="297" width="375" height="370"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="companyCell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="companyCell" rowHeight="45" id="VWz-Qh-nkm" customClass="CompanyCell" customModule="MobeWash">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VWz-Qh-nkm" id="qxq-LH-3V9">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="45"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Company A" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I9P-kn-uTn">
+                                                    <rect key="frame" x="138.5" y="12" width="98" height="23.5"/>
+                                                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                                                    <color key="textColor" red="0.46123126149999999" green="0.6736420393" blue="0.9726208448" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="I9P-kn-uTn" firstAttribute="top" secondItem="qxq-LH-3V9" secondAttribute="topMargin" constant="4" id="TCG-T0-Ch8"/>
+                                                <constraint firstItem="I9P-kn-uTn" firstAttribute="centerX" secondItem="qxq-LH-3V9" secondAttribute="centerX" id="b37-bY-f6q"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="nameText" destination="I9P-kn-uTn" id="h6d-ik-nDM"/>
+                                            <segue destination="A8N-4d-Txu" kind="show" id="lbR-Al-SVs"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mwlogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="a3c-Yr-2gb">
+                                <rect key="frame" x="117.5" y="42" width="140" height="194"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="a3c-Yr-2gb" secondAttribute="height" multiplier="70:97" id="PSR-hM-CVF"/>
+                                    <constraint firstAttribute="height" constant="194" id="naB-ea-T9k"/>
+                                    <constraint firstAttribute="width" constant="140" id="tLP-08-CP4"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="93a-6B-eU8" secondAttribute="trailing" id="1Vv-2y-4Os"/>
+                            <constraint firstItem="93a-6B-eU8" firstAttribute="leading" secondItem="5Mg-MI-iUS" secondAttribute="leading" id="3Wm-S8-fMJ"/>
+                            <constraint firstItem="93a-6B-eU8" firstAttribute="top" secondItem="kUw-qC-a4m" secondAttribute="bottom" constant="6" id="4uz-N4-7eN"/>
+                            <constraint firstItem="fse-gl-nja" firstAttribute="top" secondItem="93a-6B-eU8" secondAttribute="bottom" id="7dr-7Z-nf7"/>
+                            <constraint firstAttribute="trailing" secondItem="kUw-qC-a4m" secondAttribute="trailing" id="8qV-d9-T5S"/>
+                            <constraint firstItem="kUw-qC-a4m" firstAttribute="leading" secondItem="5Mg-MI-iUS" secondAttribute="leading" id="CoL-7E-wuh"/>
+                            <constraint firstItem="a3c-Yr-2gb" firstAttribute="centerX" secondItem="5Mg-MI-iUS" secondAttribute="centerX" id="JGN-UP-6Ix"/>
+                            <constraint firstItem="fse-gl-nja" firstAttribute="top" secondItem="93a-6B-eU8" secondAttribute="bottom" id="MKN-Iy-YQM"/>
+                            <constraint firstItem="kUw-qC-a4m" firstAttribute="top" secondItem="a3c-Yr-2gb" secondAttribute="bottom" constant="11" id="P54-GS-dAF"/>
+                            <constraint firstItem="93a-6B-eU8" firstAttribute="leading" secondItem="5Mg-MI-iUS" secondAttribute="leading" id="UKI-vF-sNW"/>
+                            <constraint firstItem="a3c-Yr-2gb" firstAttribute="top" secondItem="GLT-KX-pKn" secondAttribute="bottom" constant="22" id="Xkq-W2-klq"/>
+                            <constraint firstAttribute="trailing" secondItem="93a-6B-eU8" secondAttribute="trailing" id="rkM-Br-Htl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ready2Book" id="aox-xq-8A8">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="SfO-Ig-myd">
+                            <color key="tintColor" red="0.07334799031" green="0.82569291469999995" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="companyInput" destination="kUw-qC-a4m" id="6XE-wL-P5Q"/>
+                        <outlet property="companyTable" destination="93a-6B-eU8" id="CPR-1P-DUY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BLm-4N-BZ9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="512.79999999999995" y="-436.73163418290858"/>
+        </scene>
+        <!--SelectService-->
+        <scene sceneID="dJ5-If-CnQ">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SelectServiceStoryboard" storyboardName="SelectService" id="A8N-4d-Txu" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q58-cx-kMc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056" y="-376.01199400299851"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mwlogo.png" width="548" height="800"/>
+    </resources>
+</document>
