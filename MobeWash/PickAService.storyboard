@@ -82,7 +82,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="11D-jU-XbR" userLabel="RegulareServiceButton">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="86"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="88"/>
                                         <connections>
                                             <segue destination="oai-Tl-Vtu" kind="show" id="LdN-og-SRj"/>
                                         </connections>
@@ -95,7 +95,7 @@
                                     <constraint firstItem="Uew-id-4r1" firstAttribute="leading" secondItem="NSh-DS-Nzi" secondAttribute="trailing" constant="17" id="7DB-Dj-c8X"/>
                                     <constraint firstItem="QxD-5W-T5y" firstAttribute="leading" secondItem="Uew-id-4r1" secondAttribute="trailing" constant="96" id="7aD-lu-bJp"/>
                                     <constraint firstItem="NSh-DS-Nzi" firstAttribute="top" secondItem="rqy-0k-eMs" secondAttribute="top" constant="4" id="8tM-gq-Ti4"/>
-                                    <constraint firstAttribute="bottom" secondItem="11D-jU-XbR" secondAttribute="bottom" constant="2" id="Lge-zz-1xv"/>
+                                    <constraint firstAttribute="bottom" secondItem="11D-jU-XbR" secondAttribute="bottom" id="Lge-zz-1xv"/>
                                     <constraint firstAttribute="height" constant="88" id="LyG-98-X4y"/>
                                     <constraint firstItem="QxD-5W-T5y" firstAttribute="top" secondItem="rqy-0k-eMs" secondAttribute="top" constant="31" id="RRe-cR-4fp"/>
                                     <constraint firstItem="Uew-id-4r1" firstAttribute="trailing" secondItem="ADQ-qm-zS3" secondAttribute="trailing" id="W9e-SG-u1W"/>
@@ -144,8 +144,7 @@
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZPd-pb-MP4">
-                                        <rect key="frame" x="0.0" y="3" width="374" height="80"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="88"/>
                                         <connections>
                                             <segue destination="oai-Tl-Vtu" kind="show" id="ZSI-m9-xoI"/>
                                         </connections>
@@ -153,14 +152,14 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.20399454240000001" green="0.54511106009999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="ZPd-pb-MP4" firstAttribute="top" secondItem="Fq8-bd-PWr" secondAttribute="top" constant="3" id="0P6-xL-NxK"/>
+                                    <constraint firstItem="ZPd-pb-MP4" firstAttribute="top" secondItem="Fq8-bd-PWr" secondAttribute="top" id="0P6-xL-NxK"/>
                                     <constraint firstAttribute="trailing" secondItem="ZPd-pb-MP4" secondAttribute="trailing" id="5Ra-Bk-u68"/>
                                     <constraint firstAttribute="bottom" secondItem="ElR-QV-yHp" secondAttribute="bottom" constant="20" id="7Fs-fF-xPC"/>
                                     <constraint firstItem="Lyv-NP-8ul" firstAttribute="top" secondItem="Fq8-bd-PWr" secondAttribute="top" constant="29" id="C62-CD-9Tt"/>
                                     <constraint firstAttribute="trailing" secondItem="Lyv-NP-8ul" secondAttribute="trailing" constant="8" id="EFM-ou-0cy"/>
                                     <constraint firstAttribute="height" constant="88" id="Ha4-s6-ZHq"/>
                                     <constraint firstItem="00f-Qm-lru" firstAttribute="top" secondItem="Fq8-bd-PWr" secondAttribute="top" constant="17" id="LTJ-vy-P43"/>
-                                    <constraint firstAttribute="bottom" secondItem="ZPd-pb-MP4" secondAttribute="bottom" constant="5" id="S7H-zb-sdK"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZPd-pb-MP4" secondAttribute="bottom" id="S7H-zb-sdK"/>
                                     <constraint firstItem="XDQ-Ca-cVn" firstAttribute="leading" secondItem="Fq8-bd-PWr" secondAttribute="leading" constant="22" id="UM1-qX-UI4"/>
                                     <constraint firstItem="ElR-QV-yHp" firstAttribute="leading" secondItem="XDQ-Ca-cVn" secondAttribute="trailing" constant="4" id="UP5-oM-7Eh"/>
                                     <constraint firstItem="ElR-QV-yHp" firstAttribute="top" secondItem="Fq8-bd-PWr" secondAttribute="top" constant="39" id="W4D-Vp-uIt"/>
