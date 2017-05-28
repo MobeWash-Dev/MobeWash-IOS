@@ -174,7 +174,6 @@ extension BillingDetailsViewController: PKPaymentAuthorizationViewControllerDele
 extension BillingDetailsViewController: STPPaymentCardTextFieldDelegate {
     func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
         if textField.valid{
-            carImageView.image = textField.brandImage
             bookBuyButton?.isEnabled = true
         }else{
             bookBuyButton?.isEnabled = false
