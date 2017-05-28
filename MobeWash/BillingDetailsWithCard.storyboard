@@ -5,14 +5,13 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Billing Details With Card View Controller-->
         <scene sceneID="xau-MO-jyN">
             <objects>
-                <viewController id="1yL-MT-P5m" sceneMemberID="viewController">
+                <viewController id="1yL-MT-P5m" customClass="BillingDetailsWithCardViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xbd-9W-PqE"/>
                         <viewControllerLayoutGuide type="bottom" id="Gd6-js-0LL"/>
@@ -21,20 +20,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pW5-XN-Hef">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pW5-XN-Hef">
                                 <rect key="frame" x="16" y="70" width="343" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm2-sr-MGQ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DETAILS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xm2-sr-MGQ">
                                         <rect key="frame" x="0.0" y="8" width="55" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="HeB-xW-ep2"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uh-oQ-kIm">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4uh-oQ-kIm">
                                         <rect key="frame" x="0.0" y="28" width="343" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FIRST NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pdg-Hi-rbt">
@@ -147,120 +146,120 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="Xm2-sr-MGQ" firstAttribute="leading" secondItem="4uh-oQ-kIm" secondAttribute="leading" id="02P-aw-aEp"/>
-                                    <constraint firstItem="4uh-oQ-kIm" firstAttribute="top" secondItem="pW5-XN-Hef" secondAttribute="top" constant="28" id="BQG-Yc-t2a"/>
-                                    <constraint firstItem="Xm2-sr-MGQ" firstAttribute="leading" secondItem="pW5-XN-Hef" secondAttribute="leading" id="Pff-2E-yJM"/>
-                                    <constraint firstItem="4uh-oQ-kIm" firstAttribute="bottom" secondItem="Xm2-sr-MGQ" secondAttribute="bottom" id="R1h-Ds-Gxj"/>
-                                    <constraint firstItem="Xm2-sr-MGQ" firstAttribute="top" secondItem="pW5-XN-Hef" secondAttribute="topMargin" id="Y2N-6o-g2c"/>
-                                    <constraint firstAttribute="trailing" secondItem="4uh-oQ-kIm" secondAttribute="trailing" id="zrg-F7-fMr"/>
-                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R9o-Ek-7Eq">
-                                <rect key="frame" x="16" y="308" width="343" height="309"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R9o-Ek-7Eq">
+                                <rect key="frame" x="16" y="308" width="343" height="329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAYMENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bV1-xY-CX0">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PAYMENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bV1-xY-CX0">
                                         <rect key="frame" x="0.0" y="8" width="104" height="21"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="21" id="egh-w2-0nq"/>
-                                            <constraint firstAttribute="width" constant="104" id="pYZ-5j-Pse"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                         <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZNx-vg-JhR">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZNx-vg-JhR">
                                         <rect key="frame" x="0.0" y="28" width="343" height="1"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQv-dc-28l">
-                                        <rect key="frame" x="297" y="116" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="&gt;"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvG-Uh-Amv">
-                                        <rect key="frame" x="0.0" y="116" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="&lt;"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BD7-SK-axd">
-                                        <rect key="frame" x="0.0" y="263" width="189" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="PAY WITH CARD"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di2-0M-xpK">
-                                        <rect key="frame" x="213" y="263" width="130" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title=" PAY">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pay directly with saved cards or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-Y5-Xbb">
-                                        <rect key="frame" x="34" y="221" width="183" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbg-nb-CZ7">
-                                        <rect key="frame" x="215" y="217" width="95" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
-                                        <state key="normal" title="add a new card">
-                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                    </button>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HHS-fH-HBC">
-                                        <rect key="frame" x="40" y="48" width="263" height="166"/>
+                                        <rect key="frame" x="40" y="48" width="263" height="174"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
+                                            <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dhB-76-a8K">
+                                                <rect key="frame" x="0.0" y="0.0" width="263" height="174"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Card Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3n-6I-koP">
-                                                <rect key="frame" x="8" y="73" width="247" height="21"/>
+                                                <rect key="frame" x="8" y="73" width="247" height="37"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y9I-W1-RbR">
-                                                <rect key="frame" x="210" y="126" width="45" height="32"/>
+                                                <rect key="frame" x="210" y="136" width="45" height="32"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="month/year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6c8-X8-DX3">
-                                                <rect key="frame" x="19" y="126" width="144" height="21"/>
+                                                <rect key="frame" x="19" y="142" width="144" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQv-dc-28l">
+                                        <rect key="frame" x="297" y="116" width="46" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="&gt;"/>
+                                        <connections>
+                                            <action selector="changeCardRight:" destination="1yL-MT-P5m" eventType="touchUpInside" id="nrL-JS-vUX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvG-Uh-Amv">
+                                        <rect key="frame" x="0.0" y="116" width="46" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="&lt;"/>
+                                        <connections>
+                                            <action selector="changeCardLeft:" destination="1yL-MT-P5m" eventType="touchUpInside" id="rHV-XK-x0J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BD7-SK-axd" customClass="BuyButton" customModule="MobeWash" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="270" width="189" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="PAY WITH CARD">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pay directly with saved cards or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-Y5-Xbb">
+                                        <rect key="frame" x="34" y="229" width="183" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbg-nb-CZ7">
+                                        <rect key="frame" x="215" y="225" width="95" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <state key="normal" title="add a new card">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di2-0M-xpK" customClass="ApplePayBuyButton" customModule="MobeWash" customModuleProvider="target">
+                                        <rect key="frame" x="213" y="270" width="130" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title=" PAY">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="ZNx-vg-JhR" firstAttribute="top" secondItem="R9o-Ek-7Eq" secondAttribute="top" constant="28" id="HLE-nI-nLi"/>
-                                    <constraint firstItem="bV1-xY-CX0" firstAttribute="top" secondItem="R9o-Ek-7Eq" secondAttribute="topMargin" id="L1z-sx-eID"/>
-                                    <constraint firstItem="bV1-xY-CX0" firstAttribute="leading" secondItem="R9o-Ek-7Eq" secondAttribute="leading" id="V95-dG-qAU"/>
-                                    <constraint firstItem="ZNx-vg-JhR" firstAttribute="bottom" secondItem="bV1-xY-CX0" secondAttribute="bottom" id="WMD-Eg-JeP"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZNx-vg-JhR" secondAttribute="trailing" id="aa9-pP-TXx"/>
-                                    <constraint firstItem="bV1-xY-CX0" firstAttribute="leading" secondItem="ZNx-vg-JhR" secondAttribute="leading" id="osH-7J-FG3"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="pW5-XN-Hef" firstAttribute="trailing" secondItem="R9o-Ek-7Eq" secondAttribute="trailing" id="50N-vS-A5b"/>
-                            <constraint firstItem="pW5-XN-Hef" firstAttribute="leading" secondItem="A1z-Rf-V9f" secondAttribute="leadingMargin" id="P64-Ga-PPf"/>
-                            <constraint firstItem="R9o-Ek-7Eq" firstAttribute="top" secondItem="pW5-XN-Hef" secondAttribute="bottom" constant="8" symbolic="YES" id="SJT-W4-lmO"/>
-                            <constraint firstItem="pW5-XN-Hef" firstAttribute="trailing" secondItem="A1z-Rf-V9f" secondAttribute="trailingMargin" id="TDs-QA-jt2"/>
-                            <constraint firstItem="Gd6-js-0LL" firstAttribute="top" secondItem="R9o-Ek-7Eq" secondAttribute="bottom" constant="50" id="WJS-rI-7n3"/>
-                            <constraint firstItem="pW5-XN-Hef" firstAttribute="top" secondItem="Xbd-9W-PqE" secondAttribute="bottom" constant="50" id="ZEM-xE-dvj"/>
-                            <constraint firstItem="pW5-XN-Hef" firstAttribute="leading" secondItem="R9o-Ek-7Eq" secondAttribute="leading" id="eSH-RT-cpP"/>
-                            <constraint firstItem="R9o-Ek-7Eq" firstAttribute="top" secondItem="A1z-Rf-V9f" secondAttribute="top" constant="308" id="iEW-uj-6N4"/>
-                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addNewCardButton" destination="cbg-nb-CZ7" id="w54-UG-odh"/>
+                        <outlet property="applePayButton" destination="di2-0M-xpK" id="RP8-80-L6m"/>
+                        <outlet property="cardBackground" destination="dhB-76-a8K" id="Ohb-fi-vcI"/>
+                        <outlet property="cardExpiration" destination="6c8-X8-DX3" id="497-sk-I0A"/>
+                        <outlet property="cardFrame" destination="HHS-fH-HBC" id="AbC-dU-m1D"/>
+                        <outlet property="cardNumber" destination="A3n-6I-koP" id="6yu-1O-llW"/>
+                        <outlet property="cardTypeImage" destination="y9I-W1-RbR" id="cAD-mR-RQy"/>
+                        <outlet property="color" destination="Kji-6u-X6j" id="hSw-LI-ZxQ"/>
+                        <outlet property="firstName" destination="Pdg-Hi-rbt" id="CxN-Ht-ug7"/>
+                        <outlet property="lastName" destination="MRt-LO-jMQ" id="7pR-SX-CPG"/>
+                        <outlet property="licensePlate" destination="qeE-wI-3P5" id="ipt-hM-Fyy"/>
+                        <outlet property="make" destination="8xw-pd-V5M" id="FWg-NN-38w"/>
+                        <outlet property="payWithCardButton" destination="BD7-SK-axd" id="oSb-2X-SMp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQA-TC-tjX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -177,11 +177,7 @@ extension BillingDetailsViewController: STPPaymentCardTextFieldDelegate {
     func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
         if textField.valid{
             bookBuyButton?.isEnabled = true
-
             
-            //save the card
-            
-    
         }else{
             bookBuyButton?.isEnabled = false
         }

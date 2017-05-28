@@ -32,6 +32,7 @@ class BuyButton : HighlightingButton {
     var disabledColor = UIColor.lightGray
     var enabledColor = UIColor(red:0.22, green:0.65, blue:0.91, alpha:1.00)
     
+
     override var isEnabled: Bool {
         didSet {
             let color = isEnabled ? enabledColor : disabledColor

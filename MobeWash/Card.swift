@@ -10,11 +10,11 @@ import Foundation
 import UIKit
 
 public class Card {
-    private var number: String
-    private var last4: String
-    private var expMonth, expYear: UInt
-    private var typeImage: UIImage?
-    private var color: UIColor?
+    var number: String
+    var last4: String
+    var expMonth, expYear: UInt
+    var typeImage: UIImage?
+    var color: UIColor?
 
     init(number: String, last4: String, expMonth: UInt, expYear: UInt,
          typeImage: UIImage?, color: UIColor?) {
