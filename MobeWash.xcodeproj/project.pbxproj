@@ -34,6 +34,7 @@
 		78FCB3E61EB6E9A20094C161 /* Time.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FCB3E51EB6E9A20094C161 /* Time.storyboard */; };
 		78FCB3E81EB6E9B40094C161 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */; };
 		8C04E59F1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E59E1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard */; };
+		8C04E5A11EDA863E004E54A1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C04E5A01EDA863E004E54A1 /* Card.swift */; };
 		8C2EF0F61EB43CC900514560 /* TextfieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */; };
 		8C34AA391EB15930000A5490 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA381EB15930000A5490 /* Package.swift */; };
 		8C34AA3B1EB1BAE7000A5490 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3A1EB1BAE7000A5490 /* Company.swift */; };
@@ -137,6 +138,7 @@
 		78FCB3E51EB6E9A20094C161 /* Time.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Time.storyboard; sourceTree = "<group>"; };
 		78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		8C04E59E1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BillingDetailsWithCard.storyboard; sourceTree = "<group>"; };
+		8C04E5A01EDA863E004E54A1 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldExtensions.swift; sourceTree = "<group>"; };
 		8C34AA381EB15930000A5490 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8C34AA3A1EB1BAE7000A5490 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -380,6 +382,7 @@
 				8C34AA381EB15930000A5490 /* Package.swift */,
 				B59F36C21EB69A5700DA21EE /* Washer.swift */,
 				B59F36C41EB69A6100DA21EE /* Work.swift */,
+				8C04E5A01EDA863E004E54A1 /* Card.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -706,6 +709,7 @@
 				78CDC7CB1EB8721100495ED0 /* CustomButton.swift in Sources */,
 				783919D31EBAA1B70086CF37 /* CalendarJTAppleCell.swift in Sources */,
 				B59F36C51EB69A6100DA21EE /* Work.swift in Sources */,
+				8C04E5A11EDA863E004E54A1 /* Card.swift in Sources */,
 				8C34AA451EB30509000A5490 /* BillingDetailsViewController.swift in Sources */,
 				78CDC7C81EB836B200495ED0 /* ThemeManager.swift in Sources */,
 				0797263C1EB3077400A3DF1C /* CompanyCell.swift in Sources */,
