@@ -244,7 +244,7 @@
                                             <action selector="changeCardLeft:" destination="1yL-MT-P5m" eventType="touchUpInside" id="rHV-XK-x0J"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BD7-SK-axd" customClass="BuyButton" customModule="MobeWash" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BD7-SK-axd" customClass="BuyButton" customModule="MobeWash" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="270" width="189" height="51"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="189" id="baP-Jt-si3"/>
@@ -252,6 +252,9 @@
                                         <state key="normal" title="PAY WITH CARD">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="O4u-PW-dHx" kind="show" id="u9i-bf-bga"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay directly with saved cards or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-Y5-Xbb">
                                         <rect key="frame" x="34" y="229" width="180" height="15"/>
@@ -266,11 +269,14 @@
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di2-0M-xpK" customClass="ApplePayBuyButton" customModule="MobeWash" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di2-0M-xpK" customClass="ApplePayBuyButton" customModule="MobeWash" customModuleProvider="target">
                                         <rect key="frame" x="213" y="270" width="130" height="51"/>
                                         <state key="normal" title=" PAY">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="O4u-PW-dHx" kind="show" id="6QI-Cb-IDN"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -337,5 +343,16 @@
             </objects>
             <point key="canvasLocation" x="76" y="-68.815592203898049"/>
         </scene>
+        <!--Success-->
+        <scene sceneID="Iob-Qf-KMz">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Success" storyboardName="Success" id="O4u-PW-dHx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nUJ-Tf-uYZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="641" y="-5"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="u9i-bf-bga"/>
+    </inferredMetricsTieBreakers>
 </document>
