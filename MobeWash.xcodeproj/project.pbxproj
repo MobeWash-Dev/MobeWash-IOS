@@ -48,8 +48,6 @@
 		B2054EE91ED91BE5006C15F5 /* SearchCompany.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2054EE81ED91BE5006C15F5 /* SearchCompany.storyboard */; };
 		B2054EEB1ED91F21006C15F5 /* PickAService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2054EEA1ED91F21006C15F5 /* PickAService.storyboard */; };
 		B2054EED1ED920C3006C15F5 /* Success.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2054EEC1ED920C3006C15F5 /* Success.storyboard */; };
-		B2054EF31ED93778006C15F5 /* PickAServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2054EF21ED93778006C15F5 /* PickAServiceViewController.swift */; };
-		B215833C1ED91118002E86B4 /* BookNowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B215833B1ED91118002E86B4 /* BookNowViewController.swift */; };
 		B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
 		B25AAC4B1EAC1095001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
 		B25AAC4C1EAC1095001C3369 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */; };
@@ -157,8 +155,6 @@
 		B2054EE81ED91BE5006C15F5 /* SearchCompany.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchCompany.storyboard; sourceTree = "<group>"; };
 		B2054EEA1ED91F21006C15F5 /* PickAService.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PickAService.storyboard; sourceTree = "<group>"; };
 		B2054EEC1ED920C3006C15F5 /* Success.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Success.storyboard; sourceTree = "<group>"; };
-		B2054EF21ED93778006C15F5 /* PickAServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickAServiceViewController.swift; sourceTree = "<group>"; };
-		B215833B1ED91118002E86B4 /* BookNowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNowViewController.swift; sourceTree = "<group>"; };
 		B25AAC491EAC106D001C3369 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B25AAC4D1EAC13E1001C3369 /* MobeWash-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MobeWash-Bridging-Header.h"; sourceTree = "<group>"; };
 		B260314E1EB1BC3B00FE81AE /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
@@ -349,8 +345,6 @@
 		78CBE8BD1EA3E5E1006BD330 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B2054EF21ED93778006C15F5 /* PickAServiceViewController.swift */,
-				B215833B1ED91118002E86B4 /* BookNowViewController.swift */,
 				D75EC5131ECEB3A700BD8517 /* WasherHistoryDetailViewController.swift */,
 				D75EC5141ECEB3A700BD8517 /* WasherHistoryTableViewCell.swift */,
 				D75EC5151ECEB3A700BD8517 /* WasherHistoryTableViewController.swift */,
@@ -722,7 +716,6 @@
 				B59F36C91EB69A8100DA21EE /* WorkDetailViewController.swift in Sources */,
 				8C34AA471EB3D755000A5490 /* Buttons.swift in Sources */,
 				78CDC7CB1EB8721100495ED0 /* CustomButton.swift in Sources */,
-				B215833C1ED91118002E86B4 /* BookNowViewController.swift in Sources */,
 				783919D31EBAA1B70086CF37 /* CalendarJTAppleCell.swift in Sources */,
 				B59F36C51EB69A6100DA21EE /* Work.swift in Sources */,
 				8C34AA451EB30509000A5490 /* BillingDetailsViewController.swift in Sources */,
@@ -730,7 +723,6 @@
 				0797263C1EB3077400A3DF1C /* CompanyCell.swift in Sources */,
 				B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */,
 				D75EC5181ECEB3A700BD8517 /* WasherHistoryTableViewController.swift in Sources */,
-				B2054EF31ED93778006C15F5 /* PickAServiceViewController.swift in Sources */,
 				78CDC7C61EB8363400495ED0 /* MobeWashStyles.swift in Sources */,
 				07191B901EB64A640024BF35 /* SelectServiceViewController.swift in Sources */,
 				78124A081EC3B75F00962AEF /* BillingTextField.swift in Sources */,
