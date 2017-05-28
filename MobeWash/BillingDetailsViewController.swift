@@ -28,6 +28,8 @@ class BillingDetailsViewController: UIViewController, STPPaymentContextDelegate 
     var paymentSucceeded: Bool = false
     var billingDataMutableDictionary : NSMutableDictionary?
     
+    var savedCard:Card?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -175,9 +177,19 @@ extension BillingDetailsViewController: STPPaymentCardTextFieldDelegate {
     func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
         if textField.valid{
             bookBuyButton?.isEnabled = true
+
+            
+            //save the card
+            
+    
         }else{
             bookBuyButton?.isEnabled = false
         }
+        
+    }
+    
+    func paymentCardTextFieldDidEndEditingCVC(_ textField: STPPaymentCardTextField) {
+        carImageView.image = textField.brandImage
     }
 }
 
