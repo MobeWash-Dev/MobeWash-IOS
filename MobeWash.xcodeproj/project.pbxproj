@@ -21,6 +21,9 @@
 		780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */; };
 		780D45E11EA3DDDB00FB4D35 /* MobeWashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45E01EA3DDDB00FB4D35 /* MobeWashTests.swift */; };
 		780D45EC1EA3DDDB00FB4D35 /* MobeWashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */; };
+		781225951EDA902D001F1038 /* BookNowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781225941EDA902D001F1038 /* BookNowButton.swift */; };
+		781225971EDA93B4001F1038 /* BookingAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781225961EDA93B4001F1038 /* BookingAnimationView.swift */; };
+		781225991EDA9E28001F1038 /* HamburgerMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781225981EDA9E28001F1038 /* HamburgerMenu.storyboard */; };
 		78124A021EC33D7900962AEF /* SelectService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78124A041EC33D7900962AEF /* SelectService.storyboard */; };
 		78124A081EC3B75F00962AEF /* BillingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78124A071EC3B75F00962AEF /* BillingTextField.swift */; };
 		783919D11EBA9EDE0086CF37 /* Calendar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783919D01EBA9EDE0086CF37 /* Calendar.storyboard */; };
@@ -127,6 +130,9 @@
 		780D45E71EA3DDDB00FB4D35 /* MobeWashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobeWashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		780D45EB1EA3DDDB00FB4D35 /* MobeWashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobeWashUITests.swift; sourceTree = "<group>"; };
 		780D45ED1EA3DDDB00FB4D35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		781225941EDA902D001F1038 /* BookNowButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNowButton.swift; sourceTree = "<group>"; };
+		781225961EDA93B4001F1038 /* BookingAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookingAnimationView.swift; sourceTree = "<group>"; };
+		781225981EDA9E28001F1038 /* HamburgerMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HamburgerMenu.storyboard; sourceTree = "<group>"; };
 		78124A031EC33D7900962AEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SelectService.storyboard; sourceTree = "<group>"; };
 		78124A071EC3B75F00962AEF /* BillingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingTextField.swift; sourceTree = "<group>"; };
 		783919D01EBA9EDE0086CF37 /* Calendar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Calendar.storyboard; sourceTree = "<group>"; };
@@ -299,8 +305,6 @@
 			isa = PBXGroup;
 			children = (
 				B2054EDE1ED91213006C15F5 /* BookNow.storyboard */,
-				B2054EE81ED91BE5006C15F5 /* SearchCompany.storyboard */,
-				B2054EEA1ED91F21006C15F5 /* PickAService.storyboard */,
 				B2054EEC1ED920C3006C15F5 /* Success.storyboard */,
 				D7575AD61ECF606200ABA878 /* WasherTabView.storyboard */,
 				D75EC5191ECEB3AF00BD8517 /* WasherHistory.storyboard */,
@@ -310,10 +314,13 @@
 				780D45CF1EA3DDDA00FB4D35 /* Home.storyboard */,
 				780D45D41EA3DDDA00FB4D35 /* LaunchScreen.storyboard */,
 				079726331EB2FC4400A3DF1C /* Ready2Book.storyboard */,
+				B2054EEA1ED91F21006C15F5 /* PickAService.storyboard */,
+				B2054EE81ED91BE5006C15F5 /* SearchCompany.storyboard */,
 				78124A041EC33D7900962AEF /* SelectService.storyboard */,
 				B26031551EB407D900FE81AE /* SignUp.storyboard */,
 				78FCB3E51EB6E9A20094C161 /* Time.storyboard */,
 				B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */,
+				781225981EDA9E28001F1038 /* HamburgerMenu.storyboard */,
 			);
 			name = "Views (Storyboards)";
 			sourceTree = "<group>";
@@ -374,6 +381,8 @@
 				78CDC7CE1EB8881000495ED0 /* CustomUINavBar.swift */,
 				78CDC7D01EB888C700495ED0 /* CustomUINavItem.swift */,
 				78124A071EC3B75F00962AEF /* BillingTextField.swift */,
+				781225941EDA902D001F1038 /* BookNowButton.swift */,
+				781225961EDA93B4001F1038 /* BookingAnimationView.swift */,
 			);
 			name = CustomUIClasses;
 			sourceTree = "<group>";
@@ -544,6 +553,7 @@
 				B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */,
 				D7575AD71ECF606200ABA878 /* WasherTabView.storyboard in Resources */,
 				B26031571EB407D900FE81AE /* SignUp.storyboard in Resources */,
+				781225991EDA9E28001F1038 /* HamburgerMenu.storyboard in Resources */,
 				783919D11EBA9EDE0086CF37 /* Calendar.storyboard in Resources */,
 				780D45D11EA3DDDA00FB4D35 /* Home.storyboard in Resources */,
 			);
@@ -713,6 +723,7 @@
 				B59F36C31EB69A5700DA21EE /* Washer.swift in Sources */,
 				78FCB3E81EB6E9B40094C161 /* TimeViewController.swift in Sources */,
 				B59F36C71EB69A7C00DA21EE /* WorkDetailVC.swift in Sources */,
+				781225971EDA93B4001F1038 /* BookingAnimationView.swift in Sources */,
 				B59F36C91EB69A8100DA21EE /* WorkDetailViewController.swift in Sources */,
 				8C34AA471EB3D755000A5490 /* Buttons.swift in Sources */,
 				78CDC7CB1EB8721100495ED0 /* CustomButton.swift in Sources */,
@@ -746,6 +757,7 @@
 				079726381EB2FE7200A3DF1C /* Ready2BookViewController.swift in Sources */,
 				B59F36CB1EB69A8700DA21EE /* WorkListTableViewCell.swift in Sources */,
 				B260314F1EB1BC3B00FE81AE /* DetailsViewController.swift in Sources */,
+				781225951EDA902D001F1038 /* BookNowButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

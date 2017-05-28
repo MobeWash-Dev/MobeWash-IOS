@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sL1-iH-vW9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8Qf-Oh-InB">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,6 +9,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Fmy-4V-SYy">
+            <objects>
+                <navigationController id="8Qf-Oh-InB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="iVB-r5-POr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sL1-iH-vW9" kind="relationship" relationship="rootViewController" id="Yfy-1k-kXt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4I9-oC-Avh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-948" y="200"/>
+        </scene>
         <!--Book Now View Controller-->
         <scene sceneID="Wwk-bI-GJZ">
             <objects>
@@ -21,17 +37,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PaP-S0-rv4">
-                                <rect key="frame" x="16" y="32" width="30" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="aal-f4-h5L"/>
-                                    <constraint firstAttribute="height" constant="30" id="bhp-93-C6d"/>
-                                </constraints>
-                                <state key="normal" title="Hamburger" image="hamburger">
-                                    <color key="titleColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsL-MT-SHv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsL-MT-SHv" customClass="BookNowButton" customModule="MobeWash" customModuleProvider="target">
                                 <rect key="frame" x="16" y="608" width="343" height="39"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="bs3-pp-fFK"/>
@@ -55,23 +61,23 @@
                                     <segue destination="wNY-vY-CKL" kind="show" id="wic-Bj-1yC"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oz4-Xo-jAN">
-                                <rect key="frame" x="16" y="70" width="343" height="519"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oz4-Xo-jAN" customClass="BookingAnimationView" customModule="MobeWash" customModuleProvider="target">
+                                <rect key="frame" x="16" y="83" width="343" height="506"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MISSING ANIMATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4Z-oR-QAd">
-                                        <rect key="frame" x="89.5" y="249" width="164" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MISSING ANIMATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4Z-oR-QAd">
+                                        <rect key="frame" x="8" y="227" width="328" height="21"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="164" id="OEE-Xm-Lq4"/>
+                                            <constraint firstAttribute="width" constant="328" id="OEE-Xm-Lq4"/>
                                             <constraint firstAttribute="height" constant="21" id="Zz2-vP-yRO"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
                                         <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="X4Z-oR-QAd" firstAttribute="centerY" secondItem="oz4-Xo-jAN" secondAttribute="centerY" id="3sc-0O-P7u"/>
+                                    <constraint firstItem="X4Z-oR-QAd" firstAttribute="centerY" secondItem="oz4-Xo-jAN" secondAttribute="centerY" constant="-15.5" id="3sc-0O-P7u"/>
                                     <constraint firstItem="X4Z-oR-QAd" firstAttribute="centerX" secondItem="oz4-Xo-jAN" secondAttribute="centerX" id="als-PL-o37"/>
                                 </constraints>
                             </view>
@@ -86,13 +92,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="leadingMargin" secondItem="hsL-MT-SHv" secondAttribute="leading" id="1Ek-VA-Jv9"/>
-                            <constraint firstItem="oz4-Xo-jAN" firstAttribute="top" secondItem="D25-u1-DXR" secondAttribute="bottom" constant="50" id="4oV-24-MeF"/>
-                            <constraint firstItem="PaP-S0-rv4" firstAttribute="top" secondItem="D25-u1-DXR" secondAttribute="bottom" constant="12" id="9X0-8I-JtT"/>
+                            <constraint firstItem="oz4-Xo-jAN" firstAttribute="top" secondItem="D25-u1-DXR" secondAttribute="bottom" constant="19" id="4oV-24-MeF"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oz4-Xo-jAN" secondAttribute="trailing" id="OUA-r7-hRH"/>
                             <constraint firstAttribute="leadingMargin" secondItem="oz4-Xo-jAN" secondAttribute="leading" id="Vzt-3f-QEm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hsL-MT-SHv" secondAttribute="trailing" id="Zz9-mo-DgS"/>
                             <constraint firstItem="hsL-MT-SHv" firstAttribute="top" secondItem="mzK-sM-uVf" secondAttribute="bottom" constant="-31" id="dFE-73-9X9"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="PaP-S0-rv4" secondAttribute="leading" id="jj7-Eh-G1U"/>
                             <constraint firstItem="mzK-sM-uVf" firstAttribute="leading" secondItem="hsL-MT-SHv" secondAttribute="trailing" constant="-36" id="ns8-YU-rhs"/>
                             <constraint firstItem="hsL-MT-SHv" firstAttribute="centerX" secondItem="CoT-32-lhi" secondAttribute="centerX" id="o6v-GY-V4n"/>
                             <constraint firstItem="hsL-MT-SHv" firstAttribute="top" secondItem="oz4-Xo-jAN" secondAttribute="bottom" constant="19" id="otX-ID-HZv"/>
@@ -100,6 +104,24 @@
                             <constraint firstItem="d16-FF-jfz" firstAttribute="top" secondItem="hsL-MT-SHv" secondAttribute="bottom" constant="20" id="uyJ-QU-K7o"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5dv-Ot-z7i">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="yys-D5-dQc">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PaP-S0-rv4">
+                                <rect key="frame" x="16" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="aal-f4-h5L"/>
+                                    <constraint firstAttribute="height" constant="30" id="bhp-93-C6d"/>
+                                </constraints>
+                                <state key="normal" title="Hamburger" image="hamburger">
+                                    <color key="titleColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bky-yn-Vs1" kind="presentation" id="gyQ-4R-84A"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nP-BC-a3t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -112,6 +134,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wut-K9-aHc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="358" y="166"/>
+        </scene>
+        <!--HamburgerMenu-->
+        <scene sceneID="KSp-q8-PR7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="HamburgerMenu" id="bky-yn-Vs1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Usc-Gb-Oyk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="330" y="264"/>
         </scene>
     </scenes>
     <resources>

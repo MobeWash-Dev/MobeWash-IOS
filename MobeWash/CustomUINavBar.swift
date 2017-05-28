@@ -21,7 +21,7 @@ class CustomUINavBar: UINavigationBar {
     static let navigationBarHeight: CGFloat = 44.0
     
     ///The difference between new height and default height
-    static let heightIncrease:CGFloat = navigationBarHeight - 44
+    static let heightIncrease:CGFloat = navigationBarHeight + 60.0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
