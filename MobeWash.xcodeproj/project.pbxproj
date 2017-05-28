@@ -36,6 +36,16 @@
 		78CDC7D11EB888C700495ED0 /* CustomUINavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7D01EB888C700495ED0 /* CustomUINavItem.swift */; };
 		78FCB3E61EB6E9A20094C161 /* Time.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FCB3E51EB6E9A20094C161 /* Time.storyboard */; };
 		78FCB3E81EB6E9B40094C161 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */; };
+		8C04E59F1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E59E1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard */; };
+		8C04E5A11EDA863E004E54A1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C04E5A01EDA863E004E54A1 /* Card.swift */; };
+		8C04E5A31EDA90C8004E54A1 /* BillingDetailsWithCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C04E5A21EDA90C8004E54A1 /* BillingDetailsWithCardViewController.swift */; };
+		8C04E5A71EDAA4F6004E54A1 /* stp_card_amex.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E5A41EDAA4F6004E54A1 /* stp_card_amex.png */; };
+		8C04E5A81EDAA4F6004E54A1 /* stp_card_amex@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E5A51EDAA4F6004E54A1 /* stp_card_amex@2x.png */; };
+		8C04E5A91EDAA4F6004E54A1 /* stp_card_amex@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E5A61EDAA4F6004E54A1 /* stp_card_amex@3x.png */; };
+		8C04E5AD1EDAA504004E54A1 /* stp_card_visa.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E5AA1EDAA504004E54A1 /* stp_card_visa.png */; };
+		8C04E5AE1EDAA504004E54A1 /* stp_card_visa@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E5AB1EDAA504004E54A1 /* stp_card_visa@2x.png */; };
+		8C04E5AF1EDAA504004E54A1 /* stp_card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E5AC1EDAA504004E54A1 /* stp_card_visa@3x.png */; };
+		8C04E5B51EDB435B004E54A1 /* world.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E5B41EDB435B004E54A1 /* world.png */; };
 		8C2EF0F61EB43CC900514560 /* TextfieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */; };
 		8C34AA391EB15930000A5490 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA381EB15930000A5490 /* Package.swift */; };
 		8C34AA3B1EB1BAE7000A5490 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3A1EB1BAE7000A5490 /* Company.swift */; };
@@ -145,6 +155,16 @@
 		78CDC7D01EB888C700495ED0 /* CustomUINavItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUINavItem.swift; sourceTree = "<group>"; };
 		78FCB3E51EB6E9A20094C161 /* Time.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Time.storyboard; sourceTree = "<group>"; };
 		78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		8C04E59E1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BillingDetailsWithCard.storyboard; sourceTree = "<group>"; };
+		8C04E5A01EDA863E004E54A1 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		8C04E5A21EDA90C8004E54A1 /* BillingDetailsWithCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingDetailsWithCardViewController.swift; sourceTree = "<group>"; };
+		8C04E5A41EDAA4F6004E54A1 /* stp_card_amex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stp_card_amex.png; path = Pods/Stripe/Stripe/Resources/Images/stp_card_amex.png; sourceTree = SOURCE_ROOT; };
+		8C04E5A51EDAA4F6004E54A1 /* stp_card_amex@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stp_card_amex@2x.png"; path = "Pods/Stripe/Stripe/Resources/Images/stp_card_amex@2x.png"; sourceTree = SOURCE_ROOT; };
+		8C04E5A61EDAA4F6004E54A1 /* stp_card_amex@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stp_card_amex@3x.png"; path = "Pods/Stripe/Stripe/Resources/Images/stp_card_amex@3x.png"; sourceTree = SOURCE_ROOT; };
+		8C04E5AA1EDAA504004E54A1 /* stp_card_visa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stp_card_visa.png; path = Pods/Stripe/Stripe/Resources/Images/stp_card_visa.png; sourceTree = SOURCE_ROOT; };
+		8C04E5AB1EDAA504004E54A1 /* stp_card_visa@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stp_card_visa@2x.png"; path = "Pods/Stripe/Stripe/Resources/Images/stp_card_visa@2x.png"; sourceTree = SOURCE_ROOT; };
+		8C04E5AC1EDAA504004E54A1 /* stp_card_visa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stp_card_visa@3x.png"; path = "Pods/Stripe/Stripe/Resources/Images/stp_card_visa@3x.png"; sourceTree = SOURCE_ROOT; };
+		8C04E5B41EDB435B004E54A1 /* world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = world.png; sourceTree = "<group>"; };
 		8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldExtensions.swift; sourceTree = "<group>"; };
 		8C34AA381EB15930000A5490 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8C34AA3A1EB1BAE7000A5490 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -320,6 +340,7 @@
 				B26031551EB407D900FE81AE /* SignUp.storyboard */,
 				78FCB3E51EB6E9A20094C161 /* Time.storyboard */,
 				B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */,
+				8C04E59E1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard */,
 				781225981EDA9E28001F1038 /* HamburgerMenu.storyboard */,
 			);
 			name = "Views (Storyboards)";
@@ -344,6 +365,13 @@
 			isa = PBXGroup;
 			children = (
 				077871BE1EA7E58B00652EE5 /* mwlogo.png */,
+				8C04E5A41EDAA4F6004E54A1 /* stp_card_amex.png */,
+				8C04E5A51EDAA4F6004E54A1 /* stp_card_amex@2x.png */,
+				8C04E5A61EDAA4F6004E54A1 /* stp_card_amex@3x.png */,
+				8C04E5AA1EDAA504004E54A1 /* stp_card_visa.png */,
+				8C04E5AB1EDAA504004E54A1 /* stp_card_visa@2x.png */,
+				8C04E5AC1EDAA504004E54A1 /* stp_card_visa@3x.png */,
+				8C04E5B41EDB435B004E54A1 /* world.png */,
 				8C34AA461EB3D755000A5490 /* Buttons.swift */,
 			);
 			name = Resources;
@@ -370,6 +398,7 @@
 				B59F36C61EB69A7C00DA21EE /* WorkDetailVC.swift */,
 				B59F36CC1EB69A8D00DA21EE /* WorkListViewController.swift */,
 				B59F36CA1EB69A8700DA21EE /* WorkListTableViewCell.swift */,
+				8C04E5A21EDA90C8004E54A1 /* BillingDetailsWithCardViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -398,6 +427,7 @@
 				8C34AA381EB15930000A5490 /* Package.swift */,
 				B59F36C21EB69A5700DA21EE /* Washer.swift */,
 				B59F36C41EB69A6100DA21EE /* Work.swift */,
+				8C04E5A01EDA863E004E54A1 /* Card.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -539,6 +569,7 @@
 				78124A021EC33D7900962AEF /* SelectService.storyboard in Resources */,
 				077871BF1EA7E58B00652EE5 /* mwlogo.png in Resources */,
 				8C34AA431EB30355000A5490 /* BillingDetails.storyboard in Resources */,
+				8C04E5A81EDAA4F6004E54A1 /* stp_card_amex@2x.png in Resources */,
 				780D45D61EA3DDDA00FB4D35 /* LaunchScreen.storyboard in Resources */,
 				B2054EED1ED920C3006C15F5 /* Success.storyboard in Resources */,
 				079726341EB2FC4400A3DF1C /* Ready2Book.storyboard in Resources */,
@@ -551,11 +582,18 @@
 				B59F36CF1EB69A9E00DA21EE /* Worklist.storyboard in Resources */,
 				B26031541EB31A4000FE81AE /* Details.storyboard in Resources */,
 				B25AAC4A1EAC106D001C3369 /* GoogleService-Info.plist in Resources */,
+				8C04E5A91EDAA4F6004E54A1 /* stp_card_amex@3x.png in Resources */,
+				8C04E5AE1EDAA504004E54A1 /* stp_card_visa@2x.png in Resources */,
 				D7575AD71ECF606200ABA878 /* WasherTabView.storyboard in Resources */,
+				8C04E5AD1EDAA504004E54A1 /* stp_card_visa.png in Resources */,
 				B26031571EB407D900FE81AE /* SignUp.storyboard in Resources */,
+				8C04E5B51EDB435B004E54A1 /* world.png in Resources */,
 				781225991EDA9E28001F1038 /* HamburgerMenu.storyboard in Resources */,
 				783919D11EBA9EDE0086CF37 /* Calendar.storyboard in Resources */,
+				8C04E5A71EDAA4F6004E54A1 /* stp_card_amex.png in Resources */,
 				780D45D11EA3DDDA00FB4D35 /* Home.storyboard in Resources */,
+				8C04E5AF1EDAA504004E54A1 /* stp_card_visa@3x.png in Resources */,
+				8C04E59F1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -729,8 +767,10 @@
 				78CDC7CB1EB8721100495ED0 /* CustomButton.swift in Sources */,
 				783919D31EBAA1B70086CF37 /* CalendarJTAppleCell.swift in Sources */,
 				B59F36C51EB69A6100DA21EE /* Work.swift in Sources */,
+				8C04E5A11EDA863E004E54A1 /* Card.swift in Sources */,
 				8C34AA451EB30509000A5490 /* BillingDetailsViewController.swift in Sources */,
 				78CDC7C81EB836B200495ED0 /* ThemeManager.swift in Sources */,
+				8C04E5A31EDA90C8004E54A1 /* BillingDetailsWithCardViewController.swift in Sources */,
 				0797263C1EB3077400A3DF1C /* CompanyCell.swift in Sources */,
 				B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */,
 				D75EC5181ECEB3A700BD8517 /* WasherHistoryTableViewController.swift in Sources */,

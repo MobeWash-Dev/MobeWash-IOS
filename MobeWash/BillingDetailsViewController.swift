@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import Stripe
 
-class BillingDetailsViewController: UIViewController {
+class BillingDetailsViewController: UIViewController, STPPaymentContextDelegate {
     @IBOutlet weak var topView: UIView!
     @IBOutlet weak var detailTextView: UITextView!
     @IBOutlet weak var carImageView: UIImageView!
@@ -27,6 +27,8 @@ class BillingDetailsViewController: UIViewController {
     
     var paymentSucceeded: Bool = false
     var billingDataMutableDictionary : NSMutableDictionary?
+    
+    var savedCard:Card?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,6 +48,9 @@ class BillingDetailsViewController: UIViewController {
         bookBuyButton?.isEnabled = false
         bookApplyPayBuyButton?.isEnabled = false
        // bookApplyPayBuyButton?.isEnabled = Stripe.deviceSupportsApplePay()
+        
+        
+        
     }
     
     func initViews() {
@@ -111,6 +116,33 @@ class BillingDetailsViewController: UIViewController {
         topView.layer.borderColor = UIColor.lightGray.cgColor
         topView.layer.cornerRadius = 10
     }
+    
+    // MARK -- STPPaymentContextDelegate
+    
+    func paymentContextDidChange(_ paymentContext: STPPaymentContext) {
+
+    }
+    
+    func paymentContext(_ paymentContext: STPPaymentContext,
+                        didCreatePaymentResult paymentResult: STPPaymentResult,
+                        completion: @escaping STPErrorBlock) {
+        
+    }
+    
+    func paymentContext(_ paymentContext: STPPaymentContext,
+                        didFinishWith status: STPPaymentStatus,
+                        error: Error?) {
+        
+      
+    }
+    
+
+    func paymentContext(_ paymentContext: STPPaymentContext,
+                        didFailToLoadWithError error: Error) {
+        self.navigationController?.popViewController(animated: true)
+        
+    }
+    
 }
 
 extension BillingDetailsViewController: PKPaymentAuthorizationViewControllerDelegate  {
@@ -145,9 +177,15 @@ extension BillingDetailsViewController: STPPaymentCardTextFieldDelegate {
     func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
         if textField.valid{
             bookBuyButton?.isEnabled = true
+            
         }else{
             bookBuyButton?.isEnabled = false
         }
+        
+    }
+    
+    func paymentCardTextFieldDidEndEditingCVC(_ textField: STPPaymentCardTextField) {
+        carImageView.image = textField.brandImage
     }
 }
 
