@@ -33,6 +33,7 @@
 		78CDC7D11EB888C700495ED0 /* CustomUINavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7D01EB888C700495ED0 /* CustomUINavItem.swift */; };
 		78FCB3E61EB6E9A20094C161 /* Time.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FCB3E51EB6E9A20094C161 /* Time.storyboard */; };
 		78FCB3E81EB6E9B40094C161 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */; };
+		8C04E59F1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E59E1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard */; };
 		8C2EF0F61EB43CC900514560 /* TextfieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */; };
 		8C34AA391EB15930000A5490 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA381EB15930000A5490 /* Package.swift */; };
 		8C34AA3B1EB1BAE7000A5490 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3A1EB1BAE7000A5490 /* Company.swift */; };
@@ -135,6 +136,7 @@
 		78CDC7D01EB888C700495ED0 /* CustomUINavItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUINavItem.swift; sourceTree = "<group>"; };
 		78FCB3E51EB6E9A20094C161 /* Time.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Time.storyboard; sourceTree = "<group>"; };
 		78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		8C04E59E1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BillingDetailsWithCard.storyboard; sourceTree = "<group>"; };
 		8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldExtensions.swift; sourceTree = "<group>"; };
 		8C34AA381EB15930000A5490 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8C34AA3A1EB1BAE7000A5490 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 				B26031551EB407D900FE81AE /* SignUp.storyboard */,
 				78FCB3E51EB6E9A20094C161 /* Time.storyboard */,
 				B59F36CE1EB69A9E00DA21EE /* Worklist.storyboard */,
+				8C04E59E1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard */,
 			);
 			name = "Views (Storyboards)";
 			sourceTree = "<group>";
@@ -530,6 +533,7 @@
 				B26031571EB407D900FE81AE /* SignUp.storyboard in Resources */,
 				783919D11EBA9EDE0086CF37 /* Calendar.storyboard in Resources */,
 				780D45D11EA3DDDA00FB4D35 /* Home.storyboard in Resources */,
+				8C04E59F1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
