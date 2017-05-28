@@ -116,7 +116,9 @@ extension CalendarViewController: UITableViewDataSource {
         } else{
             cell.textLabel?.text = String(time-12)+"PM"
         }
-        
+        let view = UIView()
+        view.backgroundColor = .blue
+        cell.selectedBackgroundView = view
         return cell
     }
 }
@@ -134,9 +136,22 @@ extension CalendarViewController: UITableViewDelegate {
         }
     }
     
+    func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+        let currentCell = tableView.cellForRow(at: indexPath)
+        if (currentCell?.isSelected)! {
+            currentCell?.selectionStyle = .blue
+        } else {
+            currentCell?.backgroundColor = UIColor.black
+        }
+        //currentCell?.layer.borderColor = UIColor.blue.cgColor
+        //currentCell?.backgroundColor = UIColor.blue
+        return true
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentCell = tableView.cellForRow(at: indexPath)
-        currentCell?.layer.borderColor = UIColor.gray.cgColor
+        //currentCell?.layer.borderColor = UIColor.blue.cgColor
+        currentCell?.backgroundColor = UIColor.blue
         
         // Choose what to do with user's selected time
         selectedTime = (currentCell?.textLabel!.text)!

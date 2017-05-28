@@ -15,20 +15,20 @@ class ThemeManager {
         //let proxySegmentedControl = UISegmentedControl.appearance()
         //proxySegmentedControl.tintColor = MWColors.MWGreen
         
-        let proxyTextField = UITextField.appearance()
-        proxyTextField.backgroundColor = UIColor.clear
-        proxyTextField.textColor = MWColors.MWLightBlue
+        //let proxyTextField = UITextField.appearance()
+        //proxyTextField.backgroundColor = UIColor.clear
+        //proxyTextField.textColor = MWColors.MWLightBlue
         //proxyTextField.font = MWStyles.bodyFont
         
         let proxyNavBar = CustomUINavBar.appearance()
         proxyNavBar.backgroundColor = MWColors.MWBlue
-        proxyNavBar.tintColor = MWColors.MWGray
+        //proxyNavBar.tintColor = MWColors.MWGray
         
-        let proxySearchBar = UISearchBar.appearance()
-        proxySearchBar.barTintColor = UIColor.white
+        //let proxySearchBar = UISearchBar.appearance()
+        //proxySearchBar.barTintColor = UIColor.white
         
-        let proxyLabel = UILabel.appearance()
-        proxyLabel.textColor = UIColor.black
+        //let proxyLabel = UILabel.appearance()
+        //proxyLabel.textColor = UIColor.black
         
 //        let proxyButton = UIButton.appearance()
 //        proxyButton.backgroundColor = MWColors.
