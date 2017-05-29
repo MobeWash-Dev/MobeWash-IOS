@@ -275,6 +275,16 @@
                             <constraint firstItem="eJJ-0u-1pN" firstAttribute="trailing" secondItem="7A6-El-qHt" secondAttribute="trailingMargin" id="yDL-aY-ATb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorField" destination="Aga-WW-1ri" id="UC3-vu-wOa"/>
+                        <outlet property="emailField" destination="kRX-W0-LoV" id="kii-c3-BZE"/>
+                        <outlet property="firstNameField" destination="TnN-Mx-Qia" id="Jjq-IR-PjN"/>
+                        <outlet property="infoField" destination="212-3e-MQu" id="xlQ-sQ-HxM"/>
+                        <outlet property="lastNameField" destination="6J0-UF-PwP" id="705-CF-k75"/>
+                        <outlet property="licenseField" destination="gj6-dS-vyf" id="rEJ-FI-faV"/>
+                        <outlet property="makeField" destination="gk3-EQ-ak4" id="dDj-rB-bWI"/>
+                        <outlet property="phoneField" destination="84V-mZ-Fwl" id="9d9-Wi-HP3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LhZ-OU-Qwi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
