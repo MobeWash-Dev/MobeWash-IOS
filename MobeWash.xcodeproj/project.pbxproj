@@ -47,6 +47,7 @@
 		8C04E5AF1EDAA504004E54A1 /* stp_card_visa@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E5AC1EDAA504004E54A1 /* stp_card_visa@3x.png */; };
 		8C04E5B51EDB435B004E54A1 /* world.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E5B41EDB435B004E54A1 /* world.png */; };
 		8C04E5B71EDBCEA8004E54A1 /* UserDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E5B61EDBCEA8004E54A1 /* UserDetails.storyboard */; };
+		8C04E5B91EDBD851004E54A1 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C04E5B81EDBD851004E54A1 /* UserDetailsViewController.swift */; };
 		8C2EF0F61EB43CC900514560 /* TextfieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */; };
 		8C34AA391EB15930000A5490 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA381EB15930000A5490 /* Package.swift */; };
 		8C34AA3B1EB1BAE7000A5490 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA3A1EB1BAE7000A5490 /* Company.swift */; };
@@ -167,6 +168,7 @@
 		8C04E5AC1EDAA504004E54A1 /* stp_card_visa@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stp_card_visa@3x.png"; path = "Pods/Stripe/Stripe/Resources/Images/stp_card_visa@3x.png"; sourceTree = SOURCE_ROOT; };
 		8C04E5B41EDB435B004E54A1 /* world.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = world.png; sourceTree = "<group>"; };
 		8C04E5B61EDBCEA8004E54A1 /* UserDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserDetails.storyboard; sourceTree = "<group>"; };
+		8C04E5B81EDBD851004E54A1 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 		8C2EF0F51EB43CC900514560 /* TextfieldExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextfieldExtensions.swift; sourceTree = "<group>"; };
 		8C34AA381EB15930000A5490 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		8C34AA3A1EB1BAE7000A5490 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -402,6 +404,7 @@
 				B59F36CC1EB69A8D00DA21EE /* WorkListViewController.swift */,
 				B59F36CA1EB69A8700DA21EE /* WorkListTableViewCell.swift */,
 				8C04E5A21EDA90C8004E54A1 /* BillingDetailsWithCardViewController.swift */,
+				8C04E5B81EDBD851004E54A1 /* UserDetailsViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -765,6 +768,7 @@
 				B59F36C31EB69A5700DA21EE /* Washer.swift in Sources */,
 				78FCB3E81EB6E9B40094C161 /* TimeViewController.swift in Sources */,
 				B59F36C71EB69A7C00DA21EE /* WorkDetailVC.swift in Sources */,
+				8C04E5B91EDBD851004E54A1 /* UserDetailsViewController.swift in Sources */,
 				781225971EDA93B4001F1038 /* BookingAnimationView.swift in Sources */,
 				B59F36C91EB69A8100DA21EE /* WorkDetailViewController.swift in Sources */,
 				8C34AA471EB3D755000A5490 /* Buttons.swift in Sources */,
