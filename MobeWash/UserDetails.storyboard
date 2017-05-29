@@ -14,7 +14,7 @@
         <!--User Details View Controller-->
         <scene sceneID="hbb-Dy-XS0">
             <objects>
-                <viewController id="qeh-sX-yCm" customClass="UserDetailsViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qeh-sX-yCm" customClass="UserDetailsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="53m-5q-F7r"/>
                         <viewControllerLayoutGuide type="bottom" id="hBo-FY-7DI"/>
