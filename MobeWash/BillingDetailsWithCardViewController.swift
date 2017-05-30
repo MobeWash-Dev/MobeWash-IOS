@@ -20,7 +20,6 @@ class BillingDetailsWithCardViewController: UIViewController {
     @IBOutlet weak var color: UILabel!
     @IBOutlet weak var licensePlate: UILabel!
     
-    
     @IBOutlet weak var cardFrame: UIView!
     @IBOutlet weak var cardNumber: UILabel!
     @IBOutlet weak var cardExpiration: UILabel!
@@ -32,6 +31,8 @@ class BillingDetailsWithCardViewController: UIViewController {
     @IBOutlet weak var addNewCardButton: UIButton!
     @IBOutlet weak var payWithCardButton: UIButton!
     @IBOutlet weak var applePayButton: UIButton!
+    
+    var saveCardButton: BuyButton?
     
     var paymentTextField: STPPaymentCardTextField!
     var cardArray:[Card] = []
@@ -69,10 +70,27 @@ class BillingDetailsWithCardViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         print("in appear \(cardNumber.frame)")
         
+        //Programatic UI that references storyboard frames must be initialized
+        //here to ensure all frames are definite
+        
         //init addCard UI
         paymentTextField = STPPaymentCardTextField(frame: cardNumber.frame)
         cardFrame.addSubview(paymentTextField)
         paymentTextField.isHidden = true
+        
+        //set up delegation
+        paymentTextField.delegate = self
+        
+        saveCardButton = BuyButton(enabled: true, theme: .default())
+        let saveCardFrame = CGRect(x: cardExpiration.frame.minX, y: cardExpiration.frame.minY, width: cardExpiration.frame.width + 20, height: cardExpiration.frame.height + 5)
+        saveCardButton?.frame = saveCardFrame
+        saveCardButton?.setTitle("add", for: .normal)
+        cardFrame.addSubview(saveCardButton!)
+        saveCardButton?.isEnabled = false
+        saveCardButton?.isHidden = true
+        
+        //add button targets
+        self.saveCardButton!.addTarget(self, action: #selector(saveCardButtonTapped), for: .touchUpInside)
         
     }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -120,13 +138,15 @@ class BillingDetailsWithCardViewController: UIViewController {
         applePayButton.backgroundColor = UIColor.black
         
 
-        
-
-        
+        //remove these lines, they just demonstrate the constraints are off
+        cardNumber.layer.borderWidth = 2
+        cardNumber.layer.borderColor = UIColor.black.cgColor
+        cardExpiration.layer.borderWidth = 2
+        cardExpiration.layer.borderColor = UIColor.black.cgColor
     
     }
     
-    // MARK -- IBACTIONS
+    // MARK : IBACTIONS
     @IBAction func changeCardRight(_ sender: Any) {
 
         currentCard = cardArray[1]
@@ -150,12 +170,11 @@ class BillingDetailsWithCardViewController: UIViewController {
 
     }
     @IBAction func addCard(_ sender: Any) {
-        if(addNewCardButton.titleLabel!.text! == "Cancel"){
-            
-        }
         showAddCard()
     }
     
+    
+    // MARK : Add Card Functionality Methods
     func showAddCard(){
         
         if(addNewCardButton.titleLabel!.text! == "Cancel"){
@@ -163,6 +182,7 @@ class BillingDetailsWithCardViewController: UIViewController {
                 (item as? UIView)?.isHidden = false
             }
             paymentTextField.isHidden = true
+            saveCardButton?.isHidden = true
         
             addNewCardButton.setTitle("add a new card", for: .normal)
             addNewCardButton.setTitleColor(UIColor.lightGray, for: .normal)
@@ -178,12 +198,40 @@ class BillingDetailsWithCardViewController: UIViewController {
         addNewCardButton.setTitle("Cancel", for: .normal)
         addNewCardButton.setTitleColor(UIColor.red, for: .normal)
         
-        //show paymentField
+        //show paymentField & button
         paymentTextField.isHidden = false
-        
-    
+        saveCardButton?.isHidden = false
         
     }
-
+    
+    func saveCardButtonTapped (){
+        
+        //TODO : add card functionality includes saving card in to stripe via API calls
+        
+        //assume successful for demo
+        showAddCard()
+        MWALerts.alertMessage(message: "Successfully Saved Card!", sender: self)
+        
+        
+    }
     
 }
+
+// MARK : Stripe Delegate Methods
+
+extension BillingDetailsWithCardViewController: STPPaymentCardTextFieldDelegate{
+    func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
+        
+        if textField.valid{
+            saveCardButton!.isEnabled = true
+        }else{
+            saveCardButton!.isEnabled = false
+        }
+        
+        
+    }
+}
+
+
+
+
