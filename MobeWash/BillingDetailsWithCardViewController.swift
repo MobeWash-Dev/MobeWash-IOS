@@ -38,12 +38,10 @@ class BillingDetailsWithCardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
+        print("in didload \(cardNumber.frame)")
         initViews()
         
-        
-    
+        //Dummy Data
         let card1 = Card(number: "••••••••••••4242", last4: "4242", expMonth: 09, expYear: 20, typeImage: UIImage(named:"stp_card_visa.png"), color: UIColor.blue)
         
         let card2 = Card(number: "••••••••••••5555", last4: "5555", expMonth: 08, expYear: 19, typeImage: UIImage(named:"stp_card_amex.png"), color: UIColor.green)
@@ -51,10 +49,26 @@ class BillingDetailsWithCardViewController: UIViewController {
         cardArray = [card1,card2]
         currentCard = cardArray[0]
         updateCard(card: currentCard!)
-
+        
+        
+        //check if user has any cards
+        if (!cardArray.isEmpty){
+            hasCard = true
+        }else{
+            showAddCard()
+        }
         
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        print("in appear \(cardNumber.frame)")
+        
+        //init addCard UI
+        paymentTextField = STPPaymentCardTextField(frame: cardNumber.frame)
+        cardFrame.addSubview(paymentTextField)
+        paymentTextField.isHidden = true
+        
+    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
@@ -99,11 +113,10 @@ class BillingDetailsWithCardViewController: UIViewController {
         applePayButton.layer.cornerRadius = 10
         applePayButton.backgroundColor = UIColor.black
         
-        //init Stripe textField
-        paymentTextField = STPPaymentCardTextField(frame: cardNumber.frame)
-        paymentTextField.isHidden = true
+
         
 
+        
     
     }
     
@@ -131,10 +144,19 @@ class BillingDetailsWithCardViewController: UIViewController {
 
     }
     @IBAction func addCard(_ sender: Any) {
+        showAddCard()
+    }
+    
+    func showAddCard(){
         
+        //hide original data
+        cardNumber.isHidden = true
+        cardExpiration.isHidden = true
+        cardTypeImage.isHidden = true
         
-        
-        
+        //show paymentField
+        paymentTextField.isHidden = false
+    
         
     }
 
