@@ -27,6 +27,8 @@ class BillingDetailsWithCardViewController: UIViewController {
     @IBOutlet weak var cardTypeImage: UIImageView!
     @IBOutlet weak var cardBackground: UIImageView!
     
+    @IBOutlet weak var payLabel: UILabel!
+    
     @IBOutlet weak var addNewCardButton: UIButton!
     @IBOutlet weak var payWithCardButton: UIButton!
     @IBOutlet weak var applePayButton: UIButton!
@@ -35,11 +37,15 @@ class BillingDetailsWithCardViewController: UIViewController {
     var cardArray:[Card] = []
     var currentCard:Card?
     var hasCard:Bool = false
+    var hiddenCardElements:[Any] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print("in didload \(cardNumber.frame)")
+        
         initViews()
+        
+        hiddenCardElements = [cardNumber,cardExpiration,cardTypeImage,payLabel]
         
         //Dummy Data
         let card1 = Card(number: "••••••••••••4242", last4: "4242", expMonth: 09, expYear: 20, typeImage: UIImage(named:"stp_card_visa.png"), color: UIColor.blue)
@@ -144,18 +150,37 @@ class BillingDetailsWithCardViewController: UIViewController {
 
     }
     @IBAction func addCard(_ sender: Any) {
+        if(addNewCardButton.titleLabel!.text! == "Cancel"){
+            
+        }
         showAddCard()
     }
     
     func showAddCard(){
         
+        if(addNewCardButton.titleLabel!.text! == "Cancel"){
+            for item in hiddenCardElements{
+                (item as? UIView)?.isHidden = false
+            }
+            paymentTextField.isHidden = true
+        
+            addNewCardButton.setTitle("add a new card", for: .normal)
+            addNewCardButton.setTitleColor(UIColor.lightGray, for: .normal)
+            
+            return
+        }
+  
         //hide original data
-        cardNumber.isHidden = true
-        cardExpiration.isHidden = true
-        cardTypeImage.isHidden = true
+        for item in hiddenCardElements{
+            (item as? UIView)?.isHidden = true
+        }
+        
+        addNewCardButton.setTitle("Cancel", for: .normal)
+        addNewCardButton.setTitleColor(UIColor.red, for: .normal)
         
         //show paymentField
         paymentTextField.isHidden = false
+        
     
         
     }

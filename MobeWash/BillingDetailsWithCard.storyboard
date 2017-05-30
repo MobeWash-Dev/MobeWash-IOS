@@ -327,6 +327,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addNewCardButton" destination="cbg-nb-CZ7" id="gx0-72-f9N"/>
                         <outlet property="applePayButton" destination="di2-0M-xpK" id="RP8-80-L6m"/>
                         <outlet property="cardBackground" destination="dhB-76-a8K" id="Ohb-fi-vcI"/>
                         <outlet property="cardExpiration" destination="6c8-X8-DX3" id="497-sk-I0A"/>
@@ -338,6 +339,7 @@
                         <outlet property="lastName" destination="MRt-LO-jMQ" id="7pR-SX-CPG"/>
                         <outlet property="licensePlate" destination="qeE-wI-3P5" id="ipt-hM-Fyy"/>
                         <outlet property="make" destination="8xw-pd-V5M" id="FWg-NN-38w"/>
+                        <outlet property="payLabel" destination="mIV-Y5-Xbb" id="21m-BD-ymZ"/>
                         <outlet property="payWithCardButton" destination="BD7-SK-axd" id="oSb-2X-SMp"/>
                     </connections>
                 </viewController>
