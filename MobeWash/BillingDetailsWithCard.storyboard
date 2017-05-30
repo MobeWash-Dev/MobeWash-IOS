@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1yL-MT-P5m">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1yL-MT-P5m">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -268,6 +268,9 @@
                                         <state key="normal" title="add a new card">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addCard:" destination="1yL-MT-P5m" eventType="touchUpInside" id="02h-ux-fpb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di2-0M-xpK" customClass="ApplePayBuyButton" customModule="MobeWash" customModuleProvider="target">
                                         <rect key="frame" x="213" y="270" width="130" height="51"/>
@@ -324,7 +327,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addNewCardButton" destination="cbg-nb-CZ7" id="w54-UG-odh"/>
                         <outlet property="applePayButton" destination="di2-0M-xpK" id="RP8-80-L6m"/>
                         <outlet property="cardBackground" destination="dhB-76-a8K" id="Ohb-fi-vcI"/>
                         <outlet property="cardExpiration" destination="6c8-X8-DX3" id="497-sk-I0A"/>

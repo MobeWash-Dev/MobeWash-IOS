@@ -31,13 +31,18 @@ class BillingDetailsWithCardViewController: UIViewController {
     @IBOutlet weak var payWithCardButton: UIButton!
     @IBOutlet weak var applePayButton: UIButton!
     
+    var paymentTextField: STPPaymentCardTextField!
     var cardArray:[Card] = []
     var currentCard:Card?
+    var hasCard:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         initViews()
+        
+        
     
         let card1 = Card(number: "••••••••••••4242", last4: "4242", expMonth: 09, expYear: 20, typeImage: UIImage(named:"stp_card_visa.png"), color: UIColor.blue)
         
@@ -93,6 +98,11 @@ class BillingDetailsWithCardViewController: UIViewController {
         applePayButton.layer.borderColor = UIColor.black.cgColor
         applePayButton.layer.cornerRadius = 10
         applePayButton.backgroundColor = UIColor.black
+        
+        //init Stripe textField
+        paymentTextField = STPPaymentCardTextField(frame: cardNumber.frame)
+        paymentTextField.isHidden = true
+        
 
     
     }
@@ -120,5 +130,13 @@ class BillingDetailsWithCardViewController: UIViewController {
         
 
     }
+    @IBAction func addCard(_ sender: Any) {
+        
+        
+        
+        
+        
+    }
+
     
 }
