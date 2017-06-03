@@ -100,7 +100,6 @@
                                 <state key="normal" title="Sign Up"/>
                                 <connections>
                                     <action selector="signUpButton:" destination="elT-8V-IaB" eventType="touchUpInside" id="dJY-tm-Gam"/>
-                                    <segue destination="ujk-5b-pF0" kind="show" id="mSd-Zv-Ohv"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="spD-Hz-6zf">
@@ -227,6 +226,7 @@
                         <outlet property="modelOfCar" destination="e8V-bR-dgk" id="LpK-xq-VZJ"/>
                         <outlet property="numberField" destination="myN-iO-mPw" id="bi4-pQ-hsd"/>
                         <outlet property="passwordField" destination="spD-Hz-6zf" id="PNa-7j-fWd"/>
+                        <outlet property="signupButton" destination="vzQ-MO-1Tt" id="J8G-JI-HEw"/>
                         <outlet property="userButtonOutlet" destination="Wfk-6T-AuW" id="hbs-gn-2wy"/>
                         <outlet property="washerButtonOutlet" destination="RpS-On-UlE" id="7mq-vt-D8s"/>
                     </connections>
