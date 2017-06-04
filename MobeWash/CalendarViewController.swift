@@ -171,7 +171,7 @@ extension CalendarViewController: JTAppleCalendarViewDataSource {
         formatter.locale = Calendar.current.locale
         
         let start = formatter.date(from: String(year) + " " + String(month) + " 01")!
-        let end = formatter.date(from: String(year+1) + " " + String(month) + " 30")!
+        let end = formatter.date(from: String(year+1) + " " + String(month) + " 31")!
         calendar.allowsMultipleSelection = false
         
         let parameters = ConfigurationParameters(startDate: start, endDate: end)
