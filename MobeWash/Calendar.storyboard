@@ -241,10 +241,10 @@
             </objects>
             <point key="canvasLocation" x="-346.39999999999998" y="94.902548725637189"/>
         </scene>
-        <!--UserDetails-->
+        <!--Details-->
         <scene sceneID="VGU-xe-2YK">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="DetailsStoryboard" storyboardName="UserDetails" id="zE2-Ed-K9T" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="DetailsStoryboard" storyboardName="Details" id="zE2-Ed-K9T" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hug-Rm-oaG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="86" y="-5"/>
