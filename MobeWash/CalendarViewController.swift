@@ -25,7 +25,7 @@ class CalendarViewController: UIViewController {
     var noneAvailable: Bool = false
 
     // Dummy Data
-    let availability = ["May": [5: [10, 11, 12], 7: [8, 14]]]
+    let availability = ["June": [5: [10, 11, 12], 7: [8, 14]]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
