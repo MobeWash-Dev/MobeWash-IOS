@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <PassKit/PassKit.h>
 #import "STPBlocks.h"
+#import "STPFile.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -16,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define FAUXPAS_IGNORED_IN_FILE(...)
 FAUXPAS_IGNORED_IN_FILE(APIAvailability)
 
-static NSString *const STPSDKVersion = @"10.0.1";
+static NSString *const STPSDKVersion = @"10.1.0";
 
 @class STPBankAccount, STPBankAccountParams, STPCard, STPCardParams, STPSourceParams, STPToken, STPPaymentConfiguration;
 
@@ -36,12 +37,6 @@ static NSString *const STPSDKVersion = @"10.0.1";
 
 /// The current default publishable key.
 + (nullable NSString *)defaultPublishableKey;
-
-/**
- *  By default, Stripe collects some basic information about SDK usage.
- *  You can call this method to turn off analytics collection.
- */
-+ (void)disableAnalytics;
 
 @end
 
@@ -81,6 +76,50 @@ static NSString *const STPSDKVersion = @"10.0.1";
  *  @param completion  The callback to run with the returned Stripe token (and any errors that may have occurred).
  */
 - (void)createTokenWithBankAccount:(STPBankAccountParams *)bankAccount completion:(__nullable STPTokenCompletionBlock)completion;
+
+@end
+
+#pragma mark Personally Identifiable Information
+
+/**
+ *  STPAPIClient extensions to create Stripe tokens from a personal identification number.
+ */
+@interface STPAPIClient (PII)
+
+/**
+ *  Converts a personal identification number into a Stripe token using the Stripe API.
+ *
+ *  @param pii The user's personal identification number. Cannot be nil. @see https://stripe.com/docs/api#create_pii_token
+ *  @param completion  The callback to run with the returned Stripe token (and any errors that may have occurred).
+ */
+- (void)createTokenWithPersonalIDNumber:(NSString *)pii completion:(__nullable STPTokenCompletionBlock)completion;
+
+@end
+
+/**
+ *  STPAPIClient extensions to upload files.
+ */
+@interface STPAPIClient (Upload)
+
+
+/**
+ *  Uses the Stripe file upload API to upload an image. This can be used for 
+ *  identity veritfication and evidence disputes.
+ *
+ *  @param image The image to be uploaded. The maximum allowed file size is 4MB 
+ *         for identity documents and 8MB for evidence disputes. Cannot be nil. 
+ *         Your image will be automatically resized down if you pass in one that
+ *         is too large
+ *  @param purpose The purpose of this file. This can be either an identifing 
+ *         document or an evidence dispute.
+ *  @param completion The callback to run with the returned Stripe file 
+ *         (and any errors that may have occurred).
+ *
+ *  @see https://stripe.com/docs/file-upload
+ */
+- (void)uploadImage:(UIImage *)image
+            purpose:(STPFilePurpose)purpose
+         completion:(nullable STPFileCompletionBlock)completion;
 
 @end
 
@@ -185,5 +224,31 @@ static NSString *const STPSDKVersion = @"10.0.1";
 
 @end
 
+#pragma mark URL callbacks
+
+@interface Stripe (STPURLCallbackHandlerAdditions)
+
+/**
+ *  Call this method in your app delegate whenever you receive an URL in your
+ *  app delegate for a Stripe callback.
+ *
+ *  For convenience, you can pass all URL's you receive in your app delegate
+ *  to this method first, and check the return value
+ *  to easily determine whether it is a callback URL that Stripe will handle
+ *  or if your app should process it normally.
+ *
+ *  If you are using a universal link URL, you will receive the callback in `application:continueUserActivity:restorationHandler:`
+ *  To learn more about universal links, see https://developer.apple.com/library/content/documentation/General/Conceptual/AppSearch/UniversalLinks.html
+ *
+ *  If you are using a native scheme URL, you will receive the callback in `application:openURL:options:`
+ *  To learn more about native url schemes, see https://developer.apple.com/library/content/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Inter-AppCommunication/Inter-AppCommunication.html#//apple_ref/doc/uid/TP40007072-CH6-SW10
+ *
+ *  @param url The URL that you received in your app delegate
+ *
+ *  @return YES if the URL is expected and will be handled by Stripe. NO otherwise.
+ */
++ (BOOL)handleStripeURLCallbackWithURL:(NSURL *)url;
+
+@end
 
 NS_ASSUME_NONNULL_END

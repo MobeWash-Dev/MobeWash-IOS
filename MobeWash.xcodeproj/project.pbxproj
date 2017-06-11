@@ -57,6 +57,8 @@
 		8C34AA431EB30355000A5490 /* BillingDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C34AA421EB30355000A5490 /* BillingDetails.storyboard */; };
 		8C34AA451EB30509000A5490 /* BillingDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA441EB30509000A5490 /* BillingDetailsViewController.swift */; };
 		8C34AA471EB3D755000A5490 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C34AA461EB3D755000A5490 /* Buttons.swift */; };
+		8C5FF18A1EED03A000500151 /* SearchCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FF1891EED03A000500151 /* SearchCompanyViewController.swift */; };
+		8C5FF18C1EED202400500151 /* PickAServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C5FF18B1EED202400500151 /* PickAServiceViewController.swift */; };
 		8C75E27C1EBFA9600037E8A3 /* MWAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C75E27B1EBFA9600037E8A3 /* MWAlerts.swift */; };
 		B1B87C597285DC19C7C7D95B /* Pods_MobeWash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D1905CA2E73BC252B45A062 /* Pods_MobeWash.framework */; };
 		B2054EDF1ED91213006C15F5 /* BookNow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2054EDE1ED91213006C15F5 /* BookNow.storyboard */; };
@@ -178,6 +180,8 @@
 		8C34AA421EB30355000A5490 /* BillingDetails.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BillingDetails.storyboard; sourceTree = "<group>"; };
 		8C34AA441EB30509000A5490 /* BillingDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BillingDetailsViewController.swift; sourceTree = "<group>"; };
 		8C34AA461EB3D755000A5490 /* Buttons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		8C5FF1891EED03A000500151 /* SearchCompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCompanyViewController.swift; sourceTree = "<group>"; };
+		8C5FF18B1EED202400500151 /* PickAServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickAServiceViewController.swift; sourceTree = "<group>"; };
 		8C75E27B1EBFA9600037E8A3 /* MWAlerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MWAlerts.swift; sourceTree = "<group>"; };
 		938203FEC5CD43B1818AFF2B /* Pods-MobeWashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9468D1ECF422C6979804B99B /* Pods-MobeWashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobeWashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobeWashTests/Pods-MobeWashTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -405,6 +409,8 @@
 				B59F36CA1EB69A8700DA21EE /* WorkListTableViewCell.swift */,
 				8C04E5A21EDA90C8004E54A1 /* BillingDetailsWithCardViewController.swift */,
 				8C04E5BC1EDBDE06004E54A1 /* UserDetailsViewController.swift */,
+				8C5FF1891EED03A000500151 /* SearchCompanyViewController.swift */,
+				8C5FF18B1EED202400500151 /* PickAServiceViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -524,7 +530,7 @@
 				TargetAttributes = {
 					780D45C71EA3DDDA00FB4D35 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = F2F757HLJ7;
+						DevelopmentTeam = 7WU653JKVV;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
@@ -635,7 +641,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		1D7810C15A5F9FB251471F92 /* [CP] Embed Pods Frameworks */ = {
@@ -665,7 +671,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		5203C6F7CB5C48725148FB23 /* [CP] Copy Pods Resources */ = {
@@ -725,7 +731,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EBCE57009594AEA846FFC30C /* [CP] Copy Pods Resources */ = {
@@ -799,11 +805,13 @@
 				8C34AA3D1EB1BFE5000A5490 /* CompanySetting.swift in Sources */,
 				B59F36CD1EB69A8D00DA21EE /* WorkListViewController.swift in Sources */,
 				783919D51EBAA3310086CF37 /* CalendarViewController.swift in Sources */,
+				8C5FF18A1EED03A000500151 /* SearchCompanyViewController.swift in Sources */,
 				D75EC5161ECEB3A700BD8517 /* WasherHistoryDetailViewController.swift in Sources */,
 				8C34AA3B1EB1BAE7000A5490 /* Company.swift in Sources */,
 				0799D57D1EBCFC370027C1D8 /* ServiceTableViewCell.swift in Sources */,
 				079726381EB2FE7200A3DF1C /* Ready2BookViewController.swift in Sources */,
 				B59F36CB1EB69A8700DA21EE /* WorkListTableViewCell.swift in Sources */,
+				8C5FF18C1EED202400500151 /* PickAServiceViewController.swift in Sources */,
 				B260314F1EB1BC3B00FE81AE /* DetailsViewController.swift in Sources */,
 				781225951EDA902D001F1038 /* BookNowButton.swift in Sources */,
 			);
@@ -984,7 +992,7 @@
 			baseConfigurationReference = CCAAE805BAC673105378E7B9 /* Pods-MobeWash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F2F757HLJ7;
+				DEVELOPMENT_TEAM = 7WU653JKVV;
 				INFOPLIST_FILE = MobeWash/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1000,7 +1008,7 @@
 			baseConfigurationReference = 073CC921CAFDBEFC61F6753A /* Pods-MobeWash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F2F757HLJ7;
+				DEVELOPMENT_TEAM = 7WU653JKVV;
 				INFOPLIST_FILE = MobeWash/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

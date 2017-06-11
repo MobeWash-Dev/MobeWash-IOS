@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1yL-MT-P5m">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1yL-MT-P5m">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -185,26 +185,29 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHS-fH-HBC">
-                                        <rect key="frame" x="40" y="48" width="263" height="174"/>
+                                        <rect key="frame" x="40" y="48" width="263" height="153"/>
                                         <subviews>
                                             <imageView opaque="NO" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dhB-76-a8K">
-                                                <rect key="frame" x="0.0" y="0.0" width="263" height="174"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="263" height="153"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="153" id="zFe-zL-oca"/>
+                                                </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3n-6I-koP">
-                                                <rect key="frame" x="8" y="73" width="247" height="37"/>
+                                                <rect key="frame" x="8" y="73" width="247" height="16"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y9I-W1-RbR">
-                                                <rect key="frame" x="210" y="136" width="45" height="32"/>
+                                                <rect key="frame" x="210" y="115" width="45" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="1Qw-4t-bFC"/>
                                                     <constraint firstAttribute="width" constant="45" id="Q43-qr-wvB"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="month/year" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6c8-X8-DX3">
-                                                <rect key="frame" x="19" y="145" width="79" height="18"/>
+                                                <rect key="frame" x="19" y="124" width="79" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -223,6 +226,7 @@
                                             <constraint firstAttribute="bottom" secondItem="y9I-W1-RbR" secondAttribute="bottom" constant="6" id="X9n-fp-GlK"/>
                                             <constraint firstItem="A3n-6I-koP" firstAttribute="top" secondItem="HHS-fH-HBC" secondAttribute="top" constant="73" id="bJX-OV-e7b"/>
                                             <constraint firstAttribute="trailing" secondItem="A3n-6I-koP" secondAttribute="trailing" constant="8" id="gSJ-5G-bVA"/>
+                                            <constraint firstAttribute="height" constant="153" id="lBg-kX-YHU"/>
                                             <constraint firstAttribute="bottom" secondItem="6c8-X8-DX3" secondAttribute="bottom" constant="11" id="m4S-GZ-PXY"/>
                                             <constraint firstItem="6c8-X8-DX3" firstAttribute="leading" secondItem="HHS-fH-HBC" secondAttribute="leading" constant="19" id="sF3-mm-7PS"/>
                                             <constraint firstAttribute="trailing" secondItem="y9I-W1-RbR" secondAttribute="trailing" constant="8" id="zjy-ar-CGV"/>
@@ -245,7 +249,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BD7-SK-axd" customClass="BuyButton" customModule="MobeWash" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="270" width="189" height="51"/>
+                                        <rect key="frame" x="0.0" y="249" width="189" height="72"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="189" id="baP-Jt-si3"/>
                                         </constraints>
@@ -257,20 +261,23 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay directly with saved cards or" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIV-Y5-Xbb">
-                                        <rect key="frame" x="34" y="229" width="180" height="15"/>
+                                        <rect key="frame" x="34" y="208" width="180" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbg-nb-CZ7">
-                                        <rect key="frame" x="214" y="223" width="96" height="27"/>
+                                        <rect key="frame" x="214" y="202" width="96" height="27"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                         <state key="normal" title="add a new card">
                                             <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addCard:" destination="1yL-MT-P5m" eventType="touchUpInside" id="02h-ux-fpb"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="di2-0M-xpK" customClass="ApplePayBuyButton" customModule="MobeWash" customModuleProvider="target">
-                                        <rect key="frame" x="213" y="270" width="130" height="51"/>
+                                        <rect key="frame" x="213" y="249" width="130" height="72"/>
                                         <state key="normal" title=" PAY">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -297,7 +304,7 @@
                                     <constraint firstItem="BD7-SK-axd" firstAttribute="leading" secondItem="cvG-Uh-Amv" secondAttribute="leading" id="flT-pf-2fv"/>
                                     <constraint firstItem="mIV-Y5-Xbb" firstAttribute="leading" secondItem="R9o-Ek-7Eq" secondAttribute="leading" constant="34" id="fpx-Gk-2ht"/>
                                     <constraint firstAttribute="trailing" secondItem="di2-0M-xpK" secondAttribute="trailing" id="kNp-0T-f2r"/>
-                                    <constraint firstAttribute="bottom" secondItem="HHS-fH-HBC" secondAttribute="bottom" constant="119" id="kPX-fA-ODE"/>
+                                    <constraint firstAttribute="bottom" secondItem="HHS-fH-HBC" secondAttribute="bottom" constant="140" id="kPX-fA-ODE"/>
                                     <constraint firstItem="BD7-SK-axd" firstAttribute="firstBaseline" secondItem="di2-0M-xpK" secondAttribute="baseline" id="mx9-gi-BkG"/>
                                     <constraint firstItem="di2-0M-xpK" firstAttribute="leading" secondItem="BD7-SK-axd" secondAttribute="trailing" constant="24" id="osV-LU-EoO"/>
                                     <constraint firstAttribute="trailing" secondItem="eQv-dc-28l" secondAttribute="trailing" id="pLi-JB-Qm5"/>
@@ -318,13 +325,12 @@
                             <constraint firstAttribute="trailingMargin" secondItem="R9o-Ek-7Eq" secondAttribute="trailing" id="G9Z-04-yCr"/>
                             <constraint firstAttribute="leadingMargin" secondItem="pW5-XN-Hef" secondAttribute="leading" id="GcU-nQ-PSJ"/>
                             <constraint firstItem="pW5-XN-Hef" firstAttribute="top" secondItem="Xbd-9W-PqE" secondAttribute="bottom" constant="8" id="g5r-ry-rTi"/>
-                            <constraint firstItem="Gd6-js-0LL" firstAttribute="top" secondItem="R9o-Ek-7Eq" secondAttribute="bottom" id="tZ0-P9-XOI"/>
                             <constraint firstAttribute="leadingMargin" secondItem="R9o-Ek-7Eq" secondAttribute="leading" id="wBu-Sk-h8T"/>
                             <constraint firstAttribute="trailingMargin" secondItem="pW5-XN-Hef" secondAttribute="trailing" id="wjP-cX-gnY"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="addNewCardButton" destination="cbg-nb-CZ7" id="w54-UG-odh"/>
+                        <outlet property="addNewCardButton" destination="cbg-nb-CZ7" id="gx0-72-f9N"/>
                         <outlet property="applePayButton" destination="di2-0M-xpK" id="RP8-80-L6m"/>
                         <outlet property="cardBackground" destination="dhB-76-a8K" id="Ohb-fi-vcI"/>
                         <outlet property="cardExpiration" destination="6c8-X8-DX3" id="497-sk-I0A"/>
@@ -336,6 +342,7 @@
                         <outlet property="lastName" destination="MRt-LO-jMQ" id="7pR-SX-CPG"/>
                         <outlet property="licensePlate" destination="qeE-wI-3P5" id="ipt-hM-Fyy"/>
                         <outlet property="make" destination="8xw-pd-V5M" id="FWg-NN-38w"/>
+                        <outlet property="payLabel" destination="mIV-Y5-Xbb" id="21m-BD-ymZ"/>
                         <outlet property="payWithCardButton" destination="BD7-SK-axd" id="oSb-2X-SMp"/>
                     </connections>
                 </viewController>

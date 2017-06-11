@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 import ReachabilitySwift
 
-class MWALerts {
+class MWAlerts {
     
     static let reachability = Reachability()!
     
