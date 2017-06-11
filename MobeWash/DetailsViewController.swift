@@ -21,6 +21,7 @@ class DetailsViewController: UIViewController, UITextFieldDelegate {
     }
     @IBOutlet weak var nextButtonOutlet: UIButton!
     
+    var bookingData:Booking?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,10 +48,28 @@ class DetailsViewController: UIViewController, UITextFieldDelegate {
         
         return true
     }
+    
+    //Error checking
+    func checkTextFields (){
+        for view: UIView in view.subviews{
+            if (view is UITextField){
+                let textField:UITextField? = (view as? UITextField)
+                if textField?.text?.characters.count == 0 {
+                    MWAlerts.alertMessage(message: "Please fill out all details",sender: self)
+                }
+            }
+        }
+        
+        
+    }
+
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 
 }

@@ -10,12 +10,12 @@ import Foundation
 
 public class Booking {
     var calendarType: Int
-    var appointmentTypeID: String
+    var appointmentTypeID: Int
     var datetime: String
     var firstName: String, lastName: String, email: String, phone: String
     var fields: [Field]
     
-    init(calendarType: Int, appointmentTypeID: String, dateTime: String, firstName: String,
+    init(calendarType: Int, appointmentTypeID: Int, dateTime: String, firstName: String,
          lastName: String, email: String, phone: String, fields: [Field]) {
         self.calendarType = calendarType
         self.appointmentTypeID = appointmentTypeID

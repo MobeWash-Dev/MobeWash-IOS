@@ -16,6 +16,7 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var monthLabel: UILabel!
     
     var bookingData:Booking?
+    var selectedDateTime:String?
     
     let brightBlue: UIColor = UIColor(red: 32/255.0, green: 139/255.0, blue: 1, alpha: 1.0)
     let formatter = DateFormatter()
@@ -31,6 +32,8 @@ class CalendarViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //TODO - Api call for slot times to calculated available times 
         
         setupCalendarView()
         
@@ -91,6 +94,21 @@ class CalendarViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    // MARK -- Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Dummy Data
+        bookingData?.datetime = "DateTime"
+        
+        if let destinationViewController = segue.destination as? DetailsViewController{
+            destinationViewController.bookingData = self.bookingData
+        }
+        
+    }
+    
+    
+    
 }
 
 extension CalendarViewController: UITableViewDataSource {

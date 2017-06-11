@@ -210,7 +210,7 @@ class BillingDetailsWithCardViewController: UIViewController {
         
         //assume successful for demo
         showAddCard()
-        MWALerts.alertMessage(message: "Successfully Saved Card!", sender: self)
+        MWAlerts.alertMessage(message: "Successfully Saved Card!", sender: self)
         
         
     }

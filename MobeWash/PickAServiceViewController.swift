@@ -12,7 +12,7 @@ import Alamofire
 
 class PickAServiceViewController: UIViewController {
 
-    var services:[Int:String] = [2925879:"Mobe",2944155:"MobePlus"]
+    var services:[String:Int] = ["Mobe":2925879,"MobePlus":2944155]
     var serviceSelectedId:Int?
     var bookingData:Booking?
     
@@ -54,6 +54,8 @@ class PickAServiceViewController: UIViewController {
     
     // MARK -- Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //update service ID before passing
+        bookingData?.appointmentTypeID = services["Mobe"]!
         
         if let destinationViewController = segue.destination as? CalendarViewController{
             destinationViewController.bookingData = self.bookingData
