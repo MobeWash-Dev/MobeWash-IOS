@@ -14,6 +14,8 @@ target 'MobeWash' do
   pod 'ReachabilitySwift', '~> 3'
   pod 'InteractiveSideMenu'
   pod 'SideMenu'
+  pod 'Alamofire', '~> 4.4'
+
   # Pods for MobeWash
 
   target 'MobeWashTests' do

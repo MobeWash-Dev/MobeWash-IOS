@@ -109,6 +109,11 @@ class JTAppleCalendarLayout: UICollectionViewLayout, JTAppleCalendarLayoutProtoc
     }
     /// Tells the layout object to update the current layout.
     open override func prepare() {
+        
+        // set the last content size before the if statement which can possible return if layout is not yet ready to be prepared. Avoids inf loop
+        // with layout subviews
+        lastSetCollectionViewSize = collectionView!.frame
+        
         if !layoutIsReadyToBePrepared { return }
         
         setupDataFromDelegate()
@@ -132,7 +137,6 @@ class JTAppleCalendarLayout: UICollectionViewLayout, JTAppleCalendarLayoutProtoc
             collectionView!.setContentOffset(firstContentOffset, animated: false)
         }
         daysInSection.removeAll() // Clear chache
-        lastSetCollectionViewSize = collectionView!.frame
     }
     
     func setupDataFromDelegate() {

@@ -8,6 +8,7 @@
 
 #import "STPAnalyticsClient.h"
 
+#import "NSBundle+Stripe_AppName.h"
 #import "NSMutableURLRequest+Stripe.h"
 #import "STPAPIClient+ApplePay.h"
 #import "STPAPIClient.h"
@@ -17,6 +18,7 @@
 #import "STPCard.h"
 #import "STPFormEncodable.h"
 #import "STPPaymentCardTextField.h"
+#import "STPPaymentCardTextField+Private.h"
 #import "STPPaymentConfiguration.h"
 #import "STPPaymentContext.h"
 #import "STPPaymentMethodsViewController+Private.h"
@@ -24,8 +26,6 @@
 #import "STPToken.h"
 #import <UIKit/UIKit.h>
 #import <sys/utsname.h>
-
-static BOOL STPAnalyticsCollectionDisabled = NO;
 
 @interface STPAnalyticsClient()
 
@@ -52,13 +52,18 @@ static BOOL STPAnalyticsCollectionDisabled = NO;
 + (void)initializeIfNeeded {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+
+        // Individual views
+
         [STPPaymentCardTextField stp_aspect_hookSelector:@selector(commonInit)
                                              withOptions:STPAspectPositionAfter
                                               usingBlock:^{
                                                   STPAnalyticsClient *client = [self sharedClient];
                                                   [client setApiUsage:[client.apiUsage setByAddingObject:NSStringFromClass([STPPaymentCardTextField class])]];
                                               } error:nil];
-        
+
+        // Pay context
+
         [STPPaymentContext stp_aspect_hookSelector:@selector(initWithAPIAdapter:configuration:theme:)
                                        withOptions:STPAspectPositionAfter
                                         usingBlock:^{
@@ -66,7 +71,9 @@ static BOOL STPAnalyticsCollectionDisabled = NO;
                                             [client setApiUsage:[client.apiUsage setByAddingObject:NSStringFromClass([STPPaymentContext class])]];
                                         } error:nil];
         
-        
+
+        // View controllers
+
         [STPAddCardViewController stp_aspect_hookSelector:@selector(commonInitWithConfiguration:)
                                               withOptions:STPAspectPositionAfter
                                                usingBlock:^{
@@ -91,26 +98,30 @@ static BOOL STPAnalyticsCollectionDisabled = NO;
     });
 }
 
-+ (void)disableAnalytics {
-    STPAnalyticsCollectionDisabled = YES;
-}
-
 + (BOOL)shouldCollectAnalytics {
 #if TARGET_OS_SIMULATOR
     return NO;
+#else
+    return NSClassFromString(@"XCTest") == nil;
 #endif
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wunreachable-code"
-    return NSClassFromString(@"XCTest") == nil && !STPAnalyticsCollectionDisabled;
-#pragma clang diagnostic pop
 }
 
 + (NSNumber *)timestampWithDate:(NSDate *)date {
     return @((NSInteger)([date timeIntervalSince1970]*1000));
 }
 
-+ (NSString *)muid {
-    return [[[UIDevice currentDevice] identifierForVendor] UUIDString];
++ (NSString *)tokenTypeFromParameters:(NSDictionary *)parameters {
+    if ([parameters.allKeys count] == 1) {
+        NSArray *validTypes = @[@"bank_account", @"card", @"pii"];
+        NSString *type = [parameters.allKeys firstObject];
+        if ([validTypes containsObject:type]) {
+            return type;
+        }
+    }
+    if ([parameters.allKeys containsObject:@"pk_token"]) {
+        return @"apple_pay";
+    }
+    return nil;
 }
 
 - (instancetype)init {
@@ -138,14 +149,38 @@ static BOOL STPAnalyticsCollectionDisabled = NO;
     return productUsage ?: @[];
 }
 
-- (void)logTokenCreationAttemptWithConfiguration:(STPPaymentConfiguration *)configuration {
+- (NSDictionary *)productUsageDictionary {
+    NSMutableDictionary *productUsage = [NSMutableDictionary new];
+
+    NSString *uiUsageLevel = nil;
+    if ([self.apiUsage containsObject:NSStringFromClass([STPPaymentContext class])]) {
+        uiUsageLevel = @"full";
+    }
+    else if (self.apiUsage.count == 1
+             && [self.apiUsage containsObject:NSStringFromClass([STPPaymentCardTextField class])]) {
+        uiUsageLevel = @"card_text_field";
+    }
+    else if (self.apiUsage.count > 0) {
+        uiUsageLevel = @"partial";
+    }
+    else {
+        uiUsageLevel = @"none";
+    }
+    productUsage[@"ui_usage_level"] = uiUsageLevel;
+    productUsage[@"product_usage"] = [self productUsage];
+
+    return productUsage.copy;
+}
+
+- (void)logTokenCreationAttemptWithConfiguration:(STPPaymentConfiguration *)configuration
+                                       tokenType:(NSString *)tokenType {
     NSDictionary *configurationDictionary = [self.class serializeConfiguration:configuration];
     NSMutableDictionary *payload = [self.class commonPayload];
     [payload addEntriesFromDictionary:@{
                                         @"event": @"stripeios.token_creation",
-                                        @"apple_pay_enabled": @([Stripe deviceSupportsApplePay]),
-                                        @"product_usage": [self productUsage],
+                                        @"token_type": tokenType ?: @"unknown",
                                         }];
+    [payload addEntriesFromDictionary:[self productUsageDictionary]];
     [payload addEntriesFromDictionary:configurationDictionary];
     [self logPayload:payload];
 }
@@ -158,8 +193,8 @@ static BOOL STPAnalyticsCollectionDisabled = NO;
                                         @"event": @"stripeios.source_creation",
                                         @"source_type": sourceType ?: @"unknown",
                                         @"apple_pay_enabled": @([Stripe deviceSupportsApplePay]),
-                                        @"product_usage": [self productUsage],
                                         }];
+    [payload addEntriesFromDictionary:[self productUsageDictionary]];
     [payload addEntriesFromDictionary:configurationDictionary];
     [self logPayload:payload];
 }
@@ -208,6 +243,10 @@ static BOOL STPAnalyticsCollectionDisabled = NO;
     if (deviceType) {
         payload[@"device_type"] = deviceType;
     }
+    payload[@"app_name"] = [NSBundle stp_applicationName];
+    payload[@"app_version"] = [NSBundle stp_applicationVersion];
+    payload[@"apple_pay_enabled"] = @([Stripe deviceSupportsApplePay]);
+    
     return payload;
 }
 
