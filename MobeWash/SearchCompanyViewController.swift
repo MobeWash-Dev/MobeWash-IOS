@@ -75,15 +75,11 @@ class SearchCompanyViewController: UIViewController {
         let companyField = Field(name: "company", value: companySelected)
         bookingData.addField(field: companyField)
         
-        
-        
+        if let destinationViewController = segue.destination as? PickAServiceViewController{
+            destinationViewController.bookingData = self.bookingData
+        }
         
     }
-    
-    
-    
-    
-    
 
 }
     

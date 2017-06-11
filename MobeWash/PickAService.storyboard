@@ -12,7 +12,7 @@
         <!--PickAService View Controller-->
         <scene sceneID="w6E-Q0-BkG">
             <objects>
-                <viewController storyboardIdentifier="PickAService" id="jzW-GC-f8Y" userLabel="PickAService View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PickAService" id="jzW-GC-f8Y" userLabel="PickAService View Controller" customClass="PickAServiceViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nNJ-eN-3j4"/>
                         <viewControllerLayoutGuide type="bottom" id="r2a-7h-oRx"/>
