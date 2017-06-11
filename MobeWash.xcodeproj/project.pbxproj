@@ -34,6 +34,7 @@
 		78CDC7CB1EB8721100495ED0 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7CA1EB8721100495ED0 /* CustomButton.swift */; };
 		78CDC7CF1EB8881000495ED0 /* CustomUINavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7CE1EB8881000495ED0 /* CustomUINavBar.swift */; };
 		78CDC7D11EB888C700495ED0 /* CustomUINavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDC7D01EB888C700495ED0 /* CustomUINavItem.swift */; };
+		78F9D20C1EED2CAD00B52E44 /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F9D20B1EED2CAD00B52E44 /* UITextFieldX.swift */; };
 		78FCB3E61EB6E9A20094C161 /* Time.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78FCB3E51EB6E9A20094C161 /* Time.storyboard */; };
 		78FCB3E81EB6E9B40094C161 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */; };
 		8C04E59F1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C04E59E1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard */; };
@@ -155,6 +156,7 @@
 		78CDC7CA1EB8721100495ED0 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		78CDC7CE1EB8881000495ED0 /* CustomUINavBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUINavBar.swift; sourceTree = "<group>"; };
 		78CDC7D01EB888C700495ED0 /* CustomUINavItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUINavItem.swift; sourceTree = "<group>"; };
+		78F9D20B1EED2CAD00B52E44 /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
 		78FCB3E51EB6E9A20094C161 /* Time.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Time.storyboard; sourceTree = "<group>"; };
 		78FCB3E71EB6E9B40094C161 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		8C04E59E1EDA73D2004E54A1 /* BillingDetailsWithCard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BillingDetailsWithCard.storyboard; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 				78124A071EC3B75F00962AEF /* BillingTextField.swift */,
 				781225941EDA902D001F1038 /* BookNowButton.swift */,
 				781225961EDA93B4001F1038 /* BookingAnimationView.swift */,
+				78F9D20B1EED2CAD00B52E44 /* UITextFieldX.swift */,
 			);
 			name = CustomUIClasses;
 			sourceTree = "<group>";
@@ -794,6 +797,7 @@
 				780D45CC1EA3DDDA00FB4D35 /* AppDelegate.swift in Sources */,
 				8C04E5BD1EDBDE06004E54A1 /* UserDetailsViewController.swift in Sources */,
 				B59F36C11EB69A4800DA21EE /* CarInfo.swift in Sources */,
+				78F9D20C1EED2CAD00B52E44 /* UITextFieldX.swift in Sources */,
 				8C2EF0F61EB43CC900514560 /* TextfieldExtensions.swift in Sources */,
 				78CDC7CF1EB8881000495ED0 /* CustomUINavBar.swift in Sources */,
 				8C34AA3D1EB1BFE5000A5490 /* CompanySetting.swift in Sources */,
