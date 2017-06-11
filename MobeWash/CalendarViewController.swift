@@ -101,7 +101,7 @@ class CalendarViewController: UIViewController {
         //Dummy Data
         bookingData?.datetime = "DateTime"
         
-        if let destinationViewController = segue.destination as? DetailsViewController{
+        if let destinationViewController = segue.destination as? UserDetailsViewController{
             destinationViewController.bookingData = self.bookingData
         }
         
