@@ -12,8 +12,12 @@ import Alamofire
 
 class SearchCompanyViewController: UIViewController {
     
+    //bookingData will be passed throughout view controllers during booking process
+    var bookingData = Booking(calendarType: 1144452, appointmentTypeID: "", dateTime: "", firstName: "", lastName: "", email: "", phone: "", fields: [])
+    
     var companyNames:[String] = []
     var companyIds:[Int] = []
+    var companySelected:String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,5 +68,26 @@ class SearchCompanyViewController: UIViewController {
         
         return true
     }
+
+    // MARK -- Navigation
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let companyField = Field(name: "company", value: companySelected)
+        bookingData.addField(field: companyField)
+        
+        
+        
+        
+    }
+    
+    
+    
+    
+    
+
 }
+    
+
+
+
+

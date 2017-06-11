@@ -16,12 +16,12 @@ public class Booking {
     private var fields: [Field]
     
     init(calendarType: Int, appointmentTypeID: String, dateTime: String, firstName: String,
-         lasName: String, email: String, phone: String, fields: [Field]) {
+         lastName: String, email: String, phone: String, fields: [Field]) {
         self.calendarType = calendarType
         self.appointmentTypeID = appointmentTypeID
         self.datetime = dateTime
         self.firstName = firstName
-        self.lastName = lasName
+        self.lastName = lastName
         self.email = email
         self.phone = phone
         self.fields = fields
