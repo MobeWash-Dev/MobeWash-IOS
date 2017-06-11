@@ -9,11 +9,11 @@
 import Foundation
 
 public class Booking {
-    private var calendarType: Int
-    private var appointmentTypeID: String
-    private var datetime: String
-    private var firstName: String, lastName: String, email: String, phone: String
-    private var fields: [Field]
+    var calendarType: Int
+    var appointmentTypeID: String
+    var datetime: String
+    var firstName: String, lastName: String, email: String, phone: String
+    var fields: [Field]
     
     init(calendarType: Int, appointmentTypeID: String, dateTime: String, firstName: String,
          lastName: String, email: String, phone: String, fields: [Field]) {

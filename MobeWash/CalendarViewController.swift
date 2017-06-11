@@ -15,6 +15,8 @@ class CalendarViewController: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
     @IBOutlet weak var monthLabel: UILabel!
     
+    var bookingData:Booking?
+    
     let brightBlue: UIColor = UIColor(red: 32/255.0, green: 139/255.0, blue: 1, alpha: 1.0)
     let formatter = DateFormatter()
     
