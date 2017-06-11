@@ -48,21 +48,6 @@ class DetailsViewController: UIViewController, UITextFieldDelegate {
         
         return true
     }
-    
-    //Error checking
-    func checkTextFields (){
-        for view: UIView in view.subviews{
-            if (view is UITextField){
-                let textField:UITextField? = (view as? UITextField)
-                if textField?.text?.characters.count == 0 {
-                    MWAlerts.alertMessage(message: "Please fill out all details",sender: self)
-                }
-            }
-        }
-        
-        
-    }
-
 
 
     override func didReceiveMemoryWarning() {

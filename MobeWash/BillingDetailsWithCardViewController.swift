@@ -32,6 +32,8 @@ class BillingDetailsWithCardViewController: UIViewController {
     @IBOutlet weak var payWithCardButton: UIButton!
     @IBOutlet weak var applePayButton: UIButton!
     
+    var bookingData:Booking?
+    
     var saveCardButton: BuyButton?
     
     var paymentTextField: STPPaymentCardTextField!
