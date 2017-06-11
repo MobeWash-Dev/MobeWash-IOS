@@ -30,7 +30,7 @@ class HighlightingButton: UIButton {
 
 class BuyButton : HighlightingButton {
     var disabledColor = UIColor.lightGray
-    var enabledColor = UIColor(red:0.22, green:0.65, blue:0.91, alpha:1.00)
+    var enabledColor = MWColors.MWBlue
     
 
     override var isEnabled: Bool {
@@ -47,8 +47,8 @@ class BuyButton : HighlightingButton {
         self.layer.borderWidth = 2
         self.layer.cornerRadius = 10
         self.setTitle("Book", for: UIControlState())
-        self.disabledColor = theme.secondaryForegroundColor
-        self.enabledColor = theme.accentColor
+        //self.disabledColor = theme.secondaryForegroundColor
+        //self.enabledColor = theme.accentColor
         self.isEnabled = enabled
     }
 }
@@ -71,6 +71,7 @@ class ApplePayBuyButton : HighlightingButton {
         self.layer.borderWidth = 2
         self.layer.cornerRadius = 10
         self.setTitle("Book with  Apple Pay", for: UIControlState())
+
         //self.disabledColor = theme.secondaryForegroundColor
         //self.enabledColor = theme.accentColor
         self.isEnabled = enabled
