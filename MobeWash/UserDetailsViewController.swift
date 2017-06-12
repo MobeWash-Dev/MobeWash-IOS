@@ -25,13 +25,13 @@ class UserDetailsViewController: UIViewController,UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var textFields = [UITextField]()
-        textFields = [firstNameField, lastNameField, phoneField, emailField, makeField,
-                      colorField, licenseField, infoField]
-        
-        for item in textFields{
-            item.borderStyle = .roundedRect
-        }
+//        var textFields = [UITextField]()
+//        textFields = [firstNameField, lastNameField, phoneField, emailField, makeField,
+//                      colorField, licenseField, infoField]
+//        
+//        for item in textFields{
+//            item.borderStyle = .roundedRect
+//        }
     }
     
     override func didReceiveMemoryWarning() {

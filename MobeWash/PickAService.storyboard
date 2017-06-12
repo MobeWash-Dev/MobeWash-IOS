@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +18,7 @@
                         <viewControllerLayoutGuide type="bottom" id="r2a-7h-oRx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ldu-6V-Qox">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g6J-PA-bz7" customClass="BookingAnimationView" customModule="MobeWash" customModuleProvider="target">
@@ -43,14 +43,14 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="i7o-xR-XP1">
-                                <rect key="frame" x="16" y="255" width="288" height="2"/>
+                                <rect key="frame" x="16" y="256.5" width="288" height="2"/>
                                 <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="2" id="Eyo-gi-DQr"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqy-0k-eMs">
-                                <rect key="frame" x="16" y="265" width="288" height="88"/>
+                                <rect key="frame" x="16" y="266.5" width="288" height="88"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSh-DS-Nzi">
                                         <rect key="frame" x="22" y="6" width="84" height="77"/>
@@ -112,14 +112,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="PICK A SERVICE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMo-CK-cje">
-                                <rect key="frame" x="16" y="232" width="147" height="23"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
-                                <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Select A Service" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMo-CK-cje">
+                                <rect key="frame" x="16" y="229" width="125" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fq8-bd-PWr">
-                                <rect key="frame" x="16" y="360" width="288" height="88"/>
+                                <rect key="frame" x="16" y="361.5" width="288" height="88"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDQ-Ca-cVn">
                                         <rect key="frame" x="22" y="4" width="84" height="77"/>
@@ -181,12 +181,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE A SERVICE FROM ABOVE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWw-U8-gBT">
-                                <rect key="frame" x="35" y="456" width="250" height="18"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -195,14 +189,12 @@
                             <constraint firstAttribute="leadingMargin" secondItem="rqy-0k-eMs" secondAttribute="leading" id="7wD-XA-x2Q"/>
                             <constraint firstAttribute="trailingMargin" secondItem="g6J-PA-bz7" secondAttribute="trailing" id="84p-jH-PPi"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Fq8-bd-PWr" secondAttribute="leading" id="Adq-5e-DUz"/>
-                            <constraint firstItem="WMo-CK-cje" firstAttribute="top" secondItem="g6J-PA-bz7" secondAttribute="bottom" constant="10" id="GEM-Pn-peN"/>
+                            <constraint firstItem="WMo-CK-cje" firstAttribute="top" secondItem="g6J-PA-bz7" secondAttribute="bottom" constant="7" id="GEM-Pn-peN"/>
                             <constraint firstAttribute="trailingMargin" secondItem="i7o-xR-XP1" secondAttribute="trailing" id="IJj-EX-mrR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fq8-bd-PWr" secondAttribute="trailing" id="Jqg-AI-HTJ"/>
-                            <constraint firstItem="CWw-U8-gBT" firstAttribute="top" secondItem="Fq8-bd-PWr" secondAttribute="bottom" constant="8" id="Kqz-74-Gy4"/>
-                            <constraint firstItem="CWw-U8-gBT" firstAttribute="centerX" secondItem="Ldu-6V-Qox" secondAttribute="centerX" id="YEE-bC-Kcz"/>
                             <constraint firstItem="rqy-0k-eMs" firstAttribute="top" secondItem="i7o-xR-XP1" secondAttribute="bottom" constant="8" id="cQe-dD-Wr3"/>
                             <constraint firstAttribute="leadingMargin" secondItem="WMo-CK-cje" secondAttribute="leading" id="elv-Qe-Oy2"/>
-                            <constraint firstItem="WMo-CK-cje" firstAttribute="bottom" secondItem="i7o-xR-XP1" secondAttribute="top" id="p5A-f7-KLf"/>
+                            <constraint firstItem="WMo-CK-cje" firstAttribute="bottom" secondItem="i7o-xR-XP1" secondAttribute="top" constant="-7" id="p5A-f7-KLf"/>
                             <constraint firstAttribute="leadingMargin" secondItem="i7o-xR-XP1" secondAttribute="leading" id="sbf-Tn-ttS"/>
                             <constraint firstAttribute="leadingMargin" secondItem="g6J-PA-bz7" secondAttribute="leading" id="yTz-ix-bbp"/>
                             <constraint firstItem="Fq8-bd-PWr" firstAttribute="top" secondItem="rqy-0k-eMs" secondAttribute="bottom" constant="6.6666666666666856" id="yvU-7f-MqN"/>
@@ -211,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mC0-9s-cVK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-300" y="22.010869565217394"/>
+            <point key="canvasLocation" x="-300" y="21.25"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="fxc-fS-3dt">

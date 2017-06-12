@@ -43,14 +43,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPM-Mg-rCl">
                                 <rect key="frame" x="16" y="232" width="343" height="435"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUCCESS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFQ-2g-NUK">
-                                        <rect key="frame" x="8" y="5" width="64" height="16"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                        <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Success" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFQ-2g-NUK">
+                                        <rect key="frame" x="8" y="7" width="64.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ie6-9h-Dhh">
-                                        <rect key="frame" x="0.0" y="21" width="343" height="2"/>
+                                        <rect key="frame" x="0.0" y="34.5" width="343" height="2"/>
                                         <color key="backgroundColor" red="0.82745098039999998" green="0.82745098039999998" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="jTi-KQ-mpX"/>
@@ -86,8 +86,8 @@
                                 <constraints>
                                     <constraint firstItem="gS5-Hl-XUZ" firstAttribute="leading" secondItem="OPM-Mg-rCl" secondAttribute="leading" id="IGd-iD-SCc"/>
                                     <constraint firstAttribute="trailing" secondItem="Ie6-9h-Dhh" secondAttribute="trailing" id="TEp-uz-5Vk"/>
-                                    <constraint firstItem="LFQ-2g-NUK" firstAttribute="top" secondItem="OPM-Mg-rCl" secondAttribute="top" constant="5" id="hzA-rD-ocA"/>
-                                    <constraint firstItem="Ie6-9h-Dhh" firstAttribute="top" secondItem="LFQ-2g-NUK" secondAttribute="bottom" id="rzO-Az-N8T"/>
+                                    <constraint firstItem="LFQ-2g-NUK" firstAttribute="top" secondItem="OPM-Mg-rCl" secondAttribute="top" constant="7" id="hzA-rD-ocA"/>
+                                    <constraint firstItem="Ie6-9h-Dhh" firstAttribute="top" secondItem="LFQ-2g-NUK" secondAttribute="bottom" constant="7" id="rzO-Az-N8T"/>
                                     <constraint firstItem="LFQ-2g-NUK" firstAttribute="leading" secondItem="OPM-Mg-rCl" secondAttribute="leading" constant="8" id="u7P-Aw-g1o"/>
                                     <constraint firstAttribute="trailing" secondItem="gS5-Hl-XUZ" secondAttribute="trailing" id="utl-Q7-Aoi"/>
                                     <constraint firstAttribute="bottom" secondItem="gS5-Hl-XUZ" secondAttribute="bottom" constant="18" id="wRj-fI-WRi"/>
