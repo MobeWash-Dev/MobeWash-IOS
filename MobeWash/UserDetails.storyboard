@@ -68,7 +68,7 @@
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                                <real key="value" value="10"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="5"/>
@@ -90,7 +90,7 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                                <real key="value" value="10"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
@@ -109,7 +109,7 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                                <real key="value" value="10"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
@@ -125,7 +125,7 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                                <real key="value" value="10"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
@@ -144,7 +144,7 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                                <real key="value" value="10"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
@@ -163,7 +163,7 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                                <real key="value" value="10"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
@@ -195,7 +195,7 @@
                                                 <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                                <real key="value" value="10"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
@@ -207,7 +207,7 @@
                                             <constraint firstAttribute="height" constant="31" id="Was-Fe-KKd"/>
                                         </constraints>
                                         <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="continue"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -217,7 +217,7 @@
                                                 <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
-                                                <real key="value" value="10"/>
+                                                <real key="value" value="5"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
