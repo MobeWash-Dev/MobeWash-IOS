@@ -283,7 +283,7 @@ extension CalendarViewController: JTAppleCalendarViewDelegate {
             validCell.dateLabel.textColor = UIColor.white
         } else {
             if cellState.dateBelongsTo == .thisMonth {
-                validCell.dateLabel.textColor = brightBlue
+                validCell.dateLabel.textColor = UIColor.black
             } else {
                 validCell.dateLabel.textColor = UIColor.lightGray
             }
