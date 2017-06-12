@@ -25,6 +25,7 @@
 /// The JTAppleCell class defines the attributes and
 /// behavior of the cells that appear in JTAppleCalendarView objects.
 open class JTAppleCell: UICollectionViewCell {
+        
     /// Cell view that will be customized
 	public override init(frame: CGRect) {
 		super.init(frame: frame)
