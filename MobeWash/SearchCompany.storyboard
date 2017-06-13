@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Search Company View Controller-->
         <scene sceneID="qKM-ht-GUN">
             <objects>
-                <viewController storyboardIdentifier="SearchCompany" id="fRw-ZF-j84" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchCompany" hidesBottomBarWhenPushed="YES" id="fRw-ZF-j84" customClass="SearchCompanyViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xAz-Am-i66"/>
                         <viewControllerLayoutGuide type="bottom" id="iqG-Rf-RXg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7A4-cb-oS2">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fff-XS-umo" customClass="BookingAnimationView" customModule="MobeWash" customModuleProvider="target">
-                                <rect key="frame" x="16" y="30" width="288" height="192"/>
+                                <rect key="frame" x="16" y="30" width="343" height="192"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MISSING ANIMATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hH7-SA-W5t">
                                         <rect key="frame" x="44" y="97" width="287" height="21"/>
@@ -43,14 +43,11 @@
                                 </constraints>
                             </view>
                             <searchBar contentMode="redraw" text="" placeholder="Search Company Here" translatesAutoresizingMaskIntoConstraints="NO" id="Nnv-rB-9bL">
-                                <rect key="frame" x="27" y="232" width="274" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="274" id="hNI-g9-Vk2"/>
-                                </constraints>
+                                <rect key="frame" x="27" y="232" width="332" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e97-pT-JON">
-                                <rect key="frame" x="16" y="284" width="288" height="50"/>
+                                <rect key="frame" x="16" y="284" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.21960784310000001" green="0.52941176469999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Pcz-Vz-BDO"/>
@@ -60,11 +57,11 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="VOh-m8-2Qz" kind="show" id="UJX-l1-wQn"/>
+                                    <segue destination="VOh-m8-2Qz" kind="show" identifier="segueToPickAService" id="UJX-l1-wQn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gt-6O-VHK">
-                                <rect key="frame" x="16" y="342" width="288" height="50"/>
+                                <rect key="frame" x="16" y="342" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.41568627450980389" green="0.56862745098039214" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="A0H-iz-l5d"/>
@@ -78,7 +75,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PICK A COMPANY TO START" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKL-lf-FXG">
-                                <rect key="frame" x="56" y="414" width="209" height="18"/>
+                                <rect key="frame" x="83" y="414" width="209" height="18"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="208.5" id="TAK-zG-oaS"/>
                                     <constraint firstAttribute="height" constant="18" id="ZYN-jB-aeV"/>
@@ -88,7 +85,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUGGESTED BASED ON YOUR CURRENT LOCATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qni-Jc-BF3">
-                                <rect key="frame" x="53" y="432" width="214" height="21"/>
+                                <rect key="frame" x="80.5" y="432" width="214" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="NU4-g5-Q2W"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="W3X-Ys-sPa"/>
@@ -105,34 +102,63 @@
                                     <constraint firstAttribute="width" constant="12" id="kpF-70-1te"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4SH-Wu-54m">
+                                <rect key="frame" x="0.0" y="284" width="375" height="383"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="companyCell" id="auf-9X-WHw">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="auf-9X-WHw" id="xbd-NB-Oem">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dZa-Oa-1VM" firstAttribute="top" secondItem="Nnv-rB-9bL" secondAttribute="top" id="3hT-Nm-dmr"/>
+                            <constraint firstItem="iqG-Rf-RXg" firstAttribute="top" secondItem="4SH-Wu-54m" secondAttribute="bottom" id="Bnq-Ok-oSD"/>
                             <constraint firstItem="qni-Jc-BF3" firstAttribute="centerX" secondItem="7A4-cb-oS2" secondAttribute="centerX" id="Cum-uf-fv3"/>
+                            <constraint firstItem="4SH-Wu-54m" firstAttribute="top" secondItem="Nnv-rB-9bL" secondAttribute="bottom" constant="8" id="DCy-If-Vhs"/>
                             <constraint firstItem="uKL-lf-FXG" firstAttribute="top" secondItem="4gt-6O-VHK" secondAttribute="bottom" constant="22" id="KiE-Vy-wPf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fff-XS-umo" secondAttribute="trailing" id="Nde-XY-FOb"/>
                             <constraint firstItem="qni-Jc-BF3" firstAttribute="top" secondItem="uKL-lf-FXG" secondAttribute="bottom" id="SaK-6r-P4N"/>
                             <constraint firstItem="e97-pT-JON" firstAttribute="top" secondItem="dZa-Oa-1VM" secondAttribute="bottom" constant="8" symbolic="YES" id="UyW-Yt-RvM"/>
                             <constraint firstItem="uKL-lf-FXG" firstAttribute="centerX" secondItem="7A4-cb-oS2" secondAttribute="centerX" id="WjB-6X-D7R"/>
+                            <constraint firstItem="4SH-Wu-54m" firstAttribute="leading" secondItem="7A4-cb-oS2" secondAttribute="leadingMargin" constant="-16" id="YhH-e2-Qlg"/>
                             <constraint firstItem="dZa-Oa-1VM" firstAttribute="trailing" secondItem="Nnv-rB-9bL" secondAttribute="leading" constant="1" id="ZPv-Tg-I1h"/>
                             <constraint firstAttribute="leadingMargin" secondItem="dZa-Oa-1VM" secondAttribute="leading" id="Zvr-wi-SEI"/>
                             <constraint firstItem="Fff-XS-umo" firstAttribute="top" secondItem="xAz-Am-i66" secondAttribute="bottom" constant="10" id="bSC-PF-39D"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4gt-6O-VHK" secondAttribute="trailing" id="cuT-OT-Z1R"/>
                             <constraint firstItem="Nnv-rB-9bL" firstAttribute="top" secondItem="Fff-XS-umo" secondAttribute="bottom" constant="10" id="dx7-lb-Wjj"/>
                             <constraint firstAttribute="leadingMargin" secondItem="e97-pT-JON" secondAttribute="leading" id="eqP-sG-OJA"/>
-                            <constraint firstAttribute="trailing" secondItem="Nnv-rB-9bL" secondAttribute="trailing" constant="19" id="iSY-dc-OJj"/>
                             <constraint firstItem="Nnv-rB-9bL" firstAttribute="bottom" secondItem="e97-pT-JON" secondAttribute="top" constant="-8" id="jhr-Oj-Fat"/>
                             <constraint firstItem="Fff-XS-umo" firstAttribute="leading" secondItem="7A4-cb-oS2" secondAttribute="leadingMargin" id="lOI-M6-Ihb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4SH-Wu-54m" secondAttribute="trailing" constant="-16" id="mLd-rs-s2Y"/>
                             <constraint firstAttribute="leadingMargin" secondItem="4gt-6O-VHK" secondAttribute="leading" id="nkK-hk-VyZ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dZa-Oa-1VM" secondAttribute="leading" id="pFD-Xp-Lpb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Nnv-rB-9bL" secondAttribute="trailing" id="pcr-mw-gAz"/>
                             <constraint firstItem="4gt-6O-VHK" firstAttribute="top" secondItem="e97-pT-JON" secondAttribute="bottom" constant="8" id="u3m-VM-Ao2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e97-pT-JON" secondAttribute="trailing" id="wx3-CO-zaq"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="dZa-Oa-1VM" secondAttribute="leading" id="z93-rZ-0Ve"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="blueSearchBarStyle" destination="dZa-Oa-1VM" id="1kQ-q0-Dxo"/>
+                        <outlet property="companiesTableView" destination="4SH-Wu-54m" id="4RQ-gP-rIM"/>
+                        <outlet property="companySearchBar" destination="Nnv-rB-9bL" id="QIr-AK-KGt"/>
+                        <outlet property="firstSuggestedCompanyButtonOutlet" destination="e97-pT-JON" id="ib4-ar-bke"/>
+                        <outlet property="pickCompanyLabel" destination="uKL-lf-FXG" id="vnZ-xl-xlz"/>
+                        <outlet property="secondSuggestedCompanyButtonOutlet" destination="4gt-6O-VHK" id="z8k-VH-wLZ"/>
+                        <outlet property="suggestCompanyLabel" destination="qni-Jc-BF3" id="HAG-Xr-cqR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1q-Aj-V3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-187.5" y="34.859154929577464"/>
+            <point key="canvasLocation" x="-188" y="34.632683658170919"/>
         </scene>
         <!--PickAService-->
         <scene sceneID="8mE-iQ-BK4">
@@ -144,6 +170,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vQQ-5F-dey"/>
+        <segue reference="UJX-l1-wQn"/>
     </inferredMetricsTieBreakers>
 </document>

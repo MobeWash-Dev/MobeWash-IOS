@@ -71,6 +71,7 @@
 		B26031511EB1BC3B00FE81AE /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B260314E1EB1BC3B00FE81AE /* DetailsViewController.swift */; };
 		B26031541EB31A4000FE81AE /* Details.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26031521EB31A4000FE81AE /* Details.storyboard */; };
 		B26031571EB407D900FE81AE /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26031551EB407D900FE81AE /* SignUp.storyboard */; };
+		B27E337F1EF075AB00A00074 /* SearchCompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27E337E1EF075AB00A00074 /* SearchCompanyViewController.swift */; };
 		B2B99A971EA85F84003D2F09 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B99A961EA85F84003D2F09 /* SignUpViewController.swift */; };
 		B59F36C11EB69A4800DA21EE /* CarInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F36C01EB69A4800DA21EE /* CarInfo.swift */; };
 		B59F36C31EB69A5700DA21EE /* Washer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B59F36C21EB69A5700DA21EE /* Washer.swift */; };
@@ -190,6 +191,7 @@
 		B260314E1EB1BC3B00FE81AE /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		B26031531EB31A4000FE81AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Details.storyboard; sourceTree = "<group>"; };
 		B26031561EB407D900FE81AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SignUp.storyboard; sourceTree = "<group>"; };
+		B27E337E1EF075AB00A00074 /* SearchCompanyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCompanyViewController.swift; sourceTree = "<group>"; };
 		B2B99A961EA85F84003D2F09 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B59F36C01EB69A4800DA21EE /* CarInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarInfo.swift; sourceTree = "<group>"; };
 		B59F36C21EB69A5700DA21EE /* Washer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Washer.swift; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 		78CBE8BD1EA3E5E1006BD330 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				B27E337E1EF075AB00A00074 /* SearchCompanyViewController.swift */,
 				D75EC5131ECEB3A700BD8517 /* WasherHistoryDetailViewController.swift */,
 				D75EC5141ECEB3A700BD8517 /* WasherHistoryTableViewCell.swift */,
 				D75EC5151ECEB3A700BD8517 /* WasherHistoryTableViewController.swift */,
@@ -799,6 +802,7 @@
 				8C34AA3D1EB1BFE5000A5490 /* CompanySetting.swift in Sources */,
 				B59F36CD1EB69A8D00DA21EE /* WorkListViewController.swift in Sources */,
 				783919D51EBAA3310086CF37 /* CalendarViewController.swift in Sources */,
+				B27E337F1EF075AB00A00074 /* SearchCompanyViewController.swift in Sources */,
 				D75EC5161ECEB3A700BD8517 /* WasherHistoryDetailViewController.swift in Sources */,
 				8C34AA3B1EB1BAE7000A5490 /* Company.swift in Sources */,
 				0799D57D1EBCFC370027C1D8 /* ServiceTableViewCell.swift in Sources */,
