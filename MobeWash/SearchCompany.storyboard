@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-=======
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
->>>>>>> development
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,32 +12,20 @@
         <!--Search Company View Controller-->
         <scene sceneID="qKM-ht-GUN">
             <objects>
-<<<<<<< HEAD
-                <viewController storyboardIdentifier="SearchCompany" hidesBottomBarWhenPushed="YES" id="fRw-ZF-j84" customClass="SearchCompanyViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
-=======
                 <viewController storyboardIdentifier="SearchCompany" id="fRw-ZF-j84" customClass="SearchCompanyViewController" customModule="MobeWash" customModuleProvider="target" sceneMemberID="viewController">
->>>>>>> development
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xAz-Am-i66"/>
                         <viewControllerLayoutGuide type="bottom" id="iqG-Rf-RXg"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7A4-cb-oS2">
-<<<<<<< HEAD
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fff-XS-umo" customClass="BookingAnimationView" customModule="MobeWash" customModuleProvider="target">
-                                <rect key="frame" x="16" y="30" width="343" height="192"/>
-=======
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fff-XS-umo" customClass="BookingAnimationView" customModule="MobeWash" customModuleProvider="target">
                                 <rect key="frame" x="20" y="30" width="374" height="192"/>
->>>>>>> development
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MISSING ANIMATION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hH7-SA-W5t">
-                                        <rect key="frame" x="45" y="79" width="284.66666666666669" height="35"/>
+                                        <rect key="frame" x="44.666666666666686" y="79" width="284.66666666666663" height="35"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
                                         <color key="textColor" red="0.48627450979999998" green="0.48627450979999998" blue="0.48627450979999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -60,19 +39,11 @@
                                 </constraints>
                             </view>
                             <searchBar contentMode="redraw" text="" placeholder="Search Company Here" translatesAutoresizingMaskIntoConstraints="NO" id="Nnv-rB-9bL">
-<<<<<<< HEAD
-                                <rect key="frame" x="27" y="232" width="332" height="44"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e97-pT-JON">
-                                <rect key="frame" x="16" y="284" width="343" height="50"/>
-=======
-                                <rect key="frame" x="32" y="232" width="363" height="44"/>
+                                <rect key="frame" x="31" y="232" width="363" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e97-pT-JON">
                                 <rect key="frame" x="20" y="284" width="374" height="50"/>
->>>>>>> development
                                 <color key="backgroundColor" red="0.21960784310000001" green="0.52941176469999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Pcz-Vz-BDO"/>
@@ -86,11 +57,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gt-6O-VHK">
-<<<<<<< HEAD
-                                <rect key="frame" x="16" y="342" width="343" height="50"/>
-=======
                                 <rect key="frame" x="20" y="342" width="374" height="50"/>
->>>>>>> development
                                 <color key="backgroundColor" red="0.41568627450980389" green="0.56862745098039214" blue="0.69019607843137254" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="A0H-iz-l5d"/>
@@ -104,11 +71,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PICK A COMPANY TO START" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKL-lf-FXG">
-<<<<<<< HEAD
-                                <rect key="frame" x="83" y="414" width="209" height="18"/>
-=======
                                 <rect key="frame" x="102.66666666666669" y="414" width="209" height="18"/>
->>>>>>> development
                                 <constraints>
                                     <constraint firstAttribute="width" constant="208.5" id="TAK-zG-oaS"/>
                                     <constraint firstAttribute="height" constant="18" id="ZYN-jB-aeV"/>
@@ -118,11 +81,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUGGESTED BASED ON YOUR CURRENT LOCATION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qni-Jc-BF3">
-<<<<<<< HEAD
-                                <rect key="frame" x="80.5" y="432" width="214" height="21"/>
-=======
                                 <rect key="frame" x="100" y="432" width="214" height="21"/>
->>>>>>> development
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="NU4-g5-Q2W"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="W3X-Ys-sPa"/>
@@ -137,17 +96,18 @@
                                 <color key="backgroundColor" red="0.21960784310000001" green="0.52941176469999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="12" id="mMr-pp-kTk"/>
+                                    <constraint firstAttribute="height" constant="44" id="smh-Za-tLx"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4SH-Wu-54m">
-                                <rect key="frame" x="0.0" y="284" width="375" height="383"/>
+                                <rect key="frame" x="4" y="284" width="406" height="452"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="companyCell" id="auf-9X-WHw">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="406" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="auf-9X-WHw" id="xbd-NB-Oem">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="406" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -157,12 +117,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="dZa-Oa-1VM" firstAttribute="top" secondItem="Nnv-rB-9bL" secondAttribute="top" id="3hT-Nm-dmr"/>
-<<<<<<< HEAD
                             <constraint firstItem="iqG-Rf-RXg" firstAttribute="top" secondItem="4SH-Wu-54m" secondAttribute="bottom" id="Bnq-Ok-oSD"/>
-=======
-                            <constraint firstItem="dZa-Oa-1VM" firstAttribute="bottom" secondItem="Nnv-rB-9bL" secondAttribute="bottom" id="A0U-pR-FkO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Nnv-rB-9bL" secondAttribute="trailing" constant="-1" id="BmV-ZR-gc8"/>
->>>>>>> development
                             <constraint firstItem="qni-Jc-BF3" firstAttribute="centerX" secondItem="7A4-cb-oS2" secondAttribute="centerX" id="Cum-uf-fv3"/>
                             <constraint firstItem="4SH-Wu-54m" firstAttribute="top" secondItem="Nnv-rB-9bL" secondAttribute="bottom" constant="8" id="DCy-If-Vhs"/>
                             <constraint firstItem="uKL-lf-FXG" firstAttribute="top" secondItem="4gt-6O-VHK" secondAttribute="bottom" constant="22" id="KiE-Vy-wPf"/>
@@ -170,13 +125,9 @@
                             <constraint firstAttribute="leadingMargin" secondItem="dZa-Oa-1VM" secondAttribute="leading" id="OIW-Aa-Y1p"/>
                             <constraint firstItem="qni-Jc-BF3" firstAttribute="top" secondItem="uKL-lf-FXG" secondAttribute="bottom" id="SaK-6r-P4N"/>
                             <constraint firstItem="uKL-lf-FXG" firstAttribute="centerX" secondItem="7A4-cb-oS2" secondAttribute="centerX" id="WjB-6X-D7R"/>
-<<<<<<< HEAD
                             <constraint firstItem="4SH-Wu-54m" firstAttribute="leading" secondItem="7A4-cb-oS2" secondAttribute="leadingMargin" constant="-16" id="YhH-e2-Qlg"/>
                             <constraint firstItem="dZa-Oa-1VM" firstAttribute="trailing" secondItem="Nnv-rB-9bL" secondAttribute="leading" constant="1" id="ZPv-Tg-I1h"/>
                             <constraint firstAttribute="leadingMargin" secondItem="dZa-Oa-1VM" secondAttribute="leading" id="Zvr-wi-SEI"/>
-=======
-                            <constraint firstItem="dZa-Oa-1VM" firstAttribute="trailing" secondItem="Nnv-rB-9bL" secondAttribute="leading" id="ZPv-Tg-I1h"/>
->>>>>>> development
                             <constraint firstItem="Fff-XS-umo" firstAttribute="top" secondItem="xAz-Am-i66" secondAttribute="bottom" constant="10" id="bSC-PF-39D"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4gt-6O-VHK" secondAttribute="trailing" id="cuT-OT-Z1R"/>
                             <constraint firstItem="Nnv-rB-9bL" firstAttribute="top" secondItem="Fff-XS-umo" secondAttribute="bottom" constant="10" id="dx7-lb-Wjj"/>
@@ -204,11 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S1q-Aj-V3E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
             <point key="canvasLocation" x="-188" y="34.632683658170919"/>
-=======
-            <point key="canvasLocation" x="-188.40579710144928" y="34.239130434782609"/>
->>>>>>> development
         </scene>
         <!--PickAService-->
         <scene sceneID="8mE-iQ-BK4">
