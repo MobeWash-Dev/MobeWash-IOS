@@ -21,6 +21,7 @@ class DetailsViewController: UIViewController, UITextFieldDelegate {
     }
     @IBOutlet weak var nextButtonOutlet: UIButton!
     
+    var bookingData:Booking?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,9 +49,12 @@ class DetailsViewController: UIViewController, UITextFieldDelegate {
         return true
     }
 
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
 
 }

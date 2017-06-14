@@ -32,6 +32,8 @@ class BillingDetailsWithCardViewController: UIViewController {
     @IBOutlet weak var payWithCardButton: UIButton!
     @IBOutlet weak var applePayButton: UIButton!
     
+    var bookingData:Booking?
+    
     var saveCardButton: BuyButton?
     
     var paymentTextField: STPPaymentCardTextField!
@@ -210,7 +212,7 @@ class BillingDetailsWithCardViewController: UIViewController {
         
         //assume successful for demo
         showAddCard()
-        MWALerts.alertMessage(message: "Successfully Saved Card!", sender: self)
+        MWAlerts.alertMessage(message: "Successfully Saved Card!", sender: self)
         
         
     }
