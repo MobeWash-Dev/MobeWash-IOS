@@ -15,8 +15,8 @@ class SearchCompanyViewController: UIViewController, UISearchBarDelegate, UITabl
 
     //bookingData will be passed throughout view controllers during booking process
     var bookingData = Booking(calendarType: 1144452, appointmentTypeID: 0, dateTime: "", firstName: "", lastName: "", email: "", phone: "", fields: [])
-
-    var companyNames:[String] = []
+    
+    var companies:[String] = []
     var companyIds:[Int] = []
     var companySelected:String = ""
 
@@ -29,7 +29,6 @@ class SearchCompanyViewController: UIViewController, UISearchBarDelegate, UITabl
     @IBOutlet weak var blueSearchBarStyle: UIView!
     @IBOutlet weak var companySearchBar: UISearchBar!
     
-    var companies = ["Google", "Amazon", "UCSD", "United", "Apple", "Watermelon", "Leon's Awesome Company", "Alphabat", "Tesla"]
     var filtered = [String]()
     
     var originalSearchBarY = CGFloat()
@@ -46,7 +45,7 @@ class SearchCompanyViewController: UIViewController, UISearchBarDelegate, UITabl
                     for (key,value) in outer{
                         if (key == "name"){
                             print(value)
-                            self.companyNames.append(value as! String)
+                            self.companies.append(value as! String)
                         }else if(key == "id"){
                             self.companyIds.append(value as! Int)
                             print(value)
@@ -60,7 +59,7 @@ class SearchCompanyViewController: UIViewController, UISearchBarDelegate, UITabl
             var companyData:[Int:String] = [:]
 
             for item in self.companyIds{
-                companyData[item] = self.companyNames[item-1]
+                companyData[item] = self.companies[item-1]
             }
 
         }
@@ -153,7 +152,7 @@ class SearchCompanyViewController: UIViewController, UISearchBarDelegate, UITabl
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //let companySelected = filtered[indexPath.row]
+        companySelected = filtered[indexPath.row]
         self.performSegue(withIdentifier: "segueToPickAService", sender: self);
     }
 
